@@ -1,0 +1,326 @@
+
+/**
+* Board entry node
+**/
+
+.shai-group-block-wrapper .qtip-link {
+	border-bottom: none !important;	
+}
+
+.tabledrag-toggle-weight-wrapper {
+	display: none;	
+}
+
+.ctools-collapsible-container .ctools-toggle {
+    background-position: 0 5px !important;
+    width: 15px !important;
+}
+
+.shai-group-entry-separator {
+	margin-top: 0px !important;
+	margin-bottom: 5px !important;
+	border: 0px !important;
+	background-color: #B7B7B7;
+}
+
+.shai-group-entry-before-comment-separator {
+	margin-top: 5px !important;
+	margin-bottom: 5px !important;
+	border: 0px !important;
+	background-color: #E7E7E7;
+}
+
+.shai-group-entry-wrapper {
+	width: 100%;
+	overflow: hidden;
+	clear: both;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.shai-group-entry-content-wrapper {
+	clear: both;
+	overflow: hidden;
+}
+
+.shai-group-entry-left {
+	width: 70px;
+	float: left;
+}
+
+.shai-group-entry-right {
+	float: left;
+	width: 573px;
+}
+
+.shai_boardentry_username {
+	margin: 2px 0 2px 0;	
+}
+
+.shai_boardentry_username a:link, .shai_boardentry_username a:visited, .shai_boardentry_username a:hover {
+	color: #35477B;
+    font-size: 1.3em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.shai_boardentry_userpicture img {
+	width: 60px;
+	height: 60px;
+}
+
+.shai-group-entry-title-wrapper {
+	clear: both;	
+}
+
+.shai_boardentry_title {
+	float: left;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.shai-group-entry-title-separator {
+	float: left;
+	margin: 0 5px 0 5px;
+	font-size: 0.9em;
+	color: #666666;
+}
+
+.shai_boardentry_date {
+	float: left;
+	font-size: 0.9em;
+	color: #666666;
+}
+
+.shai_boardentry_date em {
+	font-style: normal;
+	color: #666666;
+}
+
+.shai_boardentry_delete {
+	font-size: 0.9em;
+}
+
+.shai_boardentry_content {
+
+}
+
+.shai_boardentry_content p {
+	margin: 0 0 5px 0;
+}
+
+.field-name-field-interest-group-attachments {
+	width: 100%;
+	clear: both;	
+	overflow: hidden;
+}
+
+.view-interest-group-board-entries-com {
+	width: 100%;
+	clear: both;	
+	overflow: hidden;
+}
+
+/**
+* Board entry comment
+**/
+.shai-group-entry-comment-wrapper {
+	width: 100%;
+	overflow: hidden;
+	clear: both;
+	margin-bottom: 4px;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+.shai-group-entry-comment-separator {
+	margin-top: 5px !important;
+	margin-bottom: 5px !important;
+	border: 0px !important;
+	margin-left: 20px;
+	background-color: #E7E7E7;
+}
+
+.shai-group-entry-comment-content-wrapper {
+	clear: both;
+	overflow: hidden;
+}
+
+.shai-group-entry-comment-left {
+	width: 70px;
+	float: left;
+}
+
+.shai-group-entry-comment-right {
+	float: left;
+	width: 561px;
+}
+
+.shai-group-entry-comment-title-wrapper {
+	clear: both;	
+}
+
+.shai-group-entry-comment-title-separator {
+	float: left;
+	margin: 0 5px 0 5px;
+	font-size: 0.9em;
+	color: #666666;
+}
+
+.shai_boardentry_comment_username {
+	margin: 2px 0 2px 0;	
+}
+
+.shai_boardentry_comment_username a:link, .shai_boardentry_comment_username a:visited, .shai_boardentry_comment_username a:hover {
+	color: #35477B;
+    font-size: 1.3em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.shai_boardentry_comment_userpicture img {
+	width: 60px;
+	height: 60px;
+}
+
+.shai_boardentry_comment_title {
+	float: left;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.shai_boardentry_comment_date {
+	float: left;
+	font-size: 0.9em;
+	color: #666666;
+}
+
+.shai_boardentry_comment_date em {
+	font-style: normal;
+	color: #666666;
+}
+
+.shai_boardentry_comment_delete {
+	font-size: 0.9em;
+}
+
+.shai_boardentry_comment_content {
+
+}
+
+.shai_boardentry_comment_content p {
+	margin: 0 0 5px 0;
+}
+
+
+/**
+* Board entry attachments
+**/
+.jcarousel-item img {
+	border: 1px solid #CCCCCC;	
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	border-radius: 6px;
+	behavior: url("../../../libraries/PIE/PIE.htc");
+	
+	width: 125px;
+	height: 125px;
+}
+
+.jcarousel-item .field-item a:link, .jcarousel-item .field-item a:visited, .jcarousel-item .field-item a:hover {
+	font-size: 0.9em;
+	color: #666666;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+ 
+ 
+/**
+* Board entry add form
+**/
+
+#mini-panel-study_group_board_entry_add_form .panel-separator,
+#mini-panel-ig_board_entry_add_form .panel-separator {
+	margin: 0;	
+}
+
+#mini-panel-study_group_board_entry_add_form .field-type-media .form-item,
+#mini-panel-ig_board_entry_add_form .field-type-media .form-item {
+	margin: 5px 0;	
+}
+
+#mini-panel-study_group_board_entry_add_form .field-type-media th,
+#mini-panel-ig_board_entry_add_form .field-type-media th {
+	padding: 2px 5px;
+}
+
+#mini-panel-study_group_board_entry_add_form .field-type-media td,
+#mini-panel-ig_board_entry_add_form .field-type-media td {
+	padding: 0px 5px;
+}
+
+#mini-panel-study_group_board_entry_add_form .field-type-media td .form-item,
+#mini-panel-ig_board_entry_add_form .field-type-media td .form-item {
+	margin: 0;
+}
+
+#mini-panel-study_group_board_entry_add_form .field-type-media td a,
+#mini-panel-ig_board_entry_add_form .field-type-media td a {
+	margin: 0;
+}
+
+#mini-panel-study_group_board_entry_add_form fieldset, 
+#mini-panel-ig_board_entry_add_form fieldset {
+	padding: 0 !important;
+	border-color: #DDDDDD !important;
+}
+
+div.pane-study-group-board-entry-add-form, div.pane-ig-board-entry-add-form {
+  	border-bottom: 1px solid #E2E2E2;
+    padding-left: 10px;
+    padding-right: 5px;
+    margin: -2px;
+}
+
+.filter-wrapper {
+    border: 1px solid #B3B2B2 !important;
+    border-top: 0 none !important;
+    margin: 0px !important;
+    padding: 5px 0px 2px 0px !important;
+    font-size: 11px !important;
+}
+
+.filter-wrapper .form-item {
+    margin-top: 5px !important;
+    padding: 0px 0px 5px 5px !important;
+}
+
+.filter-guidelines {
+    display: none !important;
+}
+
+.panels-flexible-row-1-1-inside {
+
+}
+
+.filter-help {
+	padding-top: 6px !important;
+}
+
+/** Board Entries in Community Panel *******/
+
+.shai-group-entry-name-wrapper {
+	clear: both;	
+}
+
+.shai_boardentry_username {
+	float: left;	
+}
+
+.shai-group-entry-intgroup {
+	margin: 3px 0 0 10px;
+	float: left;
+	font-size: 0.9em;
+	color: #666666;
+}

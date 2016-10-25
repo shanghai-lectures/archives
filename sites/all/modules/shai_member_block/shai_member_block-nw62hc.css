@@ -1,0 +1,222 @@
+/* MEMBER BLOCK *********************************/
+
+.block-shai-member-block .content {
+	height:auto;
+	overflow: hidden;	
+}
+
+.shai-member-block-member-wrapper {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.shai-member-block-own-wrapper {
+	border-bottom: 1px solid #E7E7E7;
+	padding-bottom: 10px;
+}
+
+.shai-member-block-last {
+	border-bottom: 1px solid #E7E7E7;
+	padding-bottom: 10px;	
+}
+
+.shai-member-block-member-wrapper h3, .shai-member-block-member-wrapper h4 {
+	margin:0;
+}
+
+.shai-member-block-member-wrapper a, 
+.shai-member-block-member-wrapper a:hover,
+.shai-member-block-member-wrapper a:visited {
+	color: #35477B;
+	text-decoration: none;
+}
+
+.shai-member-block-left-wrapper {
+	width: 45%;
+	height: 100px;
+	float: left;
+	position: relative;
+}
+
+.shai-member-block-time-picture {
+	position: absolute;
+	top: 2px;
+	left: 0px;
+	
+	width: 40px;
+	height: 40px;
+}
+
+.shai-member-block-country-picture {
+	position: absolute;
+	bottom: 0px;
+	left: 2px;
+	
+	--width: 40px;
+	--height: 40px;
+	width:37px;
+	height: 37px;
+}
+
+.shai-member-block-user-picture {
+	position: absolute;
+	left: 25px;
+	top: 17px;
+	
+	width: 60px;
+	height: 60px;
+	
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	border-radius: 6px;
+	behavior: url("../../libraries/PIE/PIE.htc");
+	
+	background-repeat: no-repeat;
+}
+
+.shai-member-block-user-picture a {
+	width: 100%;
+	height: 100%;
+}
+
+.shai-member-block-user-picture-login {
+	border: 5px solid #16830d;	
+}
+
+.shai-member-block-user-picture-logout {
+	border: 5px solid #c63d3d;	
+}
+
+.shai-member-block-user-picture-day {
+	background-image: url('images/time/day.png');
+}
+
+.shai-member-block-user-picture-night {
+	background-image: url('images/time/night.png');
+}
+
+.shai-member-block-time-text {
+	position: absolute;
+	top: 2px;
+	left: 40px;
+	
+	width: 60px;
+	height: 20px;
+	
+	font-size: 0.9em;
+}
+
+.shai-member-block-right-wrapper {
+	width: 55%;
+	height: 100px;
+	float: right;
+}
+
+h4.shai-member-block-username {
+	margin-top: 17px;	
+	font-size: 1em;
+}
+
+.shai-member-block-activity {
+	width: 90px;
+	height: 16px;
+	margin-top: 2px;
+	overflow: hidden;
+}
+
+.shai-member-block-assignment {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 40px;
+}
+
+.shai-member-block-contact {
+	width: 26px;
+	height: 19px;
+	font-size: 0.9em;
+	margin-left: 33px;
+	margin-top: 4px;
+}
+
+.shai-member-block-contact a:hover {
+	cursor: pointer;
+}
+
+.shai-member-block-lastonline {
+	width: 100%;
+	margin: 2px 0;
+	line-height: 1.1em;
+	font-size: 0.9em;
+}
+
+.shai-member-block-add-friend {
+	float: left;
+}
+
+.shai-member-block-add-friend-link {
+	background-image: url("images/Add-user-icon-small.png");
+	width: 25px;
+	height: 21px;
+	cursor: pointer !important;
+}
+
+.shai-member-block-already-friends {
+	background-image: url("images/Added-user-icon-small.png");
+	width: 25px;
+	height: 21px;
+	cursor: pointer !important;
+}
+
+.shai-member-block-not-confirmed-friends {
+	background-image: url("images/Not-confirmed-user-icon-small.png");
+	width: 25px;
+	height: 21px;
+	cursor: pointer !important;
+}
+
+.shai-member-block-mail {
+	float: left;
+	cursor: pointer;
+	width: 26px;
+	height: 19px;
+	margin-bottom: 1px;
+	background-image: url('images/mail.png');
+}
+
+/* GROUP BLOCK *********************************/
+
+.shai-group-block-wrapper {
+	width: 100%;
+	overflow: hidden;
+	clear: both;
+}
+
+.shai-group-block-title {
+	float: left;	
+}
+
+.shai-group-block-title h2 {
+	margin: 3px 0 0 0;
+}
+
+.shai-group-block-contact {
+	width: 26px;
+	height: 19px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 2px;
+}
+
+.shai-group-block-activity {
+	width: 111px;
+	height: 21px;
+	margin-left: 10px;
+	float: left;	
+}
+
+

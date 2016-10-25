@@ -1,0 +1,25 @@
+.node-guest-lecture .user-picture, .node-guest-lecture .submitted {
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.node-guest-lecture .field {
+	width: 100%;
+	clear: both;
+	overflow: hidden;	
+	margin: 5px 0;
+}
+
+.node-guest-lecture .field-label, .node-guest-lecture .field-items {
+	float: left;	
+}
+
+.node-guest-lecture .field-label {
+	width: 19%;
+	margin-right: 1%;	
+}
+
+.node-guest-lecture .field-items {
+	width: 80%;	
+}

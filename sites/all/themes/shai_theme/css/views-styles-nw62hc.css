@@ -1,0 +1,517 @@
+/**
+ * @file
+ * Views Styling
+ */
+
+
+/*Member List View*/
+
+.view-member-list table, .view-member-list tr, .view-newest-members table, .view-newest-members tr {
+	border: none;
+	background: none;	
+}
+
+.view-member-list td, .view-newest-members td {
+	padding: 5px 5px 10px 5px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.view-member-list .views-field, .view-newest-members .views-field {
+	border: 1px solid #CCCCCC;	
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	border-radius: 6px;
+	behavior: url("../../../libraries/PIE/PIE.htc");
+	
+	width: 140px;
+	height: 163px;
+}
+
+.members-contact-links-wrapper {
+	position: absolute;
+	top: 1;
+	left: 1;
+	width: 140px;
+	height: 30px;
+	background-image: url("../images/member_contact_bg2.png");	
+	background-repeat: repeat-x;
+  	border-radius: 6px 6px 0 0;
+	-moz-border-radius: 6px 6px 0 0;
+	-webkit-border-radius: 6px 6px 0 0;
+	-khtml-border-radius: 6px 6px 0 0;
+	behavior: url("../../../libraries/PIE/PIE.htc");
+}
+
+.view-member-list .user-picture{
+	width: 140px;
+	height: 140px;	
+	margin-bottom: 5px;
+	
+	border-radius: 6px 6px 0 0;
+	-moz-border-radius: 6px 6px 0 0;
+	-webkit-border-radius: 6px 6px 0 0;
+	-khtml-border-radius: 6px 6px 0 0;
+	behavior: url("../../../libraries/PIE/PIE.htc");
+}
+
+.view-newest-members .user-picture {
+	width: 115px;
+	height: 115px;	
+	margin-bottom: 5px;
+	
+	border-radius: 6px 6px 0 0;
+	-moz-border-radius: 6px 6px 0 0;
+	-webkit-border-radius: 6px 6px 0 0;
+	-khtml-border-radius: 6px 6px 0 0;
+	behavior: url("../../../libraries/PIE/PIE.htc");
+}
+
+.view-member-list .user-picture img, .view-newest-members .user-picture img {
+	border-radius: 6px 6px 0 0;
+	-moz-border-radius: 6px 6px 0 0;
+	-webkit-border-radius: 6px 6px 0 0;
+	-khtml-border-radius: 6px 6px 0 0;
+	behavior: url("../../../libraries/PIE/PIE.htc");
+}
+
+.view-newest-members .user-picture img {
+	width: 115px;
+	height: 115px;	
+}
+
+.view-member-list .views-field-picture, .view-newest-members .views-field-picture {
+	width: 140px;
+	margin: auto;
+}
+
+.ui-tooltip-title a:link, .ui-tooltip-title a:visited, .ui-tooltip-title a:hover, .qtip-tooltip a:link, .qtip-tooltip a:visited, .qtip-tooltip a:hover  {
+	text-decoration: none;	
+	color: 	#454545;
+}
+
+.view-member-list .qtip-link, .view-newest-members .qtip-link {
+	border: none;
+}
+
+.view-member-list .qtip-link a:link, .view-member-list .qtip-link a:hover, .view-member-list .qtip-link a:visited,
+.view-newest-members .qtip-link a:link, .view-newest-members .qtip-link a:hover, .view-newest-members .qtip-link a:visited {
+	text-decoration: none;	
+	color: #666666;
+}
+
+.members-qtip-row {
+	clear: both;
+	height: 14px;
+}
+
+.members-qtip-row-left {
+	float: left;
+	width:	40%;
+	font-weight: bold;
+}
+.members-qtip-row-right {
+	float: left;
+	width:	50%;
+}
+
+.view-member-list .member-list-member, .view-newest-members .member-list-member {
+	position: relative;
+}
+
+.view-newest-members .member-list-member {
+	width: 115px;
+	height: 138px;	
+	border: 1px solid #CCCCCC;	
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	border-radius: 6px;
+	behavior: url("../../../libraries/PIE/PIE.htc");
+}
+
+.view-member-list .member-list-member {
+	width: 140px;
+	height: 163px;
+	border: 1px solid #CCCCCC;	
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	border-radius: 6px;
+	behavior: url("../../../libraries/PIE/PIE.htc");
+}
+
+.shai-member-list-add-friend-link {
+	background-image: url("../images/Add-user-icon-small.png");
+	position:absolute;
+	height: 21px;
+	width: 25px;
+	background-repeat:no-repeat;
+	left: 5px;
+	top: 3px;
+	cursor: pointer !important;
+}
+
+.shai-member-list-already-friends {
+	position: absolute;
+	left: 5px;
+	top: 3px;	
+	background-image: url("../images/Added-user-icon-small.png");
+	width: 25px;
+	height: 21px;
+	cursor: pointer !important;
+}
+
+.shai-member-list-not-confirmed-friends {
+	position: absolute;
+	left: 5px;
+	top: 3px;	
+	background-image: url("../images/Not-confirmed-user-icon-small.png");
+	width: 25px;
+	height: 21px;
+	cursor: pointer !important;
+}
+
+.view-member-list .shai-member-list-send-message a, .view-newest-members .shai-member-list-send-message a {
+	background-image: url("../images/mail.png");
+	position:absolute;
+	height: 21px;
+	width: 25px;
+	background-repeat:no-repeat;
+	right: 8px;
+	top: 4px;
+	cursor: pointer !important;
+}
+
+.view-member-list .col-1, .view-member-list .col-2, .view-member-list .col-3, 
+.view-member-list .col-4, .view-member-list .col-5, .view-member-list .col-6 {
+	width: 16.67%;	
+}
+
+.view-newest-members .col-1 {
+	padding-left: 0;
+}
+
+.view-newest-members table {
+	margin-top: 0;	
+}
+
+
+/**
+ * News View
+ */
+.view-news .user-picture {
+	display:none;	
+}
+
+.view-news .node-teaser {
+	margin-bottom: 1.3em;
+	border-bottom: solid 1px #E9E9E9;
+	padding-bottom: 0.5em;
+}
+
+
+/**
+ * Guest Lectures
+ */
+.view-shai-guest-lectures td {
+	padding: 10px 10px;
+	background: none;
+}
+
+.view-shai-guest-lectures tr.row-last {
+	border: none;	
+}
+
+.view-shai-guest-lectures .guest-lecture-preview {
+	float:left;
+	width: 100px;
+	height: 100px;
+	margin-right: 9px;
+}
+
+.view-shai-guest-lectures .guest-lecture-list-item {
+	clear: both;
+}
+
+.view-shai-guest-lectures .guest-lecture-metadata {
+	float: left;
+	width: 580px;
+	margin-right: 9px;
+}
+
+.view-shai-guest-lectures .guest-lecture-metadata h3 {
+	margin: 0 0 0.3em 0;
+}
+
+.view-shai-guest-lectures .guest-lecture-metadata-row {
+	clear: both;
+	width: 100%;
+	overflow: hidden;
+}
+
+.view-shai-guest-lectures .guest-lecture-metadata-row .field-content {
+	float: left;
+	margin-right: 0px;
+	line-height: 2em;
+}
+
+.view-shai-guest-lectures .guest-lecture-metadata-row .custom-label {
+	margin-right: 5px !important;
+}
+
+.view-shai-guest-lectures .guest-lecture-metadata-row a {
+	line-height: 2em;
+}
+
+.view-shai-guest-lectures .guest-lecture-links {
+	float: left;
+	width: 200px;	
+	padding-top: 18px;
+}
+
+/**
+ * Lectures
+ */
+.view-shanghai-lectures-lectures td, 
+.view-shanghai-lectures-next-lecture td {
+	padding: 10px 10px;
+	background: none;
+}
+
+.view-shanghai-lectures-lectures .lecture-list-item, 
+.view-shanghai-lectures-next-lecture .lecture-list-item {
+	clear: both;
+}
+
+.view-shanghai-lectures-lectures .lecture-metadata,
+.view-shanghai-lectures-next-lecture .lecture-metadata {
+	float: left;
+	width: 580px;
+	margin-right: 9px;
+}
+
+.view-shanghai-lectures-lectures .lecture-metadata h3,
+.view-shanghai-lectures-next-lecture .lecture-metadata h3 {
+	margin: 0 1.0em 0.3em 0;
+	float: left;
+}
+
+.view-shanghai-lectures-lectures .lecture-metadata-row,
+.view-shanghai-lectures-next-lecture .lecture-metadata-row {
+	clear: both;
+	width: 100%;
+	overflow: hidden;
+	margin: 6px 0;
+}
+
+.view-shanghai-lectures-lectures .lecture-metadata-row .lecture-slides,
+.view-shanghai-lectures-next-lecture .lecture-metadata-row .lecture-slides {
+	line-height: 2em;
+}
+
+.view-shanghai-lectures-lectures .lecture-metadata-row .lecture-slides a,
+.view-shanghai-lectures-next-lecture .lecture-metadata-row .lecture-slides a {
+	line-height: 2em;
+}
+
+.view-shanghai-lectures-lectures .lecture-metadata-row .field-content,
+.view-shanghai-lectures-next-lecture .lecture-metadata-row .field-content {
+	float: left;
+	margin-right: 5px;
+}
+
+.view-shanghai-lectures-lectures .lecture-metadata-row .field-content ul,
+.view-shanghai-lectures-next-lecture .lecture-metadata-row .field-content ul {
+	margin: 3px 0;
+}
+
+.view-shanghai-lectures-lectures .lecture-metadata-row .field-content li,
+.view-shanghai-lectures-next-lecture .lecture-metadata-row .field-content li {
+	margin: 0;
+	line-height: 1.5em;
+}
+
+.view-shanghai-lectures-lectures .lecture-links,
+.view-shanghai-lectures-next-lecture .lecture-links {
+	float: left;
+	width: 288px;	
+	padding-top: 24px;
+}
+
+/**
+ * Home Slider
+ */
+.home-slider-slide {
+	position:relative;
+}
+
+.home-slider-slide .home-slider-container {
+	position: absolute;
+	bottom: 6px;
+	height: 90px;
+	background-image: url("../images/slider-bg.png");
+	width: 562px;
+	color: #FFF;
+}
+.home-slider-slide .home-slider-container .slide-title {
+	margin: 1em 1em 0 1em;
+	font-size: 140%;
+	text-align: right;
+}
+
+.home-slider-slide .home-slider-container .description {
+	margin: 0em 1em 0 4em;
+	text-align:right;
+}
+
+.home-slider-slide .field-content img {
+	border: 6px solid #EFEFEF;	
+}
+
+.home-slider-slide {
+	/** padding: 1.2em; */
+}
+
+
+/**
+ *	Interest Group Member Block
+ */
+ 
+.block-views h2 {
+	margin-bottom: 10px;
+}
+
+.shai-interest-group-member-wrapper {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.shai-interest-group-member-wrapper h3, .shai-interest-group-member-wrapper h4 {
+	margin:0;
+}
+
+.shai-interest-group-member-wrapper a, 
+.shai-interest-group-member-wrapper a:hover,
+.shai-interest-group-member-wrapper a:visited {
+	color: #35477B;
+	text-decoration: none;
+}
+
+.shai-interest-group-member-left {
+	width: 35%;
+	height: 70px;
+	float: left;
+	position: relative;
+}
+
+.shai-interst-group-member-picture {
+	position: absolute;
+	
+	width: 60px;
+	height: 60px;
+	
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	border-radius: 6px;
+	behavior: url("../../../libraries/PIE/PIE.htc");
+	background-repeat: no-repeat;
+}
+
+.shai-interst-group-member-picture img {
+	width: 60px;
+	height: 60px;
+	background-repeat: no-repeat;
+}
+
+.shai-interest-group-member-login {
+	border: 5px solid #16830d;	
+}
+
+.shai-interest-group-member-logout {
+	border: 5px solid #c63d3d;	
+}
+
+.shai-interest-group-member-right {
+	width: 65%;
+	height: 70px;
+	float: right;
+}
+
+h4.shai-interest-group-member-username {
+	margin-top: 0px;	
+	font-size: 1em;
+}
+
+.shai-interest-group-member-contact {
+	width: 26px;
+	height: 19px;
+	font-size: 0.9em;
+	margin-left: 33px;
+	margin-top: 4px;
+}
+
+.shai-interest-group-member-contact a:hover {
+	cursor: pointer;
+}
+
+.shai-member-block-lastonline {
+	width: 100%;
+	margin: 2px 0;
+	line-height: 1.1em;
+	font-size: 0.9em;
+}
+
+.shai-interest-group-member-add-friend {
+	float: left;
+}
+
+.shai-interest-group-member-friend-link {
+	background-image: url("../images/Add-user-icon-small.png");
+	width: 25px;
+	height: 21px;
+	cursor: pointer !important;
+}
+
+.shai-ig-member-already-friends {
+	background-image: url("../images/Added-user-icon-small.png");
+	width: 25px;
+	height: 21px;
+	cursor: pointer !important;
+}
+
+.shai-ig-member-not-confirmed-friends {
+	background-image: url("../images/Not-confirmed-user-icon-small.png");
+	width: 25px;
+	height: 21px;
+	cursor: pointer !important;
+}
+
+.shai-ig-member-send-message a {
+	background-image: url("../images/mail.png");
+	float: left;
+	cursor: pointer;
+	width: 26px;
+	height: 19px;
+	margin-bottom: 1px;
+}
+
+/*
+ * News
+ */
+ 
+.view-id-news h2 {
+	font-size: 13px !important;	
+}
+
+.view-id-news .views-row {
+	margin-bottom: 8px;
+}
+
+.field-item p {
+	margin: 0.2em 0 0.6em 0;
+}

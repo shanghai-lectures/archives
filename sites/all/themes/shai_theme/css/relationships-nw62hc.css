@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+
+.relationship0 {
+	width: 1px;
+	text-align: center;
+}
+
+.relationship0 img {
+	border: 1px solid #CCCCCC;
+    border-radius: 6px 6px 6px 6px;
+}
+
+.relationship1 {
+	width: 150px;
+	text-align: center;
+}
+
+.relationship3 {
+	width: 450px;
+}
+
+.relationship4 {
+	width: 70px;
+	text-align: center;
+}
+
+.relationship4 a {
+	display: block;
+	margin-top: 5px;
+}

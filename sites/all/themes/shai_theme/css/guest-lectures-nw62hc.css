@@ -1,0 +1,103 @@
+/**
+* Board entry comment
+**/
+
+.field-name-field-gl-comment-attachments {
+	width: 100%;
+	clear: both;	
+	overflow: hidden;
+}
+
+.view-guest-lecture-comment {
+	width: 100%;
+	clear: both;	
+	overflow: hidden;
+}
+
+.shai-guest-lecture-comment-wrapper {
+	width: 100%;
+	overflow: hidden;
+	clear: both;
+	margin-bottom: 4px;
+	margin-left: 0px;
+	margin-top: 10px;
+}
+
+.shai-guest-lecture-comment-separator {
+	margin-top: 5px !important;
+	margin-bottom: 5px !important;
+	border: 0px !important;
+	margin-left: 0px;
+	background-color: #E7E7E7;
+}
+
+.shai-guest-lecture-comment-content-wrapper {
+	clear: both;
+	overflow: hidden;
+}
+
+.shai-guest-lecture-comment-left {
+	width: 70px;
+	float: left;
+}
+
+.shai-guest-lecture-comment-right {
+	float: left;
+}
+
+.shai-guest-lecture-comment-title-wrapper {
+	clear: both;	
+}
+
+.shai-guest-lecture-comment-title-separator {
+	float: left;
+	margin: 0 5px 0 5px;
+	font-size: 0.9em;
+	color: #666666;
+}
+
+.shai_guest_lecture_comment_username {
+	margin: 2px 0 2px 0;	
+}
+
+.shai_guest_lecture_comment_username a:link, .shai_guest_lecture_comment_username a:visited, .shai_guest_lecture_comment_username a:hover {
+	color: #35477B;
+    font-size: 1.3em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.shai_guest_lecture_comment_userpicture img {
+	width: 60px;
+	height: 60px;
+}
+
+.shai_guest_lecture_comment_title {
+	float: left;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.shai_guest_lecture_comment_date {
+	float: left;
+	font-size: 0.9em;
+	color: #666666;
+}
+
+.shai_guest_lecture_comment_date em {
+	font-style: normal;
+	color: #666666;
+}
+
+.shai_guest_lecture_comment_delete {
+	font-size: 0.9em;
+}
+
+.shai_guest_lecture_comment_content {
+
+}
+
+.shai_guest_lecture_comment_content p {
+	margin: 0 0 5px 0;
+}
+
