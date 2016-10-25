@@ -1,0 +1,925 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../sites/all/themes/shai_theme/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>Webots | ShanghAI Lectures</title>
+  <style type="text/css" media="all">@import url("http://shanghailectures.org/modules/system/system.base.css?nw62hc");
+@import url("http://shanghailectures.org/modules/system/system.messages.css?nw62hc");
+@import url("http://shanghailectures.org/modules/system/system.theme.css?nw62hc");</style>
+<style type="text/css" media="screen">@import url("../sites/all/modules/external_projects/qtip/library/jquery.qtip-nw62hc.css");
+@import url("../sites/all/libraries/shadowbox/shadowbox-nw62hc.css");</style>
+<style type="text/css" media="all">@import url("http://shanghailectures.org/modules/comment/comment.css?nw62hc");
+@import url("../sites/all/modules/external_projects/date/date_api/date-nw62hc.css");
+@import url("../sites/all/modules/external_projects/date/date_popup/themes/datepicker.1.7-nw62hc.css");
+@import url("http://shanghailectures.org/modules/field/theme/field.css?nw62hc");
+@import url("../sites/all/modules/external_projects/mollom/mollom-nw62hc.css");
+@import url("http://shanghailectures.org/modules/node/node.css?nw62hc");
+@import url("http://shanghailectures.org/modules/search/search.css?nw62hc");
+@import url("../sites/all/modules/external_projects/twitter_block/twitter_block-nw62hc.css");
+@import url("../sites/all/modules/external_projects/views/css/views-nw62hc.css");</style>
+<style type="text/css" media="all">@import url("../sites/all/modules/external_projects/ctools/css/ctools-nw62hc.css");
+@import url("../sites/all/modules/external_projects/media_embedded/formatters/overlay_formatter/skin/jcarousel-media-embedded-1-nw62hc.css");
+@import url("../sites/all/modules/external_projects/media_embedded/formatters/overlay_formatter/skin/jcarousel-media-embedded-2-nw62hc.css");
+@import url("../sites/all/modules/external_projects/media_embedded/formatters/overlay_formatter/skin/jcarousel-media-embedded-3-nw62hc.css");
+@import url("../sites/all/modules/external_projects/media_embedded/formatters/overlay_formatter/skin/jcarousel-media-embedded-4-nw62hc.css");
+@import url("../sites/all/modules/external_projects/media_embedded/formatters/overlay_formatter/skin/jcarousel-media-embedded-nw62hc.css");
+@import url("../sites/all/modules/external_projects/nice_menus/nice_menus-nw62hc.css");
+@import url("../sites/all/modules/external_projects/panels/css/panels-nw62hc.css");
+@import url("../sites/all/modules/shai_member_block/shai_member_block-nw62hc.css");
+@import url("../sites/all/modules/external_projects/ctools/css/collapsible-div-nw62hc.css");
+@import url("../sites/all/modules/external_projects/user_relationships/user_relationships_ui/user_relationships_ui-nw62hc.css");
+@import url("../sites/all/modules/external_projects/views_slideshow/views_slideshow-nw62hc.css");
+@import url("../sites/all/modules/external_projects/views_slideshow/contrib/views_slideshow_cycle/views_slideshow_cycle-nw62hc.css");
+@import url("../sites/all/modules/external_projects/panels/plugins/layouts/flexible/flexible-nw62hc.css");</style>
+<style type="text/css" media="all"><!--/*--><![CDATA[/*><!--*/
+.panels-flexible-region {
+  padding: 0;
+}
+
+.panels-flexible-region-inside {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.panels-flexible-region-inside-first {
+  padding-left: 0;
+}
+
+.panels-flexible-region-inside-last {
+  padding-right: 0;
+}
+
+.panels-flexible-column {
+  padding: 0;
+}
+
+.panels-flexible-column-inside {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.panels-flexible-column-inside-first {
+  padding-left: 0;
+}
+
+.panels-flexible-column-inside-last {
+  padding-right: 0;
+}
+
+.panels-flexible-row {
+  padding: 0 0 0.5em 0;
+  margin: 0;
+}
+
+.panels-flexible-row-last {
+  padding-bottom: 0;
+}
+
+.panels-flexible-column-new-main {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-new-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-new {
+  width: auto;
+}
+
+.panels-flexible-region-new-center {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-new-main-row-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-region-new-bottom {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-new-1-inside {
+  padding-right: 0px;
+}
+
+
+/*]]>*/-->
+</style>
+<style type="text/css" media="all">@import url("../sites/all/themes/shai_theme/css/html-reset-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/wireframes-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/layout-fixed-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/page-backgrounds-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/tabs-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/pages-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/blocks-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/navigation-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/views-styles-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/nodes-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/comments-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/forms-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/fields-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/board-entries-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/system.menus-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/user-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/contextual-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/nice_menus_default-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/qtip-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/jquery.ui.core-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/relationships-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/media-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/lectures-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/guest-lectures-nw62hc.css");</style>
+<style type="text/css" media="print">@import url("../sites/all/themes/shai_theme/css/print-nw62hc.css");</style>
+
+<!--[if lte IE 8]>
+<style type="text/css" media="all">@import url("http://shanghailectures.org/sites/all/themes/shai_theme/css/ie8.css?nw62hc");</style>
+<![endif]-->
+
+<!--[if lte IE 7]>
+<style type="text/css" media="all">@import url("http://shanghailectures.org/sites/all/themes/shai_theme/css/ie7.css?nw62hc");</style>
+<![endif]-->
+
+<!--[if lte IE 6]>
+<style type="text/css" media="all">@import url("http://shanghailectures.org/sites/all/themes/shai_theme/css/ie6.css?nw62hc");</style>
+<![endif]-->
+  <script type="text/javascript" src="http://shanghailectures.org/misc/jquery.js?v=1.4.4"></script>
+<script type="text/javascript" src="http://shanghailectures.org/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="http://shanghailectures.org/misc/drupal.js?nw62hc"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/qtip/library/jquery.qtip-v=2.0.0pre.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/qtip/js/qtip-v=2.0.0pre.js"></script>
+<script type="text/javascript" src="../sites/all/libraries/shadowbox/shadowbox-v=3.0.3.js"></script>
+<script type="text/javascript" src="http://shanghailectures.org/misc/jquery.cookie.js?v=1.0"></script>
+<script type="text/javascript" src="http://shanghailectures.org/misc/jquery.form.js?v=2.52"></script>
+<script type="text/javascript" src="http://shanghailectures.org/misc/ajax.js?v=7.8"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/mollom/mollom-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/jcarousel/js/jquery.jcarousel.min-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/jcarousel/js/jcarousel-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/media_embedded/formatters/overlay_formatter/skin/jquery.easing.1.2-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/panels/js/panels-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/user_relationships/user_relationships_ui/user_relationships_ui-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/views_slideshow/js/views_slideshow-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/libraries/jquery.cycle/jquery.cycle.all.min-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/views_slideshow/contrib/views_slideshow_cycle/js/views_slideshow_cycle-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/views/js/base-nw62hc.js"></script>
+<script type="text/javascript" src="http://shanghailectures.org/misc/progress.js?1477346594"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/google_analytics/googleanalytics-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/views/js/ajax_view-nw62hc.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-5982901-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/views/js/jquery.ui.dialog.patch-nw62hc.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"shai_theme","theme_token":"iho5bFOSfXgmQ0_E5LempkWAUL2ZmwXBAua3v1WN7JA","js":{"0":1,"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/external_projects\/qtip\/library\/jquery.qtip.js":1,"sites\/all\/modules\/external_projects\/qtip\/js\/qtip.js":1,"sites\/all\/libraries\/shadowbox\/shadowbox.js":1,"misc\/jquery.cookie.js":1,"misc\/jquery.form.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/external_projects\/mollom\/mollom.js":1,"sites\/all\/modules\/external_projects\/jcarousel\/js\/jquery.jcarousel.min.js":1,"sites\/all\/modules\/external_projects\/jcarousel\/js\/jcarousel.js":1,"sites\/all\/modules\/external_projects\/media_embedded\/formatters\/overlay_formatter\/skin\/jquery.easing.1.2.js":1,"sites\/all\/modules\/external_projects\/panels\/js\/panels.js":1,"sites\/all\/modules\/external_projects\/user_relationships\/user_relationships_ui\/user_relationships_ui.js":1,"sites\/all\/modules\/external_projects\/views_slideshow\/js\/views_slideshow.js":1,"sites\/all\/libraries\/jquery.cycle\/jquery.cycle.all.min.js":1,"sites\/all\/modules\/external_projects\/views_slideshow\/contrib\/views_slideshow_cycle\/js\/views_slideshow_cycle.js":1,"sites\/all\/modules\/external_projects\/views\/js\/base.js":1,"misc\/progress.js":1,"sites\/all\/modules\/external_projects\/google_analytics\/googleanalytics.js":1,"sites\/all\/modules\/external_projects\/views\/js\/ajax_view.js":1,"1":1,"sites\/all\/modules\/external_projects\/views\/js\/jquery.ui.dialog.patch.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/external_projects\/qtip\/library\/jquery.qtip.css":1,"sites\/all\/libraries\/shadowbox\/shadowbox.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/external_projects\/date\/date_api\/date.css":1,"sites\/all\/modules\/external_projects\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/external_projects\/mollom\/mollom.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"sites\/all\/modules\/external_projects\/twitter_block\/twitter_block.css":1,"sites\/all\/modules\/external_projects\/views\/css\/views.css":1,"sites\/all\/modules\/external_projects\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/external_projects\/media_embedded\/formatters\/overlay_formatter\/skin\/jcarousel-media-embedded-1.css":1,"sites\/all\/modules\/external_projects\/media_embedded\/formatters\/overlay_formatter\/skin\/jcarousel-media-embedded-2.css":1,"sites\/all\/modules\/external_projects\/media_embedded\/formatters\/overlay_formatter\/skin\/jcarousel-media-embedded-3.css":1,"sites\/all\/modules\/external_projects\/media_embedded\/formatters\/overlay_formatter\/skin\/jcarousel-media-embedded-4.css":1,"sites\/all\/modules\/external_projects\/media_embedded\/formatters\/overlay_formatter\/skin\/jcarousel-media-embedded.css":1,"sites\/all\/modules\/external_projects\/nice_menus\/nice_menus.css":1,"sites\/all\/modules\/external_projects\/panels\/css\/panels.css":1,"sites\/all\/modules\/shai_member_block\/shai_member_block.css":1,"sites\/all\/modules\/external_projects\/ctools\/css\/collapsible-div.css":1,"sites\/all\/modules\/external_projects\/user_relationships\/user_relationships_ui\/user_relationships_ui.css":1,"sites\/all\/modules\/external_projects\/views_slideshow\/views_slideshow.css":1,"sites\/all\/modules\/external_projects\/views_slideshow\/contrib\/views_slideshow_cycle\/views_slideshow_cycle.css":1,"sites\/all\/modules\/external_projects\/panels\/plugins\/layouts\/flexible\/flexible.css":1,"0":1,"sites\/all\/themes\/shai_theme\/css\/html-reset.css":1,"sites\/all\/themes\/shai_theme\/css\/wireframes.css":1,"sites\/all\/themes\/shai_theme\/css\/layout-fixed.css":1,"sites\/all\/themes\/shai_theme\/css\/page-backgrounds.css":1,"sites\/all\/themes\/shai_theme\/css\/tabs.css":1,"sites\/all\/themes\/shai_theme\/css\/pages.css":1,"sites\/all\/themes\/shai_theme\/css\/blocks.css":1,"sites\/all\/themes\/shai_theme\/css\/navigation.css":1,"sites\/all\/themes\/shai_theme\/css\/views-styles.css":1,"sites\/all\/themes\/shai_theme\/css\/nodes.css":1,"sites\/all\/themes\/shai_theme\/css\/comments.css":1,"sites\/all\/themes\/shai_theme\/css\/forms.css":1,"sites\/all\/themes\/shai_theme\/css\/fields.css":1,"sites\/all\/themes\/shai_theme\/css\/board-entries.css":1,"sites\/all\/themes\/shai_theme\/css\/system.menus.css":1,"sites\/all\/themes\/shai_theme\/css\/user.css":1,"sites\/all\/themes\/shai_theme\/css\/contextual.css":1,"sites\/all\/themes\/shai_theme\/css\/nice_menus_default.css":1,"sites\/all\/themes\/shai_theme\/css\/qtip.css":1,"sites\/all\/themes\/shai_theme\/css\/jquery.ui.core.css":1,"sites\/all\/themes\/shai_theme\/css\/relationships.css":1,"sites\/all\/themes\/shai_theme\/css\/media.css":1,"sites\/all\/themes\/shai_theme\/css\/lectures.css":1,"sites\/all\/themes\/shai_theme\/css\/guest-lectures.css":1,"sites\/all\/themes\/shai_theme\/css\/print.css":1,"sites\/all\/themes\/shai_theme\/css\/ie8.css":1,"sites\/all\/themes\/shai_theme\/css\/ie7.css":1,"sites\/all\/themes\/shai_theme\/css\/ie6.css":1}},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"qtip":{"target_position":"top_right","tooltip_position":"bottom_left","show_speech_bubble_tip":1,"show_speech_bubble_tip_side":0,"speech_bubble_size":"12","show_speech_bubble_tip_solid":1,"show_shadow":1,"rounded_corners":1,"color":"ui-tooltip-light","custom_color":"","show_event_type":"mouseenter","hide_event_type":"mouseleave","show_webform_descriptions":0,"additional_elements":""},"shadowbox":{"animate":1,"animateFade":1,"animSequence":"wh","auto_enable_all_images":0,"auto_gallery":0,"autoplayMovies":true,"continuous":0,"counterLimit":"10","counterType":"default","displayCounter":1,"displayNav":1,"enableKeys":1,"fadeDuration":"0.35","handleOversize":"resize","handleUnsupported":"remove","initialHeight":160,"initialWidth":320,"language":"en","modal":false,"overlayColor":"#000","overlayOpacity":"0.85","resizeDuration":"0.35","showMovieControls":1,"slideshowDelay":"0","viewportPadding":20,"useSizzle":0},"user_relationships_ui":{"loadingimage":"\/sites\/all\/modules\/external_projects\/user_relationships\/user_relationships_ui\/images\/loadingAnimation.gif","savingimage":"\/sites\/all\/modules\/external_projects\/user_relationships\/user_relationships_ui\/images\/savingimage.gif","position":{"position":"absolute","left":"0","top":"0"}},"views":{"ajax_path":"\/views\/ajax","ajaxViews":[{"view_name":"interest_group_board_entries_com","view_display_id":"page","view_args":"333","view_path":"node\/104","view_base_path":"node\/104","view_dom_id":1,"pager_element":"11"},{"view_name":"interest_group_board_entries_com","view_display_id":"page","view_args":"326","view_path":"node\/104","view_base_path":"node\/104","view_dom_id":2,"pager_element":"11"},{"view_name":"interest_group_board_entries_com","view_display_id":"page","view_args":"286","view_path":"node\/104","view_base_path":"node\/104","view_dom_id":3,"pager_element":"11"},{"view_name":"interest_group_board_entries_com","view_display_id":"page","view_args":"255","view_path":"node\/104","view_base_path":"node\/104","view_dom_id":4,"pager_element":"11"},{"view_name":"interest_group_board_entries_com","view_display_id":"page","view_args":"127","view_path":"node\/104","view_base_path":"node\/104","view_dom_id":5,"pager_element":"11"},{"view_name":"interest_group_board_entries","view_display_id":"default","view_args":"104","view_path":"node\/104","view_base_path":"interest-group-board-entries","view_dom_id":6,"pager_element":"10"}]},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"og":{"og_context":{"gid":"8","etid":"104","entity_type":"node","label":"Webots","state":"1","created":"1317971383","rdf_mapping":[]}}});
+//--><!]]>
+</script>
+  
+<!--[if lt IE 7]>
+	<style> 
+	div.apple_overlay {
+		background-image:url(http://static.flowplayer.org/tools/img/overlay/overlay_IE6.gif);
+		color:#fff;
+	}
+	
+	/* default close button positioned on upper right corner */
+	div.apple_overlay div.close {
+		background-image:url(http://static.flowplayer.org/tools/img/overlay/overlay_close_IE6.gif);
+	
+	}	
+	</style>
+	<![endif]-->
+  
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-104 node-type-interest-group group-context group-context-group-8 group-context-node group-context-node-104 section-node" >
+  <div id="skip-link">
+    <a href="104-page=3,0,0,0,0,0,0,0,0,0,3,1.html#main-menu" class="element-invisible element-focusable">Jump to Navigation</a>
+  </div>
+    <div id="header-background"></div>
+<div id="page-wrapper"><div id="page">
+
+  <div id="header"><div class="section clearfix">
+
+          <a href="../index.html" title="Home" id="logo"><img src="../sites/all/themes/shai_theme/logo.png" alt="Home" /></a>
+    
+    
+    
+      <div class="region region-header">
+    <div id="block-user-login" class="block block-user first odd">
+
+        <h2 class="block-title">User login</h2>
+    
+  <div class="content">
+    <form action="/node/104?destination=node/104%3Fpage%3D3%252C0%252C0%252C0%252C0%252C0%252C0%252C0%252C0%252C0%252C3%252C1" method="post" id="user-login-form" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-name">
+  <label for="edit-name">E-mail <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-name" name="name" value="" size="15" maxlength="60" class="form-text required" />
+</div>
+<div class="form-item form-type-password form-item-pass">
+  <label for="edit-pass">Password <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" id="edit-pass" name="pass" size="15" maxlength="60" class="form-text required" />
+</div>
+<div class="item-list"><ul><li class="first last"><a href="../user/password.html" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" value="form-ZqXRhpbhvD92XPDmXNSpdUY9KCsHMq4ecICdunoTnsk" />
+<input type="hidden" name="form_id" value="user_login_block" />
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Log in" class="form-submit" /></div></div></form>  </div>
+
+</div><!-- /.block -->
+<div id="block-nice-menus-1" class="block block-nice-menus last even">
+
+      
+  <div class="content">
+    <ul class="nice-menu nice-menu-down" id="nice-menu-1"><li class="menu-604 menu-path-news first  odd "><a href="../news.html">News</a></li>
+<li class="menu-626 menuparent menu-path-community even "><a href="../community.html">Community</a><ul><li class="menu-511 menu-path-community-interest-groups first  odd  last "><a href="../community/interest-groups.html">Interest Groups</a></li>
+</ul>
+</li>
+<li class="menu-628 menuparent menu-path-lectures odd "><a href="../lectures.html">Lectures</a><ul><li class="menu-629 menu-path-lectures-guest-lectures first  odd "><a href="../lectures/guest-lectures.html">Guest Lectures</a></li>
+<li class="menu-808 menu-path-node-1738 even "><a href="../content/rulesexam.html">Rules/Exam</a></li>
+<li class="menu-812 menu-path-node-2893 odd "><a href="../koans.html">Kōans</a></li>
+<li class="menu-821 menu-path-shanghailecturesorg-drupalchat-messages even  last "><a href="../drupalchat/messages.html" title="Log of chat messages.">Chat log (members only)</a></li>
+</ul>
+</li>
+<li class="menu-656 menu-path-node-19 even "><a href="../research.html">Research</a></li>
+<li class="menu-652 menu-path-node-2 odd "><a href="../sponsors.html">Sponsors</a></li>
+<li class="menu-806 menu-path-node-1542 even  last "><a href="../links.html">Links</a></li>
+</ul>
+  </div>
+
+</div><!-- /.block -->
+  </div><!-- /.region -->
+
+  </div></div><!-- /.section, /#header -->
+
+  <div id="main-wrapper"><div id="main" class="clearfix">
+
+    <div id="content" class="column"><div class="section">
+            <div class="wrapper-breadcrumb">
+      <div class="breadcrumb"><h2 class="element-invisible">You are here</h2><a href="../index.html">Home</a> › <a href="../community.html">Community</a> › <a href="../community/interest-groups.html">Interest Groups</a> › </div>Webots      </div>
+      
+      <a id="main-content"></a>
+                    <h1 class="title" id="page-title">Webots</h1>
+                                            <div class="region region-content">
+    <div id="block-system-main" class="block block-system first last odd">
+
+      
+  <div class="content">
+    <div class="panel-flexible panels-flexible-new clearfix" >
+<div class="panel-flexible-inside panels-flexible-new-inside">
+<div class="panels-flexible-row panels-flexible-row-new-main-row panels-flexible-row-first clearfix">
+  <div class="inside panels-flexible-row-inside panels-flexible-row-new-main-row-inside panels-flexible-row-inside-first clearfix">
+<div class="panels-flexible-region panels-flexible-region-new-center panels-flexible-region-first panels-flexible-region-last">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-new-center-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+  </div>
+</div>
+  </div>
+</div>
+<div class="panels-flexible-row panels-flexible-row-new-1 panels-flexible-row-last clearfix ">
+  <div class="inside panels-flexible-row-inside panels-flexible-row-new-1-inside panels-flexible-row-inside-last clearfix">
+<div class="panels-flexible-region panels-flexible-region-new-bottom panels-flexible-region-first panels-flexible-region-last ">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-new-bottom-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-views pane-interest-group-board-entries" >
+  
+      <h2 class="pane-title">Interest Group Board Entries</h2>
+  
+  
+  <div class="pane-content">
+    <div class="view view-interest-group-board-entries view-id-interest_group_board_entries view-display-id-default view-dom-id-6">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    
+<div class="shai-group-entry-wrapper">
+	<div class="shai-group-entry-content-wrapper">
+		<div class="shai-group-entry-left">
+		<div class="field-content shai_boardentry_userpicture">  <div class="user-picture">
+    <a href="../users/jekaterina-novikova-0.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-968-1366386402.jpg" alt="Jekaterina Novikova&#039;s picture" title="Jekaterina Novikova&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-right">
+		<div class="field-content shai_boardentry_username"><a href="../users/jekaterina-novikova-0.html" title="View user profile." class="username" xml:lang="" about="/users/jekaterina-novikova-0" typeof="sioc:UserAccount" property="foaf:name">Jekaterina Novikova</a></div>			<div class="shai-group-entry-title-wrapper">
+				<div class="field-content shai_boardentry_date"><em class="placeholder">4 years 12 months</em> ago</div>
+				<div class="shai-group-entry-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_content"><p>My webots licence is gong to expire in 8 days.. Should I do something myself to prolong it or it will be done automatically?</p>
+</div>
+		</div>
+	</div>
+		<hr class="shai-group-entry-before-comment-separator"><div class="view view-interest-group-board-entries-com view-id-interest_group_board_entries_com view-display-id-page view-dom-id-1">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div>	<div class="shai-group-entry-add-comment-wrapper">
+		</div>
+</div>
+<hr	class="shai-group-entry-separator">  </div>
+  <div class="views-row views-row-2 views-row-even">
+    
+<div class="shai-group-entry-wrapper">
+	<div class="shai-group-entry-content-wrapper">
+		<div class="shai-group-entry-left">
+		<div class="field-content shai_boardentry_userpicture">  <div class="user-picture">
+    <a href="../users/abishek-ramdas.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1079-1319982960.jpg" alt="Abishek Ramdas&#039;s picture" title="Abishek Ramdas&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-right">
+		<div class="field-content shai_boardentry_username"><a href="../users/abishek-ramdas.html" title="View user profile." class="username" xml:lang="" about="/users/abishek-ramdas" typeof="sioc:UserAccount" property="foaf:name">Abishek Ramdas</a></div>			<div class="shai-group-entry-title-wrapper">
+				<div class="field-content shai_boardentry_date"><em class="placeholder">4 years 12 months</em> ago</div>
+				<div class="shai-group-entry-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_content"><p>Hi all,<br />
+I have been trying to get the license up for webots. I have registered with cyberbotics.com with the same email address. When I try to follow the steps in exercise 1, I get the following error : This user has no license rights, purchase a webots license and configure your user account. I was also asked to contact the system admin. </p>
+<p>Kindly let me know what I need to do. </p>
+<p>Thanks,<br />
+Abishek</p>
+</div>
+		</div>
+	</div>
+		<hr class="shai-group-entry-before-comment-separator"><div class="view view-interest-group-board-entries-com view-id-interest_group_board_entries_com view-display-id-page view-dom-id-2">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div>	<div class="shai-group-entry-add-comment-wrapper">
+		</div>
+</div>
+<hr	class="shai-group-entry-separator">  </div>
+  <div class="views-row views-row-3 views-row-odd">
+    
+<div class="shai-group-entry-wrapper">
+	<div class="shai-group-entry-content-wrapper">
+		<div class="shai-group-entry-left">
+		<div class="field-content shai_boardentry_userpicture">  <div class="user-picture">
+    <a href="../users/bekir-tufan-alper.html" title="View user profile."><img typeof="foaf:Image" src="http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=140" alt="Bekir Tufan Alper&#039;s picture" title="Bekir Tufan Alper&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-right">
+		<div class="field-content shai_boardentry_username"><a href="../users/bekir-tufan-alper.html" title="View user profile." class="username" xml:lang="" about="/users/bekir-tufan-alper" typeof="sioc:UserAccount" property="foaf:name">Bekir Tufan Alper</a></div>			<div class="shai-group-entry-title-wrapper">
+				<div class="field-content shai_boardentry_date"><em class="placeholder">5 years 1 day</em> ago</div>
+				<div class="shai-group-entry-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_content"><p>Hello everyone,</p>
+<p>I'm having trouble about activating my webots account. I have done everything illustrated in the exerise1 sheet, however when I go to Tools/Preferences and even if I use the same e-mail address and password with Shangai website and Cyberbotics website, I face with an error like that:<br />
+"Cannot connect the license server at:<br /><a href="http://www.cyberbotics.com">http://www.cyberbotics.com</a>.<br />
+License server unreachable from your location. Please check your network configuration and login account details."<br />
+If you know the solution to that error, please let me know.<br />
+Thank you.</p>
+</div>
+		</div>
+	</div>
+		<hr class="shai-group-entry-before-comment-separator"><div class="view view-interest-group-board-entries-com view-id-interest_group_board_entries_com view-display-id-page view-dom-id-3">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div>	<div class="shai-group-entry-add-comment-wrapper">
+		</div>
+</div>
+<hr	class="shai-group-entry-separator">  </div>
+  <div class="views-row views-row-4 views-row-even">
+    
+<div class="shai-group-entry-wrapper">
+	<div class="shai-group-entry-content-wrapper">
+		<div class="shai-group-entry-left">
+		<div class="field-content shai_boardentry_userpicture">  <div class="user-picture">
+    <a href="../users/tobias-klauser.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-977-1317297017.jpg" alt="Tobias Klauser&#039;s picture" title="Tobias Klauser&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-right">
+		<div class="field-content shai_boardentry_username"><a href="../users/tobias-klauser.html" title="View user profile." class="username" xml:lang="" about="/users/tobias-klauser" typeof="sioc:UserAccount" property="foaf:name">Tobias Klauser</a></div>			<div class="shai-group-entry-title-wrapper">
+				<div class="field-content shai_boardentry_date"><em class="placeholder">5 years 2 days</em> ago</div>
+				<div class="shai-group-entry-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_content"><p>When making a movie using Webots (as required for certain tasks in exercise 2), make sure you don't save the movie file to a directory path containing spaces in any directory name or the file name (e.g. /Users/johndoe/ShanghAI Lectures/Movie.avi). Otherwise the file won't be correctly generated (at least it didn't here on Mac OS X).</p>
+</div>
+		</div>
+	</div>
+		<hr class="shai-group-entry-before-comment-separator"><div class="view view-interest-group-board-entries-com view-id-interest_group_board_entries_com view-display-id-page view-dom-id-4">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div>	<div class="shai-group-entry-add-comment-wrapper">
+		</div>
+</div>
+<hr	class="shai-group-entry-separator">  </div>
+  <div class="views-row views-row-5 views-row-odd views-row-last">
+    
+<div class="shai-group-entry-wrapper">
+	<div class="shai-group-entry-content-wrapper">
+		<div class="shai-group-entry-left">
+		<div class="field-content shai_boardentry_userpicture">  <div class="user-picture">
+    <a href="../users/tobias-klauser.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-977-1317297017.jpg" alt="Tobias Klauser&#039;s picture" title="Tobias Klauser&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-right">
+		<div class="field-content shai_boardentry_username"><a href="../users/tobias-klauser.html" title="View user profile." class="username" xml:lang="" about="/users/tobias-klauser" typeof="sioc:UserAccount" property="foaf:name">Tobias Klauser</a></div>			<div class="shai-group-entry-title-wrapper">
+				<div class="field-content shai_boardentry_date"><em class="placeholder">5 years 2 weeks</em> ago</div>
+				<div class="shai-group-entry-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_content"><p>Regarding the Webots License Setup, Exercise 1, section 8 mentions we have to use our ShanghAI lecture website username and password. Does this mean we don't have to register an account with cyberbotics.com? Or do we still have to register there and then somehow "connect" the two accounts?</p>
+<p>Thanks for the clarification.</p>
+</div>
+		</div>
+	</div>
+		<hr class="shai-group-entry-before-comment-separator"><div class="view view-interest-group-board-entries-com view-id-interest_group_board_entries_com view-display-id-page view-dom-id-5">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/pablo-mar%C3%ADn-plaza.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-960-1317378979.jpg" alt="Pablo Marín Plaza&#039;s picture" title="Pablo Marín Plaza&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/pablo-mar%C3%ADn-plaza.html" title="View user profile." class="username" xml:lang="" about="/users/pablo-mar%C3%ADn-plaza" typeof="sioc:UserAccount" property="foaf:name">Pablo Marín Plaza</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 12 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Thank you Oliver, I could install webots 6.4.1 in my laptop and runs very well with the license.</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+    </div>
+  
+      <h2 class="element-invisible">Pages</h2><div class="item-list"><ul class="pager"><li class="pager-first first"><a href="104-page=3,0,0,0,0,0,0,0,0,0,3,0.html" title="Go to first page" class="active">« first</a></li>
+<li class="pager-previous"><a href="104-page=3,0,0,0,0,0,0,0,0,0,3,0.html" title="Go to previous page" class="active">‹ previous</a></li>
+<li class="pager-item"><a href="104-page=3,0,0,0,0,0,0,0,0,0,3,0.html" title="Go to page 1" class="active">1</a></li>
+<li class="pager-current last">2</li>
+</ul></div>  
+  
+  
+  
+  
+</div>	<div class="shai-group-entry-add-comment-wrapper">
+		</div>
+</div>
+<hr	class="shai-group-entry-separator">  </div>
+    </div>
+  
+      <h2 class="element-invisible">Pages</h2><div class="item-list"><ul class="pager"><li class="pager-first first"><a href="104-page=3,0,0,0,0,0,0,0,0,0,0,1.html" title="Go to first page" class="active">« first</a></li>
+<li class="pager-previous"><a href="104-page=3,0,0,0,0,0,0,0,0,0,2,1.html" title="Go to previous page" class="active">‹ previous</a></li>
+<li class="pager-item"><a href="104-page=3,0,0,0,0,0,0,0,0,0,0,1.html" title="Go to page 1" class="active">1</a></li>
+<li class="pager-item"><a href="104-page=3,0,0,0,0,0,0,0,0,0,1,1.html" title="Go to page 2" class="active">2</a></li>
+<li class="pager-item"><a href="104-page=3,0,0,0,0,0,0,0,0,0,2,1.html" title="Go to page 3" class="active">3</a></li>
+<li class="pager-current last">4</li>
+</ul></div>  
+  
+  
+  
+  
+</div>  </div>
+
+  
+  </div>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+</div>
+  </div>
+
+</div><!-- /.block -->
+  </div><!-- /.region -->
+          </div></div><!-- /.section, /#content -->
+
+    
+      <div class="region region-sidebar-first column sidebar"><div class="section">
+    <div id="block-shanghai-interest-groups-shai-interest-groups" class="block block-shanghai-interest-groups first odd">
+
+        <h2 class="block-title">Group subscription</h2>
+    
+  <div class="content">
+    <a href="../user/login-destination=group%7Cnode%7C104%7Csubscribe.html">Subscribe to group</a>  </div>
+
+</div><!-- /.block -->
+<div id="block-views-shai-ig-members-block" class="block block-views last even">
+
+        <h2 class="block-title">Interest Group Members</h2>
+    
+  <div class="content">
+    <div class="view view-shai-ig-members view-id-shai_ig_members view-display-id-block view-dom-id-7">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    <div class="shai-interest-group-member-wrapper">
+	<div class="shai-interest-group-member-left">
+				<div class="shai-interst-group-member-picture shai-interest-group-member-logout">
+			 <div class="field-content">  <div class="user-picture">
+    <a href="../users/chong-shang.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1001-1317355266.jpg" alt="Chong Shang&#039;s picture" title="Chong Shang&#039;s picture" /></a>  </div>
+</div>		</div>
+	</div>
+	<div class="shai-interest-group-member-right">
+		<h4 class="shai-interest-group-member-username">
+		<span class="field-content"><a href="../users/chong-shang.html">Chong Shang</a></span>		</h4>
+				<div class="shai-member-block-lastonline">
+			last login: over 4 years ago		</div>
+									    	    	
+			<div class="shai-interest-group-member-add-friend">
+			<div class="qtip-link"><div class="qtip-tooltip">Add Chong Shang as a friend</div>
+				<a href="../relationship/1001/request/1-destination=user%7C1001.html" class="user_relationships_popup_link"><div class="shai-interest-group-member-friend-link"></div></a>	
+				</div>
+			</div>
+	    		<div class="qtip-link">
+			<div class="qtip-tooltip">Send a message to Chong Shang.</div>
+			<div class="shai-interest-group-member-contact">
+				<div class="shai-ig-member-send-message">
+					<a href="../messages/new/1001-destination=user%7C1001.html" class="qtip-link"><div class="qtip-tooltip">Send message to Chong Shang.</div></a>				</div>
+			</div>
+		</div>
+			</div>
+
+</div>
+
+
+  </div>
+  <div class="views-row views-row-2 views-row-even">
+    <div class="shai-interest-group-member-wrapper">
+	<div class="shai-interest-group-member-left">
+				<div class="shai-interst-group-member-picture shai-interest-group-member-logout">
+			 <div class="field-content">  <div class="user-picture">
+    <a href="../users/rich%C3%A1rd-n%C3%A9meth.html" title="View user profile."><img typeof="foaf:Image" src="http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=140" alt="Richárd Németh&#039;s picture" title="Richárd Németh&#039;s picture" /></a>  </div>
+</div>		</div>
+	</div>
+	<div class="shai-interest-group-member-right">
+		<h4 class="shai-interest-group-member-username">
+		<span class="field-content"><a href="../users/rich%C3%A1rd-n%C3%A9meth.html">Richárd Németh</a></span>		</h4>
+				<div class="shai-member-block-lastonline">
+			last login: over 4 years ago		</div>
+									    	    	
+			<div class="shai-interest-group-member-add-friend">
+			<div class="qtip-link"><div class="qtip-tooltip">Add Richárd Németh as a friend</div>
+				<a href="../relationship/1369/request/1-destination=user%7C1369.html" class="user_relationships_popup_link"><div class="shai-interest-group-member-friend-link"></div></a>	
+				</div>
+			</div>
+	    		<div class="qtip-link">
+			<div class="qtip-tooltip">Send a message to Richárd Németh.</div>
+			<div class="shai-interest-group-member-contact">
+				<div class="shai-ig-member-send-message">
+					<a href="../messages/new/1369-destination=user%7C1369.html" class="qtip-link"><div class="qtip-tooltip">Send message to Richárd Németh.</div></a>				</div>
+			</div>
+		</div>
+			</div>
+
+</div>
+
+
+  </div>
+  <div class="views-row views-row-3 views-row-odd">
+    <div class="shai-interest-group-member-wrapper">
+	<div class="shai-interest-group-member-left">
+				<div class="shai-interst-group-member-picture shai-interest-group-member-logout">
+			 <div class="field-content">  <div class="user-picture">
+    <a href="../users/tam%C3%A1s-kov%C3%A1cs.html" title="View user profile."><img typeof="foaf:Image" src="http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=140" alt="Tamás Kovács&#039;s picture" title="Tamás Kovács&#039;s picture" /></a>  </div>
+</div>		</div>
+	</div>
+	<div class="shai-interest-group-member-right">
+		<h4 class="shai-interest-group-member-username">
+		<span class="field-content"><a href="../users/tam%C3%A1s-kov%C3%A1cs.html">Tamás Kovács</a></span>		</h4>
+				<div class="shai-member-block-lastonline">
+			last login: over 4 years ago		</div>
+									    	    	
+			<div class="shai-interest-group-member-add-friend">
+			<div class="qtip-link"><div class="qtip-tooltip">Add Tamás Kovács as a friend</div>
+				<a href="../relationship/1327/request/1-destination=user%7C1327.html" class="user_relationships_popup_link"><div class="shai-interest-group-member-friend-link"></div></a>	
+				</div>
+			</div>
+	    		<div class="qtip-link">
+			<div class="qtip-tooltip">Send a message to Tamás Kovács.</div>
+			<div class="shai-interest-group-member-contact">
+				<div class="shai-ig-member-send-message">
+					<a href="../messages/new/1327-destination=user%7C1327.html" class="qtip-link"><div class="qtip-tooltip">Send message to Tamás Kovács.</div></a>				</div>
+			</div>
+		</div>
+			</div>
+
+</div>
+
+
+  </div>
+  <div class="views-row views-row-4 views-row-even">
+    <div class="shai-interest-group-member-wrapper">
+	<div class="shai-interest-group-member-left">
+				<div class="shai-interst-group-member-picture shai-interest-group-member-logout">
+			 <div class="field-content">  <div class="user-picture">
+    <a href="../users/martin-schneider.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-981-1317304361.png" alt="Martin Schneider&#039;s picture" title="Martin Schneider&#039;s picture" /></a>  </div>
+</div>		</div>
+	</div>
+	<div class="shai-interest-group-member-right">
+		<h4 class="shai-interest-group-member-username">
+		<span class="field-content"><a href="../users/martin-schneider.html">Martin Schneider</a></span>		</h4>
+				<div class="shai-member-block-lastonline">
+			last login: over 4 years ago		</div>
+									    	    	
+			<div class="shai-interest-group-member-add-friend">
+			<div class="qtip-link"><div class="qtip-tooltip">Add Martin Schneider as a friend</div>
+				<a href="../relationship/981/request/1-destination=user%7C981.html" class="user_relationships_popup_link"><div class="shai-interest-group-member-friend-link"></div></a>	
+				</div>
+			</div>
+	    		<div class="qtip-link">
+			<div class="qtip-tooltip">Send a message to Martin Schneider.</div>
+			<div class="shai-interest-group-member-contact">
+				<div class="shai-ig-member-send-message">
+					<a href="../messages/new/981-destination=user%7C981.html" class="qtip-link"><div class="qtip-tooltip">Send message to Martin Schneider.</div></a>				</div>
+			</div>
+		</div>
+			</div>
+
+</div>
+
+
+  </div>
+  <div class="views-row views-row-5 views-row-odd">
+    <div class="shai-interest-group-member-wrapper">
+	<div class="shai-interest-group-member-left">
+				<div class="shai-interst-group-member-picture shai-interest-group-member-logout">
+			 <div class="field-content">  <div class="user-picture">
+    <a href="../users/pengzhi-tian.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1548-1349969276.png" alt="Pengzhi Tian&#039;s picture" title="Pengzhi Tian&#039;s picture" /></a>  </div>
+</div>		</div>
+	</div>
+	<div class="shai-interest-group-member-right">
+		<h4 class="shai-interest-group-member-username">
+		<span class="field-content"><a href="../users/pengzhi-tian.html">Pengzhi Tian</a></span>		</h4>
+				<div class="shai-member-block-lastonline">
+			last login: over 4 years ago		</div>
+									    	    	
+			<div class="shai-interest-group-member-add-friend">
+			<div class="qtip-link"><div class="qtip-tooltip">Add Pengzhi Tian as a friend</div>
+				<a href="../relationship/1548/request/1-destination=user%7C1548.html" class="user_relationships_popup_link"><div class="shai-interest-group-member-friend-link"></div></a>	
+				</div>
+			</div>
+	    		<div class="qtip-link">
+			<div class="qtip-tooltip">Send a message to Pengzhi Tian.</div>
+			<div class="shai-interest-group-member-contact">
+				<div class="shai-ig-member-send-message">
+					<a href="../messages/new/1548-destination=user%7C1548.html" class="qtip-link"><div class="qtip-tooltip">Send message to Pengzhi Tian.</div></a>				</div>
+			</div>
+		</div>
+			</div>
+
+</div>
+
+
+  </div>
+  <div class="views-row views-row-6 views-row-even">
+    <div class="shai-interest-group-member-wrapper">
+	<div class="shai-interest-group-member-left">
+				<div class="shai-interst-group-member-picture shai-interest-group-member-logout">
+			 <div class="field-content">  <div class="user-picture">
+    <a href="../users/norbert-nestler.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-985-1317380310.jpg" alt="Norbert Nestler&#039;s picture" title="Norbert Nestler&#039;s picture" /></a>  </div>
+</div>		</div>
+	</div>
+	<div class="shai-interest-group-member-right">
+		<h4 class="shai-interest-group-member-username">
+		<span class="field-content"><a href="../users/norbert-nestler.html">Norbert Nestler</a></span>		</h4>
+				<div class="shai-member-block-lastonline">
+			last login: over 4 years ago		</div>
+									    	    	
+			<div class="shai-interest-group-member-add-friend">
+			<div class="qtip-link"><div class="qtip-tooltip">Add Norbert Nestler as a friend</div>
+				<a href="../relationship/985/request/1-destination=user%7C985.html" class="user_relationships_popup_link"><div class="shai-interest-group-member-friend-link"></div></a>	
+				</div>
+			</div>
+	    		<div class="qtip-link">
+			<div class="qtip-tooltip">Send a message to Norbert Nestler.</div>
+			<div class="shai-interest-group-member-contact">
+				<div class="shai-ig-member-send-message">
+					<a href="../messages/new/985-destination=user%7C985.html" class="qtip-link"><div class="qtip-tooltip">Send message to Norbert Nestler.</div></a>				</div>
+			</div>
+		</div>
+			</div>
+
+</div>
+
+
+  </div>
+  <div class="views-row views-row-7 views-row-odd">
+    <div class="shai-interest-group-member-wrapper">
+	<div class="shai-interest-group-member-left">
+				<div class="shai-interst-group-member-picture shai-interest-group-member-logout">
+			 <div class="field-content">  <div class="user-picture">
+    <a href="../users/flavien-rouiller.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1023-1317582228.jpg" alt="Flavien Rouiller&#039;s picture" title="Flavien Rouiller&#039;s picture" /></a>  </div>
+</div>		</div>
+	</div>
+	<div class="shai-interest-group-member-right">
+		<h4 class="shai-interest-group-member-username">
+		<span class="field-content"><a href="../users/flavien-rouiller.html">Flavien Rouiller</a></span>		</h4>
+				<div class="shai-member-block-lastonline">
+			last login: over 4 years ago		</div>
+									    	    	
+			<div class="shai-interest-group-member-add-friend">
+			<div class="qtip-link"><div class="qtip-tooltip">Add Flavien Rouiller as a friend</div>
+				<a href="../relationship/1023/request/1-destination=user%7C1023.html" class="user_relationships_popup_link"><div class="shai-interest-group-member-friend-link"></div></a>	
+				</div>
+			</div>
+	    		<div class="qtip-link">
+			<div class="qtip-tooltip">Send a message to Flavien Rouiller.</div>
+			<div class="shai-interest-group-member-contact">
+				<div class="shai-ig-member-send-message">
+					<a href="../messages/new/1023-destination=user%7C1023.html" class="qtip-link"><div class="qtip-tooltip">Send message to Flavien Rouiller.</div></a>				</div>
+			</div>
+		</div>
+			</div>
+
+</div>
+
+
+  </div>
+  <div class="views-row views-row-8 views-row-even">
+    <div class="shai-interest-group-member-wrapper">
+	<div class="shai-interest-group-member-left">
+				<div class="shai-interst-group-member-picture shai-interest-group-member-logout">
+			 <div class="field-content">  <div class="user-picture">
+    <a href="../users/hongwan-huang.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1019-1318613712.jpg" alt="Hongwan Huang&#039;s picture" title="Hongwan Huang&#039;s picture" /></a>  </div>
+</div>		</div>
+	</div>
+	<div class="shai-interest-group-member-right">
+		<h4 class="shai-interest-group-member-username">
+		<span class="field-content"><a href="../users/hongwan-huang.html">Hongwan Huang</a></span>		</h4>
+				<div class="shai-member-block-lastonline">
+			last login: over 4 years ago		</div>
+									    	    	
+			<div class="shai-interest-group-member-add-friend">
+			<div class="qtip-link"><div class="qtip-tooltip">Add Hongwan Huang as a friend</div>
+				<a href="../relationship/1019/request/1-destination=user%7C1019.html" class="user_relationships_popup_link"><div class="shai-interest-group-member-friend-link"></div></a>	
+				</div>
+			</div>
+	    		<div class="qtip-link">
+			<div class="qtip-tooltip">Send a message to Hongwan Huang.</div>
+			<div class="shai-interest-group-member-contact">
+				<div class="shai-ig-member-send-message">
+					<a href="../messages/new/1019-destination=user%7C1019.html" class="qtip-link"><div class="qtip-tooltip">Send message to Hongwan Huang.</div></a>				</div>
+			</div>
+		</div>
+			</div>
+
+</div>
+
+
+  </div>
+  <div class="views-row views-row-9 views-row-odd">
+    <div class="shai-interest-group-member-wrapper">
+	<div class="shai-interest-group-member-left">
+				<div class="shai-interst-group-member-picture shai-interest-group-member-logout">
+			 <div class="field-content">  <div class="user-picture">
+    <a href="../users/steffen-kaden.html" title="View user profile."><img typeof="foaf:Image" src="http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=140" alt="Steffen Kaden&#039;s picture" title="Steffen Kaden&#039;s picture" /></a>  </div>
+</div>		</div>
+	</div>
+	<div class="shai-interest-group-member-right">
+		<h4 class="shai-interest-group-member-username">
+		<span class="field-content"><a href="../users/steffen-kaden.html">Steffen Kaden</a></span>		</h4>
+				<div class="shai-member-block-lastonline">
+			last login: over 4 years ago		</div>
+									    	    	
+			<div class="shai-interest-group-member-add-friend">
+			<div class="qtip-link"><div class="qtip-tooltip">Add Steffen Kaden as a friend</div>
+				<a href="../relationship/1142/request/1-destination=user%7C1142.html" class="user_relationships_popup_link"><div class="shai-interest-group-member-friend-link"></div></a>	
+				</div>
+			</div>
+	    		<div class="qtip-link">
+			<div class="qtip-tooltip">Send a message to Steffen Kaden.</div>
+			<div class="shai-interest-group-member-contact">
+				<div class="shai-ig-member-send-message">
+					<a href="../messages/new/1142-destination=user%7C1142.html" class="qtip-link"><div class="qtip-tooltip">Send message to Steffen Kaden.</div></a>				</div>
+			</div>
+		</div>
+			</div>
+
+</div>
+
+
+  </div>
+  <div class="views-row views-row-10 views-row-even views-row-last">
+    <div class="shai-interest-group-member-wrapper">
+	<div class="shai-interest-group-member-left">
+				<div class="shai-interst-group-member-picture shai-interest-group-member-logout">
+			 <div class="field-content">  <div class="user-picture">
+    <a href="../users/juan-miguel-garcia.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-962-1317328870.jpg" alt="Juan Miguel Garcia&#039;s picture" title="Juan Miguel Garcia&#039;s picture" /></a>  </div>
+</div>		</div>
+	</div>
+	<div class="shai-interest-group-member-right">
+		<h4 class="shai-interest-group-member-username">
+		<span class="field-content"><a href="../users/juan-miguel-garcia.html">Juan Miguel Garcia</a></span>		</h4>
+				<div class="shai-member-block-lastonline">
+			last login: over 4 years ago		</div>
+									    	    	
+			<div class="shai-interest-group-member-add-friend">
+			<div class="qtip-link"><div class="qtip-tooltip">Add Juan Miguel Garcia as a friend</div>
+				<a href="../relationship/962/request/1-destination=user%7C962.html" class="user_relationships_popup_link"><div class="shai-interest-group-member-friend-link"></div></a>	
+				</div>
+			</div>
+	    		<div class="qtip-link">
+			<div class="qtip-tooltip">Send a message to Juan Miguel Garcia.</div>
+			<div class="shai-interest-group-member-contact">
+				<div class="shai-ig-member-send-message">
+					<a href="../messages/new/962-destination=user%7C962.html" class="qtip-link"><div class="qtip-tooltip">Send message to Juan Miguel Garcia.</div></a>				</div>
+			</div>
+		</div>
+			</div>
+
+</div>
+
+
+  </div>
+    </div>
+  
+      <h2 class="element-invisible">Pages</h2><div class="item-list"><ul class="pager"><li class="pager-first first"><a href="104-page=0,0,0,0,0,0,0,0,0,0,3,1.html" title="Go to first page" class="active">« first</a></li>
+<li class="pager-previous"><a href="104-page=2,0,0,0,0,0,0,0,0,0,3,1.html" title="Go to previous page" class="active">‹ previous</a></li>
+<li class="pager-item"><a href="104-page=0,0,0,0,0,0,0,0,0,0,3,1.html" title="Go to page 1" class="active">1</a></li>
+<li class="pager-item"><a href="104-page=1,0,0,0,0,0,0,0,0,0,3,1.html" title="Go to page 2" class="active">2</a></li>
+<li class="pager-item"><a href="104-page=2,0,0,0,0,0,0,0,0,0,3,1.html" title="Go to page 3" class="active">3</a></li>
+<li class="pager-current">4</li>
+<li class="pager-item"><a href="104-page=4,0,0,0,0,0,0,0,0,0,3,1.html" title="Go to page 5" class="active">5</a></li>
+<li class="pager-item"><a href="104-page=5,0,0,0,0,0,0,0,0,0,3,1.html" title="Go to page 6" class="active">6</a></li>
+<li class="pager-next"><a href="104-page=4,0,0,0,0,0,0,0,0,0,3,1.html" title="Go to next page" class="active">next ›</a></li>
+<li class="pager-last last"><a href="104-page=5,0,0,0,0,0,0,0,0,0,3,1.html" title="Go to last page" class="active">last »</a></li>
+</ul></div>  
+  
+  
+  
+  
+</div>  </div>
+
+</div><!-- /.block -->
+  </div></div><!-- /.section, /.region -->
+
+    
+  </div></div><!-- /#main, /#main-wrapper -->
+  
+</div></div><!-- /#page, /#page-wrapper -->
+
+<div id="footer-background"></div>
+  <div class="region region-bottom">
+    <div id="block-menu-menu-footer" class="block block-menu first odd">
+
+      
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="../credits.html">Credits</a></li>
+<li class="leaf"><a href="../sitemap.html" title="">Sitemap</a></li>
+<li class="last leaf"><a href="../terms-and-conditions.html">Terms and Conditions</a></li>
+</ul>  </div>
+
+</div><!-- /.block -->
+<div id="block-block-1" class="block block-block last even">
+
+      
+  <div class="content">
+    <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a></p>
+  </div>
+
+</div><!-- /.block -->
+  </div><!-- /.region -->
+
+<!-- Overlay for User Menu -->
+<div class="apple_overlay" id="usermenuoverlay">
+<!-- the external content is loaded inside this tag -->
+	<div class="contentWrap"></div>
+	
+</div>
+  <div id="user_relationships_popup_form" class="user_relationships_ui_popup_form"></div><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+          Shadowbox.path = "/sites/all/libraries/shadowbox/";
+	      Shadowbox.init(Drupal.settings.shadowbox);
+	    
+//--><!]]>
+</script>
+</body>
+</html>

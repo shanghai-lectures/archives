@@ -1,0 +1,1816 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../sites/all/themes/shai_theme/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>Webots | ShanghAI Lectures</title>
+  <style type="text/css" media="all">@import url("http://shanghailectures.org/modules/system/system.base.css?nw62hc");
+@import url("http://shanghailectures.org/modules/system/system.messages.css?nw62hc");
+@import url("http://shanghailectures.org/modules/system/system.theme.css?nw62hc");</style>
+<style type="text/css" media="screen">@import url("../sites/all/modules/external_projects/qtip/library/jquery.qtip-nw62hc.css");
+@import url("../sites/all/libraries/shadowbox/shadowbox-nw62hc.css");</style>
+<style type="text/css" media="all">@import url("http://shanghailectures.org/modules/comment/comment.css?nw62hc");
+@import url("../sites/all/modules/external_projects/date/date_api/date-nw62hc.css");
+@import url("../sites/all/modules/external_projects/date/date_popup/themes/datepicker.1.7-nw62hc.css");
+@import url("http://shanghailectures.org/modules/field/theme/field.css?nw62hc");
+@import url("../sites/all/modules/external_projects/mollom/mollom-nw62hc.css");
+@import url("http://shanghailectures.org/modules/node/node.css?nw62hc");
+@import url("http://shanghailectures.org/modules/search/search.css?nw62hc");
+@import url("../sites/all/modules/external_projects/twitter_block/twitter_block-nw62hc.css");
+@import url("../sites/all/modules/external_projects/views/css/views-nw62hc.css");</style>
+<style type="text/css" media="all">@import url("../sites/all/modules/external_projects/ctools/css/ctools-nw62hc.css");
+@import url("../sites/all/modules/external_projects/media_embedded/formatters/overlay_formatter/skin/jcarousel-media-embedded-2-nw62hc.css");
+@import url("../sites/all/modules/external_projects/media_embedded/formatters/overlay_formatter/skin/jcarousel-media-embedded-3-nw62hc.css");
+@import url("../sites/all/modules/external_projects/media_embedded/formatters/overlay_formatter/skin/jcarousel-media-embedded-4-nw62hc.css");
+@import url("../sites/all/modules/external_projects/media_embedded/formatters/overlay_formatter/skin/jcarousel-media-embedded-nw62hc.css");
+@import url("../sites/all/modules/external_projects/nice_menus/nice_menus-nw62hc.css");
+@import url("../sites/all/modules/external_projects/panels/css/panels-nw62hc.css");
+@import url("../sites/all/modules/shai_member_block/shai_member_block-nw62hc.css");
+@import url("../sites/all/modules/external_projects/ctools/css/collapsible-div-nw62hc.css");
+@import url("../sites/all/modules/external_projects/user_relationships/user_relationships_ui/user_relationships_ui-nw62hc.css");
+@import url("../sites/all/modules/external_projects/views_slideshow/views_slideshow-nw62hc.css");
+@import url("../sites/all/modules/external_projects/views_slideshow/contrib/views_slideshow_cycle/views_slideshow_cycle-nw62hc.css");
+@import url("../sites/all/modules/external_projects/panels/plugins/layouts/flexible/flexible-nw62hc.css");
+@import url("../sites/all/modules/external_projects/media_embedded/formatters/overlay_formatter/skin/jcarousel-media-embedded-1-nw62hc.css");</style>
+<style type="text/css" media="all"><!--/*--><![CDATA[/*><!--*/
+.panels-flexible-region {
+  padding: 0;
+}
+
+.panels-flexible-region-inside {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.panels-flexible-region-inside-first {
+  padding-left: 0;
+}
+
+.panels-flexible-region-inside-last {
+  padding-right: 0;
+}
+
+.panels-flexible-column {
+  padding: 0;
+}
+
+.panels-flexible-column-inside {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.panels-flexible-column-inside-first {
+  padding-left: 0;
+}
+
+.panels-flexible-column-inside-last {
+  padding-right: 0;
+}
+
+.panels-flexible-row {
+  padding: 0 0 0.5em 0;
+  margin: 0;
+}
+
+.panels-flexible-row-last {
+  padding-bottom: 0;
+}
+
+.panels-flexible-column-new-main {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-new-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-new {
+  width: auto;
+}
+
+.panels-flexible-region-new-center {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-new-main-row-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-region-new-bottom {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-new-1-inside {
+  padding-right: 0px;
+}
+
+
+/*]]>*/-->
+</style>
+<style type="text/css" media="all">@import url("../sites/all/themes/shai_theme/css/html-reset-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/wireframes-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/layout-fixed-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/page-backgrounds-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/tabs-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/pages-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/blocks-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/navigation-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/views-styles-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/nodes-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/comments-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/forms-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/fields-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/board-entries-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/system.menus-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/user-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/contextual-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/nice_menus_default-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/qtip-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/jquery.ui.core-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/relationships-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/media-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/lectures-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/guest-lectures-nw62hc.css");</style>
+<style type="text/css" media="print">@import url("../sites/all/themes/shai_theme/css/print-nw62hc.css");</style>
+
+<!--[if lte IE 8]>
+<style type="text/css" media="all">@import url("http://shanghailectures.org/sites/all/themes/shai_theme/css/ie8.css?nw62hc");</style>
+<![endif]-->
+
+<!--[if lte IE 7]>
+<style type="text/css" media="all">@import url("http://shanghailectures.org/sites/all/themes/shai_theme/css/ie7.css?nw62hc");</style>
+<![endif]-->
+
+<!--[if lte IE 6]>
+<style type="text/css" media="all">@import url("http://shanghailectures.org/sites/all/themes/shai_theme/css/ie6.css?nw62hc");</style>
+<![endif]-->
+  <script type="text/javascript" src="http://shanghailectures.org/misc/jquery.js?v=1.4.4"></script>
+<script type="text/javascript" src="http://shanghailectures.org/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="http://shanghailectures.org/misc/drupal.js?nw62hc"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/qtip/library/jquery.qtip-v=2.0.0pre.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/qtip/js/qtip-v=2.0.0pre.js"></script>
+<script type="text/javascript" src="../sites/all/libraries/shadowbox/shadowbox-v=3.0.3.js"></script>
+<script type="text/javascript" src="http://shanghailectures.org/misc/jquery.cookie.js?v=1.0"></script>
+<script type="text/javascript" src="http://shanghailectures.org/misc/jquery.form.js?v=2.52"></script>
+<script type="text/javascript" src="http://shanghailectures.org/misc/ajax.js?v=7.8"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/mollom/mollom-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/media_embedded/formatters/overlay_formatter/skin/jquery.easing.1.2-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/panels/js/panels-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/user_relationships/user_relationships_ui/user_relationships_ui-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/views_slideshow/js/views_slideshow-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/libraries/jquery.cycle/jquery.cycle.all.min-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/views_slideshow/contrib/views_slideshow_cycle/js/views_slideshow_cycle-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/views/js/base-nw62hc.js"></script>
+<script type="text/javascript" src="http://shanghailectures.org/misc/progress.js?1477348034"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/views/js/ajax_view-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/google_analytics/googleanalytics-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/jcarousel/js/jquery.jcarousel.min-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/jcarousel/js/jcarousel-nw62hc.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-5982901-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/views/js/jquery.ui.dialog.patch-nw62hc.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"shai_theme","theme_token":"ksqTvjwTvCLLWSRj1-FzKOpjmjnBaiU8YwG88g7e8U8","js":{"0":1,"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/external_projects\/qtip\/library\/jquery.qtip.js":1,"sites\/all\/modules\/external_projects\/qtip\/js\/qtip.js":1,"sites\/all\/libraries\/shadowbox\/shadowbox.js":1,"misc\/jquery.cookie.js":1,"misc\/jquery.form.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/external_projects\/mollom\/mollom.js":1,"sites\/all\/modules\/external_projects\/media_embedded\/formatters\/overlay_formatter\/skin\/jquery.easing.1.2.js":1,"sites\/all\/modules\/external_projects\/panels\/js\/panels.js":1,"sites\/all\/modules\/external_projects\/user_relationships\/user_relationships_ui\/user_relationships_ui.js":1,"sites\/all\/modules\/external_projects\/views_slideshow\/js\/views_slideshow.js":1,"sites\/all\/libraries\/jquery.cycle\/jquery.cycle.all.min.js":1,"sites\/all\/modules\/external_projects\/views_slideshow\/contrib\/views_slideshow_cycle\/js\/views_slideshow_cycle.js":1,"sites\/all\/modules\/external_projects\/views\/js\/base.js":1,"misc\/progress.js":1,"sites\/all\/modules\/external_projects\/views\/js\/ajax_view.js":1,"sites\/all\/modules\/external_projects\/google_analytics\/googleanalytics.js":1,"sites\/all\/modules\/external_projects\/jcarousel\/js\/jquery.jcarousel.min.js":1,"sites\/all\/modules\/external_projects\/jcarousel\/js\/jcarousel.js":1,"1":1,"sites\/all\/modules\/external_projects\/views\/js\/jquery.ui.dialog.patch.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/external_projects\/qtip\/library\/jquery.qtip.css":1,"sites\/all\/libraries\/shadowbox\/shadowbox.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/external_projects\/date\/date_api\/date.css":1,"sites\/all\/modules\/external_projects\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/external_projects\/mollom\/mollom.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"sites\/all\/modules\/external_projects\/twitter_block\/twitter_block.css":1,"sites\/all\/modules\/external_projects\/views\/css\/views.css":1,"sites\/all\/modules\/external_projects\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/external_projects\/media_embedded\/formatters\/overlay_formatter\/skin\/jcarousel-media-embedded-2.css":1,"sites\/all\/modules\/external_projects\/media_embedded\/formatters\/overlay_formatter\/skin\/jcarousel-media-embedded-3.css":1,"sites\/all\/modules\/external_projects\/media_embedded\/formatters\/overlay_formatter\/skin\/jcarousel-media-embedded-4.css":1,"sites\/all\/modules\/external_projects\/media_embedded\/formatters\/overlay_formatter\/skin\/jcarousel-media-embedded.css":1,"sites\/all\/modules\/external_projects\/nice_menus\/nice_menus.css":1,"sites\/all\/modules\/external_projects\/panels\/css\/panels.css":1,"sites\/all\/modules\/shai_member_block\/shai_member_block.css":1,"sites\/all\/modules\/external_projects\/ctools\/css\/collapsible-div.css":1,"sites\/all\/modules\/external_projects\/user_relationships\/user_relationships_ui\/user_relationships_ui.css":1,"sites\/all\/modules\/external_projects\/views_slideshow\/views_slideshow.css":1,"sites\/all\/modules\/external_projects\/views_slideshow\/contrib\/views_slideshow_cycle\/views_slideshow_cycle.css":1,"sites\/all\/modules\/external_projects\/panels\/plugins\/layouts\/flexible\/flexible.css":1,"sites\/all\/modules\/external_projects\/media_embedded\/formatters\/overlay_formatter\/skin\/jcarousel-media-embedded-1.css":1,"0":1,"sites\/all\/themes\/shai_theme\/css\/html-reset.css":1,"sites\/all\/themes\/shai_theme\/css\/wireframes.css":1,"sites\/all\/themes\/shai_theme\/css\/layout-fixed.css":1,"sites\/all\/themes\/shai_theme\/css\/page-backgrounds.css":1,"sites\/all\/themes\/shai_theme\/css\/tabs.css":1,"sites\/all\/themes\/shai_theme\/css\/pages.css":1,"sites\/all\/themes\/shai_theme\/css\/blocks.css":1,"sites\/all\/themes\/shai_theme\/css\/navigation.css":1,"sites\/all\/themes\/shai_theme\/css\/views-styles.css":1,"sites\/all\/themes\/shai_theme\/css\/nodes.css":1,"sites\/all\/themes\/shai_theme\/css\/comments.css":1,"sites\/all\/themes\/shai_theme\/css\/forms.css":1,"sites\/all\/themes\/shai_theme\/css\/fields.css":1,"sites\/all\/themes\/shai_theme\/css\/board-entries.css":1,"sites\/all\/themes\/shai_theme\/css\/system.menus.css":1,"sites\/all\/themes\/shai_theme\/css\/user.css":1,"sites\/all\/themes\/shai_theme\/css\/contextual.css":1,"sites\/all\/themes\/shai_theme\/css\/nice_menus_default.css":1,"sites\/all\/themes\/shai_theme\/css\/qtip.css":1,"sites\/all\/themes\/shai_theme\/css\/jquery.ui.core.css":1,"sites\/all\/themes\/shai_theme\/css\/relationships.css":1,"sites\/all\/themes\/shai_theme\/css\/media.css":1,"sites\/all\/themes\/shai_theme\/css\/lectures.css":1,"sites\/all\/themes\/shai_theme\/css\/guest-lectures.css":1,"sites\/all\/themes\/shai_theme\/css\/print.css":1,"sites\/all\/themes\/shai_theme\/css\/ie8.css":1,"sites\/all\/themes\/shai_theme\/css\/ie7.css":1,"sites\/all\/themes\/shai_theme\/css\/ie6.css":1}},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views","carousels":{"media-embedded-1025":{"skin":"media_embedded_1","scroll":0,"wrap":"null","size":"3","selector":".media-embedded-1025"}}},"qtip":{"target_position":"top_right","tooltip_position":"bottom_left","show_speech_bubble_tip":1,"show_speech_bubble_tip_side":0,"speech_bubble_size":"12","show_speech_bubble_tip_solid":1,"show_shadow":1,"rounded_corners":1,"color":"ui-tooltip-light","custom_color":"","show_event_type":"mouseenter","hide_event_type":"mouseleave","show_webform_descriptions":0,"additional_elements":""},"shadowbox":{"animate":1,"animateFade":1,"animSequence":"wh","auto_enable_all_images":0,"auto_gallery":0,"autoplayMovies":true,"continuous":0,"counterLimit":"10","counterType":"default","displayCounter":1,"displayNav":1,"enableKeys":1,"fadeDuration":"0.35","handleOversize":"resize","handleUnsupported":"remove","initialHeight":160,"initialWidth":320,"language":"en","modal":false,"overlayColor":"#000","overlayOpacity":"0.85","resizeDuration":"0.35","showMovieControls":1,"slideshowDelay":"0","viewportPadding":20,"useSizzle":0},"user_relationships_ui":{"loadingimage":"\/sites\/all\/modules\/external_projects\/user_relationships\/user_relationships_ui\/images\/loadingAnimation.gif","savingimage":"\/sites\/all\/modules\/external_projects\/user_relationships\/user_relationships_ui\/images\/savingimage.gif","position":{"position":"absolute","left":"0","top":"0"}},"views":{"ajax_path":"\/views\/ajax","ajaxViews":[{"view_name":"interest_group_board_entries_com","view_display_id":"page","view_args":"2037","view_path":"node\/104","view_base_path":"node\/104","view_dom_id":1,"pager_element":"11"},{"view_name":"interest_group_board_entries_com","view_display_id":"page","view_args":"1278","view_path":"node\/104","view_base_path":"node\/104","view_dom_id":2,"pager_element":"11"},{"view_name":"interest_group_board_entries_com","view_display_id":"page","view_args":"1267","view_path":"node\/104","view_base_path":"node\/104","view_dom_id":3,"pager_element":"11"},{"view_name":"interest_group_board_entries_com","view_display_id":"page","view_args":"1146","view_path":"node\/104","view_base_path":"node\/104","view_dom_id":4,"pager_element":"11"},{"view_name":"interest_group_board_entries_com","view_display_id":"page","view_args":"1126","view_path":"node\/104","view_base_path":"node\/104","view_dom_id":5,"pager_element":"11"},{"view_name":"interest_group_board_entries_com","view_display_id":"page","view_args":"1111","view_path":"node\/104","view_base_path":"node\/104","view_dom_id":6,"pager_element":"11"},{"view_name":"interest_group_board_entries_com","view_display_id":"page","view_args":"1095","view_path":"node\/104","view_base_path":"node\/104","view_dom_id":7,"pager_element":"11"},{"view_name":"interest_group_board_entries_com","view_display_id":"page","view_args":"1025","view_path":"node\/104","view_base_path":"node\/104","view_dom_id":8,"pager_element":"11"},{"view_name":"interest_group_board_entries_com","view_display_id":"page","view_args":"1002","view_path":"node\/104","view_base_path":"node\/104","view_dom_id":9,"pager_element":"11"},{"view_name":"interest_group_board_entries_com","view_display_id":"page","view_args":"878","view_path":"node\/104","view_base_path":"node\/104","view_dom_id":10,"pager_element":"11"},{"view_name":"interest_group_board_entries","view_display_id":"default","view_args":"104","view_path":"node\/104","view_base_path":"interest-group-board-entries","view_dom_id":11,"pager_element":"10"}]},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"og":{"og_context":{"gid":"8","etid":"104","entity_type":"node","label":"Webots","state":"1","created":"1317971383","rdf_mapping":[]}}});
+//--><!]]>
+</script>
+  
+<!--[if lt IE 7]>
+	<style> 
+	div.apple_overlay {
+		background-image:url(http://static.flowplayer.org/tools/img/overlay/overlay_IE6.gif);
+		color:#fff;
+	}
+	
+	/* default close button positioned on upper right corner */
+	div.apple_overlay div.close {
+		background-image:url(http://static.flowplayer.org/tools/img/overlay/overlay_close_IE6.gif);
+	
+	}	
+	</style>
+	<![endif]-->
+  
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-104 node-type-interest-group group-context group-context-group-8 group-context-node group-context-node-104 section-node" >
+  <div id="skip-link">
+    <a href="104-page=1,0,0,0,0,0,0,0,0,0,1,0.html#main-menu" class="element-invisible element-focusable">Jump to Navigation</a>
+  </div>
+    <div id="header-background"></div>
+<div id="page-wrapper"><div id="page">
+
+  <div id="header"><div class="section clearfix">
+
+          <a href="../index.html" title="Home" id="logo"><img src="../sites/all/themes/shai_theme/logo.png" alt="Home" /></a>
+    
+    
+    
+      <div class="region region-header">
+    <div id="block-user-login" class="block block-user first odd">
+
+        <h2 class="block-title">User login</h2>
+    
+  <div class="content">
+    <form action="/node/104?destination=node/104%3Fpage%3D1%252C0%252C0%252C0%252C0%252C0%252C0%252C0%252C0%252C0%252C1%252C0" method="post" id="user-login-form" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-name">
+  <label for="edit-name">E-mail <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-name" name="name" value="" size="15" maxlength="60" class="form-text required" />
+</div>
+<div class="form-item form-type-password form-item-pass">
+  <label for="edit-pass">Password <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" id="edit-pass" name="pass" size="15" maxlength="60" class="form-text required" />
+</div>
+<div class="item-list"><ul><li class="first last"><a href="../user/password.html" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" value="form-0_IjK45xL-IJIPKvn6m6pxsa6xCTxBODU8oXjtBVXMw" />
+<input type="hidden" name="form_id" value="user_login_block" />
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Log in" class="form-submit" /></div></div></form>  </div>
+
+</div><!-- /.block -->
+<div id="block-nice-menus-1" class="block block-nice-menus last even">
+
+      
+  <div class="content">
+    <ul class="nice-menu nice-menu-down" id="nice-menu-1"><li class="menu-604 menu-path-news first  odd "><a href="../news.html">News</a></li>
+<li class="menu-626 menuparent menu-path-community even "><a href="../community.html">Community</a><ul><li class="menu-511 menu-path-community-interest-groups first  odd  last "><a href="../community/interest-groups.html">Interest Groups</a></li>
+</ul>
+</li>
+<li class="menu-628 menuparent menu-path-lectures odd "><a href="../lectures.html">Lectures</a><ul><li class="menu-629 menu-path-lectures-guest-lectures first  odd "><a href="../lectures/guest-lectures.html">Guest Lectures</a></li>
+<li class="menu-808 menu-path-node-1738 even "><a href="../content/rulesexam.html">Rules/Exam</a></li>
+<li class="menu-812 menu-path-node-2893 odd "><a href="../koans.html">Kōans</a></li>
+<li class="menu-821 menu-path-shanghailecturesorg-drupalchat-messages even  last "><a href="../drupalchat/messages.html" title="Log of chat messages.">Chat log (members only)</a></li>
+</ul>
+</li>
+<li class="menu-656 menu-path-node-19 even "><a href="../research.html">Research</a></li>
+<li class="menu-652 menu-path-node-2 odd "><a href="../sponsors.html">Sponsors</a></li>
+<li class="menu-806 menu-path-node-1542 even  last "><a href="../links.html">Links</a></li>
+</ul>
+  </div>
+
+</div><!-- /.block -->
+  </div><!-- /.region -->
+
+  </div></div><!-- /.section, /#header -->
+
+  <div id="main-wrapper"><div id="main" class="clearfix">
+
+    <div id="content" class="column"><div class="section">
+            <div class="wrapper-breadcrumb">
+      <div class="breadcrumb"><h2 class="element-invisible">You are here</h2><a href="../index.html">Home</a> › <a href="../community.html">Community</a> › <a href="../community/interest-groups.html">Interest Groups</a> › </div>Webots      </div>
+      
+      <a id="main-content"></a>
+                    <h1 class="title" id="page-title">Webots</h1>
+                                            <div class="region region-content">
+    <div id="block-system-main" class="block block-system first last odd">
+
+      
+  <div class="content">
+    <div class="panel-flexible panels-flexible-new clearfix" >
+<div class="panel-flexible-inside panels-flexible-new-inside">
+<div class="panels-flexible-row panels-flexible-row-new-main-row panels-flexible-row-first clearfix">
+  <div class="inside panels-flexible-row-inside panels-flexible-row-new-main-row-inside panels-flexible-row-inside-first clearfix">
+<div class="panels-flexible-region panels-flexible-region-new-center panels-flexible-region-first panels-flexible-region-last">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-new-center-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+  </div>
+</div>
+  </div>
+</div>
+<div class="panels-flexible-row panels-flexible-row-new-1 panels-flexible-row-last clearfix ">
+  <div class="inside panels-flexible-row-inside panels-flexible-row-new-1-inside panels-flexible-row-inside-last clearfix">
+<div class="panels-flexible-region panels-flexible-region-new-bottom panels-flexible-region-first panels-flexible-region-last ">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-new-bottom-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-views pane-interest-group-board-entries" >
+  
+      <h2 class="pane-title">Interest Group Board Entries</h2>
+  
+  
+  <div class="pane-content">
+    <div class="view view-interest-group-board-entries view-id-interest_group_board_entries view-display-id-default view-dom-id-11">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    
+<div class="shai-group-entry-wrapper">
+	<div class="shai-group-entry-content-wrapper">
+		<div class="shai-group-entry-left">
+		<div class="field-content shai_boardentry_userpicture">  <div class="user-picture">
+    <a href="../users/daniel-rojas.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1430-1348766869.jpg" alt="Daniel Rojas&#039;s picture" title="Daniel Rojas&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-right">
+		<div class="field-content shai_boardentry_username"><a href="../users/daniel-rojas.html" title="View user profile." class="username" xml:lang="" about="/users/daniel-rojas" typeof="sioc:UserAccount" property="foaf:name">Daniel Rojas</a></div>			<div class="shai-group-entry-title-wrapper">
+				<div class="field-content shai_boardentry_date"><em class="placeholder">3 years 12 months</em> ago</div>
+				<div class="shai-group-entry-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_content"><p>Hello!</p>
+<p>On OS X 10.8.2 I cannot get the controller built. When running from inside Webots, I get the error<br />
+"sh: make: command not found"<br />
+However, I can run make from the terminal, I corrected Webots home directory in the Makefile and I recieve the reply<br />
+"make: Nothing to be done for `mini_dog_controller.cpp'."<br />
+What should I do? Thank you very much!</p>
+</div>
+		</div>
+	</div>
+		<hr class="shai-group-entry-before-comment-separator"><div class="view view-interest-group-board-entries-com view-id-interest_group_board_entries_com view-display-id-page view-dom-id-1">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/daniel-rojas.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1430-1348766869.jpg" alt="Daniel Rojas&#039;s picture" title="Daniel Rojas&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/daniel-rojas.html" title="View user profile." class="username" xml:lang="" about="/users/daniel-rojas" typeof="sioc:UserAccount" property="foaf:name">Daniel Rojas</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">3 years 12 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>I should add that this is referring to exercise 3 of this year's lectures.. All older posts seem to be from previous years!</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-2 views-row-even">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">3 years 12 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Hi Daniel,</p>
+<p>Instead of typing "make", did you try to type "make mini_dog_controller"? It should force the build of the executable file.</p>
+<p>However, I don't understand why it doesn't work straight out of the box from inside Webots. Did you install the make command from XCode or from somewhere else? The recommended way is to install XCode and ensure no other make command conflict with the one provided by XCode.</p>
+<p>-Olivier</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-3 views-row-odd">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/daniel-rojas.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1430-1348766869.jpg" alt="Daniel Rojas&#039;s picture" title="Daniel Rojas&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/daniel-rojas.html" title="View user profile." class="username" xml:lang="" about="/users/daniel-rojas" typeof="sioc:UserAccount" property="foaf:name">Daniel Rojas</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">3 years 12 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Hi!<br />
+Thank you, yes, I tried different combinations of the make command and I did everything as recommended.</p>
+<p>However, I have found the solution :-)<br />
+Turns out that the newer Xcode versions have all the utilities embedded in the Xcode IDE and they are (initially) not available to other appilcations. To make it work, you need to launch Xcode -&gt; go to Xcode Menu, Preferences --&gt; Downloads --&gt; Components --&gt; where it says "Command Line Tools", click Install --&gt; DONE!</p>
+<p>Maybe this can save someone a few hours of frustration and googling. :-)</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-4 views-row-even">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">3 years 12 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Thanks, it really helps. We will add this in the Webots documentation for Mac OS X.</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-5 views-row-odd views-row-last">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">3 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>That will be included in Webots 7.0.3 documentation...</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>	<div class="shai-group-entry-add-comment-wrapper">
+		</div>
+</div>
+<hr	class="shai-group-entry-separator">  </div>
+  <div class="views-row views-row-2 views-row-even">
+    
+<div class="shai-group-entry-wrapper">
+	<div class="shai-group-entry-content-wrapper">
+		<div class="shai-group-entry-left">
+		<div class="field-content shai_boardentry_userpicture">  <div class="user-picture">
+    <a href="../users/tanis-mar.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1229-1320413188.jpg" alt="Tanis Mar&#039;s picture" title="Tanis Mar&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-right">
+		<div class="field-content shai_boardentry_username"><a href="../users/tanis-mar.html" title="View user profile." class="username" xml:lang="" about="/users/tanis-mar" typeof="sioc:UserAccount" property="foaf:name">Tanis Mar</a></div>			<div class="shai-group-entry-title-wrapper">
+				<div class="field-content shai_boardentry_date"><em class="placeholder">4 years 10 months</em> ago</div>
+				<div class="shai-group-entry-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_content"><p>Hi again Oliver,<br />
+I would like to know if there is any known bug between Webots and openSUSE 11.4. I am trying to run it in these OS, which is the one installed at Humboldt's University PC-pools, and when executing, the first selection menu (the one where one can choose 'Your project', 'Guided Tour', 'URBI 2.0', etc) opens correctly, but when I select any option, the full window opens briefly, but after like one second it closes automatically. When running it from the terminal, the following error is given:<br />
+"alex mar 36 ( webots ) $ webots<br />
+The program 'webots-bin' received an X Window System error.<br />
+This probably reflects a bug in the program.<br />
+The error was 'BadMatch (invalid parameter attributes)'.<br />
+  (Details: serial 4911 error_code 8 request_code 154 minor_code 5)<br />
+  (Note to programmers: normally, X errors are reported asynchronously;<br />
+   that is, you will receive the error a while after causing it.<br />
+   To debug your program, run it with the --sync command line<br />
+   option to change this behavior. You can then get a meaningful<br />
+   backtrace from your debugger if you break on the gdk_x_error() function.)<br />
+"<br />
+Thank in advance for your attention</p>
+</div>
+		</div>
+	</div>
+		<hr class="shai-group-entry-before-comment-separator"><div class="view view-interest-group-board-entries-com view-id-interest_group_board_entries_com view-display-id-page view-dom-id-2">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 10 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Hi Tanis,</p>
+<p>Webots should work on openSUSE. The crash is likely to come from the driver of the graphics card installed there. You should try to upgrade the graphics driver to the latest version. If that doesn't work, please submit a full bug report at <a href="http://www.cyberbotics.com/bug">http://www.cyberbotics.com/bug</a></p>
+<p>-Olivier</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-2 views-row-even">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/tanis-mar.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1229-1320413188.jpg" alt="Tanis Mar&#039;s picture" title="Tanis Mar&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/tanis-mar.html" title="View user profile." class="username" xml:lang="" about="/users/tanis-mar" typeof="sioc:UserAccount" property="foaf:name">Tanis Mar</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 10 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Hi Oliver,<br />
+you were right. It took us some time to update and set properly the latest graphic card drivers, but now it is working fine. Thank you!<br />
+Tanis</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-3 views-row-odd">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/tanis-mar.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1229-1320413188.jpg" alt="Tanis Mar&#039;s picture" title="Tanis Mar&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/tanis-mar.html" title="View user profile." class="username" xml:lang="" about="/users/tanis-mar" typeof="sioc:UserAccount" property="foaf:name">Tanis Mar</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 10 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Hi again...<br />
+After fixing the graphic problems, I am trying to try the matlab based controllers/worlds, but matlab seems not to respond: The Matlab-based worlds open correctly, webots console prints the Matlab initialization with the version and so on, but afterward nothing happens. Robots stay still and the matlab console is not opened.<br />
+Matlab version is the 7.12.0.635 (R2011a) 64-bit (glnxa64), and the Webots one is the Linux 64 bit. I also checked that perl and gcc packages are installed:<br />
+'alex mar 10 ( Desktop ) $ perl --version<br />
+This is perl 5, version 12, subversion 3 (v5.12.3) built for x86_64-linux-thread-multi'<br />
+'alex mar 9 ( Desktop ) $ gcc --version<br />
+gcc (SUSE Linux) 4.5.1 20101208 [gcc-4_5-branch revision 167585]'<br />
+do you know which could be the problem?</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-4 views-row-even views-row-last">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 10 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>It should work. Please submit a bug report at <a href="http://www.cyberbotics.com/bug">http://www.cyberbotics.com/bug</a> so that our experts can have a closer look at it and get back to you.</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>	<div class="shai-group-entry-add-comment-wrapper">
+		</div>
+</div>
+<hr	class="shai-group-entry-separator">  </div>
+  <div class="views-row views-row-3 views-row-odd">
+    
+<div class="shai-group-entry-wrapper">
+	<div class="shai-group-entry-content-wrapper">
+		<div class="shai-group-entry-left">
+		<div class="field-content shai_boardentry_userpicture">  <div class="user-picture">
+    <a href="../users/tanis-mar.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1229-1320413188.jpg" alt="Tanis Mar&#039;s picture" title="Tanis Mar&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-right">
+		<div class="field-content shai_boardentry_username"><a href="../users/tanis-mar.html" title="View user profile." class="username" xml:lang="" about="/users/tanis-mar" typeof="sioc:UserAccount" property="foaf:name">Tanis Mar</a></div>			<div class="shai-group-entry-title-wrapper">
+				<div class="field-content shai_boardentry_date"><em class="placeholder">4 years 10 months</em> ago</div>
+				<div class="shai-group-entry-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_content"><p>Hi Oliver</p>
+<p>I would like to know if it is possible to change the computer to which my license is tied. I have a similar problem to which Pablo Marin had: I registered webots in an old laptop, and now we are movingto a newer one, so I would need to be able to run the licensed webots in the new one. Is that possible?<br />
+Thanks in advance<br />
+Tanis</p>
+</div>
+		</div>
+	</div>
+		<hr class="shai-group-entry-before-comment-separator"><div class="view view-interest-group-board-entries-com view-id-interest_group_board_entries_com view-display-id-page view-dom-id-3">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 10 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Hi Tanis,</p>
+<p>Yes, of course, that is possible. You simply need to install Webots on your new laptop and enter your login data (e-mail and password) into the Preferences/License of Webots. This way, you can install Webots on an unlimited number of computers (but use only one instance at a time). Please let me know if that doesn't work as expected.</p>
+<p>-Olivier</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-2 views-row-even views-row-last">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/tanis-mar.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1229-1320413188.jpg" alt="Tanis Mar&#039;s picture" title="Tanis Mar&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/tanis-mar.html" title="View user profile." class="username" xml:lang="" about="/users/tanis-mar" typeof="sioc:UserAccount" property="foaf:name">Tanis Mar</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 10 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Hi Oliver,<br />
+Thank you very much, I tried it yesterday and it worked fine. Somewho I though that the license was tied up to one specific computer, but I see it ain't.<br />
+Best, Tanis</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>	<div class="shai-group-entry-add-comment-wrapper">
+		</div>
+</div>
+<hr	class="shai-group-entry-separator">  </div>
+  <div class="views-row views-row-4 views-row-even">
+    
+<div class="shai-group-entry-wrapper">
+	<div class="shai-group-entry-content-wrapper">
+		<div class="shai-group-entry-left">
+		<div class="field-content shai_boardentry_userpicture">  <div class="user-picture">
+    <a href="../users/ivan-rygaev.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-957-1317322524.jpg" alt="Ivan Rygaev&#039;s picture" title="Ivan Rygaev&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-right">
+		<div class="field-content shai_boardentry_username"><a href="../users/ivan-rygaev.html" title="View user profile." class="username" xml:lang="" about="/users/ivan-rygaev" typeof="sioc:UserAccount" property="foaf:name">Ivan Rygaev</a></div>			<div class="shai-group-entry-title-wrapper">
+				<div class="field-content shai_boardentry_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_content"><p>Hi, Oliver,</p>
+<p>When I try to build the controllers for swissRobots on my MacBook it says<br />
+sh: make: command not found</p>
+<p>How can I fix this?</p>
+<p>Thank you.</p>
+<p>Ivan.</p>
+</div>
+		</div>
+	</div>
+		<hr class="shai-group-entry-before-comment-separator"><div class="view view-interest-group-board-entries-com view-id-interest_group_board_entries_com view-display-id-page view-dom-id-4">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Hi Ivan,</p>
+<p>You probably need to install XCode on your Mac to get gcc, g++ and make installed.</p>
+<p>-Olivier</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-2 views-row-even views-row-last">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/ivan-rygaev.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-957-1317322524.jpg" alt="Ivan Rygaev&#039;s picture" title="Ivan Rygaev&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/ivan-rygaev.html" title="View user profile." class="username" xml:lang="" about="/users/ivan-rygaev" typeof="sioc:UserAccount" property="foaf:name">Ivan Rygaev</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Thanks, that worked!</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>	<div class="shai-group-entry-add-comment-wrapper">
+		</div>
+</div>
+<hr	class="shai-group-entry-separator">  </div>
+  <div class="views-row views-row-5 views-row-odd">
+    
+<div class="shai-group-entry-wrapper">
+	<div class="shai-group-entry-content-wrapper">
+		<div class="shai-group-entry-left">
+		<div class="field-content shai_boardentry_userpicture">  <div class="user-picture">
+    <a href="../users/jekaterina-novikova-0.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-968-1366386402.jpg" alt="Jekaterina Novikova&#039;s picture" title="Jekaterina Novikova&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-right">
+		<div class="field-content shai_boardentry_username"><a href="../users/jekaterina-novikova-0.html" title="View user profile." class="username" xml:lang="" about="/users/jekaterina-novikova-0" typeof="sioc:UserAccount" property="foaf:name">Jekaterina Novikova</a></div>			<div class="shai-group-entry-title-wrapper">
+				<div class="field-content shai_boardentry_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_content"><p>Hello,</p>
+<p>is it posible that swissRobot's simulation gives slightly different results (number of clusters, number of noise) on different computers, although all the parameters are the same?</p>
+<p>Best regards,<br />
+Jekaterina</p>
+</div>
+		</div>
+	</div>
+		<hr class="shai-group-entry-before-comment-separator"><div class="view view-interest-group-board-entries-com view-id-interest_group_board_entries_com view-display-id-page view-dom-id-5">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Hi Jekaterina,</p>
+<p>Yes, this is probably due to the fact that the supervisor program uses the computer's real time whereas it should use the simulation's virtual time to be able to reproduce the same result across different computers. Please see the patch submitted by Martin on this forum to correct the problem. Let us know if that helps.</p>
+<p>-Olivier</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-2 views-row-even views-row-last">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/jekaterina-novikova-0.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-968-1366386402.jpg" alt="Jekaterina Novikova&#039;s picture" title="Jekaterina Novikova&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/jekaterina-novikova-0.html" title="View user profile." class="username" xml:lang="" about="/users/jekaterina-novikova-0" typeof="sioc:UserAccount" property="foaf:name">Jekaterina Novikova</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Thanks, Oliver!</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>	<div class="shai-group-entry-add-comment-wrapper">
+		</div>
+</div>
+<hr	class="shai-group-entry-separator">  </div>
+  <div class="views-row views-row-6 views-row-even">
+    
+<div class="shai-group-entry-wrapper">
+	<div class="shai-group-entry-content-wrapper">
+		<div class="shai-group-entry-left">
+		<div class="field-content shai_boardentry_userpicture">  <div class="user-picture">
+    <a href="../users/steffen-kaden.html" title="View user profile."><img typeof="foaf:Image" src="http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=140" alt="Steffen Kaden&#039;s picture" title="Steffen Kaden&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-right">
+		<div class="field-content shai_boardentry_username"><a href="../users/steffen-kaden.html" title="View user profile." class="username" xml:lang="" about="/users/steffen-kaden" typeof="sioc:UserAccount" property="foaf:name">Steffen Kaden</a></div>			<div class="shai-group-entry-title-wrapper">
+				<div class="field-content shai_boardentry_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_content"><p>everytime i try to change the range of the sensor, webots just crashes.<br />
+there isn't a dialog with an error message (win7 just shows a dialog with something like: it doesn't work, therefore it has to be terminated)</p>
+</div>
+		</div>
+	</div>
+		<hr class="shai-group-entry-before-comment-separator"><div class="view view-interest-group-board-entries-com view-id-interest_group_board_entries_com view-display-id-page view-dom-id-6">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Hi Steffen,</p>
+<p>Before changing anything to the world in the scene tree window, you should:</p>
+<p>1) Stop the simulation (stop button).<br />
+2) Revert the simulation (to be in the initial situation of the world)<br />
+3) Make any modification in the scene tree (in stop mode).<br />
+4) Save the changes.<br />
+5) Revert the simulation again.<br />
+6) Run the simulation.</p>
+<p>Please let me know if that works better.</p>
+<p>Also, can you tell me (or send me) the world file that causes this problem, so that I can try to reproduce the crash and eventually fix it.</p>
+<p>-Olivier</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-2 views-row-even views-row-last">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/steffen-kaden.html" title="View user profile."><img typeof="foaf:Image" src="http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=140" alt="Steffen Kaden&#039;s picture" title="Steffen Kaden&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/steffen-kaden.html" title="View user profile." class="username" xml:lang="" about="/users/steffen-kaden" typeof="sioc:UserAccount" property="foaf:name">Steffen Kaden</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Thanks</p>
+<p>it was just a simple fault of mine.</p>
+<p>at the beginning the simulation is running but the robots don't move, because the controllers are not compiled<br />
+i thought that the simulation was stopped but it was not</p>
+<p>maybe i was just a little bit tired ;)</p>
+<p>Thanks again</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>	<div class="shai-group-entry-add-comment-wrapper">
+		</div>
+</div>
+<hr	class="shai-group-entry-separator">  </div>
+  <div class="views-row views-row-7 views-row-odd">
+    
+<div class="shai-group-entry-wrapper">
+	<div class="shai-group-entry-content-wrapper">
+		<div class="shai-group-entry-left">
+		<div class="field-content shai_boardentry_userpicture">  <div class="user-picture">
+    <a href="../users/chong-shang.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1001-1317355266.jpg" alt="Chong Shang&#039;s picture" title="Chong Shang&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-right">
+		<div class="field-content shai_boardentry_username"><a href="../users/chong-shang.html" title="View user profile." class="username" xml:lang="" about="/users/chong-shang" typeof="sioc:UserAccount" property="foaf:name">Chong Shang</a></div>			<div class="shai-group-entry-title-wrapper">
+				<div class="field-content shai_boardentry_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_content"><p>My problem is webots shows a dialog "You are not allowed to use webots on more than 1 computer" However I only use it in my own ONE computer!</p>
+</div>
+		</div>
+	</div>
+		<hr class="shai-group-entry-before-comment-separator"><div class="view view-interest-group-board-entries-com view-id-interest_group_board_entries_com view-display-id-page view-dom-id-7">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Hi Chong,</p>
+<p>You should try to log-in to <a href="http://www.cyberbotics.com/my_account/profile">http://www.cyberbotics.com/my_account/profile</a> to check whether or not you are using a license on another computer and possibly cancel it to fix the problem. Let me know if that works. I will also have a look in the database and try to delete all the instances of your license if any.</p>
+<p>-Olivier</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>	<div class="shai-group-entry-add-comment-wrapper">
+		</div>
+</div>
+<hr	class="shai-group-entry-separator">  </div>
+  <div class="views-row views-row-8 views-row-even">
+    
+<div class="shai-group-entry-wrapper">
+	<div class="shai-group-entry-content-wrapper">
+		<div class="shai-group-entry-left">
+		<div class="field-content shai_boardentry_userpicture">  <div class="user-picture">
+    <a href="../users/daniel-heid.html" title="View user profile."><img typeof="foaf:Image" src="http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=140" alt="Daniel Heid&#039;s picture" title="Daniel Heid&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-right">
+		<div class="field-content shai_boardentry_username"><a href="../users/daniel-heid.html" title="View user profile." class="username" xml:lang="" about="/users/daniel-heid" typeof="sioc:UserAccount" property="foaf:name">Daniel Heid</a></div>			<div class="shai-group-entry-title-wrapper">
+				<div class="field-content shai_boardentry_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_content"><p>I have a problem with opening the swissRobot world. Whenever I open it, I first get the error messages and after that I get following error message:<br />
+"This application has requested the Runtime to terminate it in an unusual way.<br />
+Please contact the application's support team for more information."</p>
+<p>Anyone has seen that before and knows what's the problem?</p>
+</div>
+		</div>
+	</div>
+		<hr class="shai-group-entry-before-comment-separator"><div class="view view-interest-group-board-entries-com view-id-interest_group_board_entries_com view-display-id-page view-dom-id-8">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Hi Daniel,</p>
+<p>I also had this problem with the swissRobot world and could fix it by changing the resolution of the texture image located in the worlds folder. Some Intel graphics cards (including mine and probably yours) actually don't support non-standard texture resolutions. Rescaling the image with a resolution in powers of 2 fixed the problem, like instead of a resolution of 2500x600, you should scale it down to a resolution of 2048x512. You can use the attached image instead of the one you have and it should fix the problem. If not, please let me know.</p>
+<p>-Olivier</p>
+</div>
+		</div>
+	</div>
+	<div>
+
+<div class='field field-name-field-ig-comment-attachments field-type-media field-label-hidden clearfix'
+>
+		<div class='field-items' >
+		<ul
+			class='media-embedded-1025 jcarousel-skin-media_embedded_1'>
+						<li>
+				<div class='field-item even'
+				>
+										<a href='../system/files/cartoon_graffiti-big.jpg'
+						rel='shadowbox[media-embedded-1025];'
+						id='http://shanghailectures.org/system/files/cartoon_graffiti-big.jpg'> [1]
+						<img typeof="foaf:Image" src="../system/files/styles/square_thumbnail/private/cartoon_graffiti-big.jpg" alt="" /> </a>
+				    
+
+				</div>
+			</li>
+					</ul>
+			</div>
+
+</div>
+<!--  -->
+		</div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-2 views-row-even">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/daniel-heid.html" title="View user profile."><img typeof="foaf:Image" src="http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=140" alt="Daniel Heid&#039;s picture" title="Daniel Heid&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/daniel-heid.html" title="View user profile." class="username" xml:lang="" about="/users/daniel-heid" typeof="sioc:UserAccount" property="foaf:name">Daniel Heid</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Hi Olivier,</p>
+<p>Thx for your help but unfortunately it still doesn't work. I get the same the same error message as before. I just replaced the graffiti image, do I need to do something additional? Or is it a whole other problem?</p>
+<p>-Daniel</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-3 views-row-odd">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Hi Daniel,</p>
+<p>Then, this might be a problem with your graphics card. I guess you have an Intel graphics card, right? These cards are not well supported by Webots and sometimes provoke crashes. Can you try to update the driver?</p>
+<p>-Olivier</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-4 views-row-even">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/daniel-heid.html" title="View user profile."><img typeof="foaf:Image" src="http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=140" alt="Daniel Heid&#039;s picture" title="Daniel Heid&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/daniel-heid.html" title="View user profile." class="username" xml:lang="" about="/users/daniel-heid" typeof="sioc:UserAccount" property="foaf:name">Daniel Heid</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Hi Olivier</p>
+<p>I updated my driver and it still doesn't work. My notebook's 5 years old and so is my graphics card. So far everything worked so I hope I won't have problems with the next excercises. Thanks for your help, I very appreciate it.</p>
+<p>-Daniel</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-5 views-row-odd views-row-last">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>I guess you have an Intel graphics card, right?<br />
+Maybe you can try to replace the texture with any other texture found in a working Webots simulation. This could fix the problem...</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>	<div class="shai-group-entry-add-comment-wrapper">
+		</div>
+</div>
+<hr	class="shai-group-entry-separator">  </div>
+  <div class="views-row views-row-9 views-row-odd">
+    
+<div class="shai-group-entry-wrapper">
+	<div class="shai-group-entry-content-wrapper">
+		<div class="shai-group-entry-left">
+		<div class="field-content shai_boardentry_userpicture">  <div class="user-picture">
+    <a href="../users/martin-schneider.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-981-1317304361.png" alt="Martin Schneider&#039;s picture" title="Martin Schneider&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-right">
+		<div class="field-content shai_boardentry_username"><a href="../users/martin-schneider.html" title="View user profile." class="username" xml:lang="" about="/users/martin-schneider" typeof="sioc:UserAccount" property="foaf:name">Martin Schneider</a></div>			<div class="shai-group-entry-title-wrapper">
+				<div class="field-content shai_boardentry_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_content"><p>I've some trouble with with capturing the videos for exercise 4. When i run the simulation with and without capturing, i get in both cases different results for "cluster" and "cluster + noise".<br />
+For example: When i run the simulation with 2 robots and without capturing. I get cluster: 8 and cluster + noise: 9. The same with capturing i get 4 and 18. (values are fictional!) If i do it again without capturing i get the first value-pair.<br />
+In my understanding such things should't happen in a simulation. Any ideas?</p>
+<p>Greeting Martin</p>
+</div>
+		</div>
+	</div>
+		<hr class="shai-group-entry-before-comment-separator"><div class="view view-interest-group-board-entries-com view-id-interest_group_board_entries_com view-display-id-page view-dom-id-9">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Hi Martin,</p>
+<p>Please check that all your robots have their synchronization field set to TRUE (in the scene tree). If not, then, the simulation results may be affected by the CPU load of your computer. Also, be sure you start in the same initial conditions. The best way to achieve this is probably to stop the simulation, quit Webots, relaunch it, possibly start-up the movie recording and start the simulation.</p>
+<p>Please let me know if that helps.</p>
+<p>-Olivier</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-2 views-row-even">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/martin-schneider.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-981-1317304361.png" alt="Martin Schneider&#039;s picture" title="Martin Schneider&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/martin-schneider.html" title="View user profile." class="username" xml:lang="" about="/users/martin-schneider" typeof="sioc:UserAccount" property="foaf:name">Martin Schneider</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Nope, restart, doesn't fix it. And all robots had there  their synchronization field set to true.</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-3 views-row-odd">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/martin-schneider.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-981-1317304361.png" alt="Martin Schneider&#039;s picture" title="Martin Schneider&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/martin-schneider.html" title="View user profile." class="username" xml:lang="" about="/users/martin-schneider" typeof="sioc:UserAccount" property="foaf:name">Martin Schneider</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Normaly, simulationt-ime should be different from real-time, so it should not be necessary to change the simulation duration.<br />
+Also it makes the results not comparable, when everyone has to adapt the simulation duration depending on his local CPU capacity.</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-4 views-row-even">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>I agree with you. However, I don't understand why you get different results when making a movie and not making a movie. Are you the only one out there with this problem?</p>
+<p>-Olivier</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-5 views-row-odd">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/martin-schneider.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-981-1317304361.png" alt="Martin Schneider&#039;s picture" title="Martin Schneider&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/martin-schneider.html" title="View user profile." class="username" xml:lang="" about="/users/martin-schneider" typeof="sioc:UserAccount" property="foaf:name">Martin Schneider</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>I look into the sourcecode of the supervisor and found this:<br />
+    void run(){</p>
+<p>      std::cout &lt;&lt; "supervisor starts" &lt;&lt; std::endl;</p>
+<p>      //Leave the loop after SIMTIME seconds<br />
+      timeval start,final;<br />
+      gettimeofday(&amp;start,NULL);<br />
+      do {<br />
+        gettimeofday(&amp;final,NULL);<br />
+        //std::cout&lt;=SIMTIME )<br />
+          break;<br />
+      } while (step(TIMESTEP) != -1);</p>
+<p>I must say that, i'm not really familiar with webbots. But in my understanding the break condition is checked with the systemtime! Not with "simulation time"! I tried to run the simulation in "fast mode" and got another result. Witch underlines this problem.<br />
+So my question is. Is ther a way to connect this break condition with the speed of the simulation?</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-6 views-row-even">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/martin-schneider.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-981-1317304361.png" alt="Martin Schneider&#039;s picture" title="Martin Schneider&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/martin-schneider.html" title="View user profile." class="username" xml:lang="" about="/users/martin-schneider" typeof="sioc:UserAccount" property="foaf:name">Martin Schneider</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>With Olivers help i modifed the function to check the simulation time and NOT the real time:</p>
+<p>      //Leave the loop after SIMTIME seconds<br />
+      do {<br />
+        if (getTime() &gt;= SIMTIME)<br />
+          break;<br />
+      } while (step(TIMESTEP) != -1);</p>
+<p>you find this lines in the supervisor.cpp from line 53 on.</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-7 views-row-odd">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/lyes-sai.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1008-1422076316.png" alt="Lyes SAI&#039;s picture" title="Lyes SAI&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/lyes-sai.html" title="View user profile." class="username" xml:lang="" about="/users/lyes-sai" typeof="sioc:UserAccount" property="foaf:name">Lyes SAI</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>I had the same problem as Martin Schneider, the results obtained without capturing a movie are different from those obtained when capturing a movie is running !</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-8 views-row-even">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Hi Lyes,</p>
+<p>Did you try to apply the patch Martin submitted in this group? I believe it fixed the issue. Your original program uses the computer's real time whereas it should use the simulation virtual time to produce similar results under different conditions (making a movie or with a different computer CPU load). Please try it and confirm us that it does fix the problem also for you.</p>
+<p>-Olivier</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-9 views-row-odd views-row-last">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/lyes-sai.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1008-1422076316.png" alt="Lyes SAI&#039;s picture" title="Lyes SAI&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/lyes-sai.html" title="View user profile." class="username" xml:lang="" about="/users/lyes-sai" typeof="sioc:UserAccount" property="foaf:name">Lyes SAI</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Hello Olivier,<br />
+Yes, I have tried the patch and it  worked very well,<br />
+thank you.</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>	<div class="shai-group-entry-add-comment-wrapper">
+		</div>
+</div>
+<hr	class="shai-group-entry-separator">  </div>
+  <div class="views-row views-row-10 views-row-even views-row-last">
+    
+<div class="shai-group-entry-wrapper">
+	<div class="shai-group-entry-content-wrapper">
+		<div class="shai-group-entry-left">
+		<div class="field-content shai_boardentry_userpicture">  <div class="user-picture">
+    <a href="../users/norbert-nestler.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-985-1317380310.jpg" alt="Norbert Nestler&#039;s picture" title="Norbert Nestler&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-right">
+		<div class="field-content shai_boardentry_username"><a href="../users/norbert-nestler.html" title="View user profile." class="username" xml:lang="" about="/users/norbert-nestler" typeof="sioc:UserAccount" property="foaf:name">Norbert Nestler</a></div>			<div class="shai-group-entry-title-wrapper">
+				<div class="field-content shai_boardentry_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_content"><p>I have a problem with the function "Make Movie". I installed Webots on another computer to have a faster simulation, which worked fine. But now everytime I make a movie and watch it right afterwards, it is in extreme slow motion. When I recorded the video, the simulation ran with almost real time speed. Any suggestions?</p>
+</div>
+		</div>
+	</div>
+		<hr class="shai-group-entry-before-comment-separator"><div class="view view-interest-group-board-entries-com view-id-interest_group_board_entries_com view-display-id-page view-dom-id-10">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Hi Norbert,</p>
+<p>Please have a look at the last question and answer of this FAQ: <a href="http://www.cyberbotics.com/guide/section9.4.php">http://www.cyberbotics.com/guide/section9.4.php</a><br />
+It explains how to tune parameters to set the desired speed for movies. Let me know if that helps.</p>
+<p>-Olivier</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-2 views-row-even views-row-last">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/norbert-nestler.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-985-1317380310.jpg" alt="Norbert Nestler&#039;s picture" title="Norbert Nestler&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/norbert-nestler.html" title="View user profile." class="username" xml:lang="" about="/users/norbert-nestler" typeof="sioc:UserAccount" property="foaf:name">Norbert Nestler</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">4 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Thank you, that kind of worked. The videos now run in real time but are still too large to capture the whole 104 seconds of the simuilation. I guess 15 seconds of the simulation will have to suffice.</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>	<div class="shai-group-entry-add-comment-wrapper">
+		</div>
+</div>
+<hr	class="shai-group-entry-separator">  </div>
+    </div>
+  
+      <h2 class="element-invisible">Pages</h2><div class="item-list"><ul class="pager"><li class="pager-first first"><a href="104-page=1,0,0,0,0,0,0,0,0,0,0,0.html" title="Go to first page" class="active">« first</a></li>
+<li class="pager-previous"><a href="104-page=1,0,0,0,0,0,0,0,0,0,0,0.html" title="Go to previous page" class="active">‹ previous</a></li>
+<li class="pager-item"><a href="104-page=1,0,0,0,0,0,0,0,0,0,0,0.html" title="Go to page 1" class="active">1</a></li>
+<li class="pager-current">2</li>
+<li class="pager-item"><a href="104-page=1,0,0,0,0,0,0,0,0,0,2,0.html" title="Go to page 3" class="active">3</a></li>
+<li class="pager-item"><a href="http://shanghailectures.org/node/104?page=1%2C0%2C0%2C0%2C0%2C0%2C0%2C0%2C0%2C0%2C3%2C0" title="Go to page 4" class="active">4</a></li>
+<li class="pager-next"><a href="104-page=1,0,0,0,0,0,0,0,0,0,2,0.html" title="Go to next page" class="active">next ›</a></li>
+<li class="pager-last last"><a href="http://shanghailectures.org/node/104?page=1%2C0%2C0%2C0%2C0%2C0%2C0%2C0%2C0%2C0%2C3%2C0" title="Go to last page" class="active">last »</a></li>
+</ul></div>  
+  
+  
+  
+  
+</div>  </div>
+
+  
+  </div>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+</div>
+  </div>
+
+</div><!-- /.block -->
+  </div><!-- /.region -->
+          </div></div><!-- /.section, /#content -->
+
+    
+      <div class="region region-sidebar-first column sidebar"><div class="section">
+    <div id="block-shanghai-interest-groups-shai-interest-groups" class="block block-shanghai-interest-groups first odd">
+
+        <h2 class="block-title">Group subscription</h2>
+    
+  <div class="content">
+    <a href="../user/login-destination=group%7Cnode%7C104%7Csubscribe.html">Subscribe to group</a>  </div>
+
+</div><!-- /.block -->
+<div id="block-views-shai-ig-members-block" class="block block-views last even">
+
+        <h2 class="block-title">Interest Group Members</h2>
+    
+  <div class="content">
+    <div class="view view-shai-ig-members view-id-shai_ig_members view-display-id-block view-dom-id-12">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    <div class="shai-interest-group-member-wrapper">
+	<div class="shai-interest-group-member-left">
+				<div class="shai-interst-group-member-picture shai-interest-group-member-logout">
+			 <div class="field-content">  <div class="user-picture">
+    <a href="../users/wenxi-zhang.html" title="View user profile."><img typeof="foaf:Image" src="http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=140" alt="Wenxi Zhang&#039;s picture" title="Wenxi Zhang&#039;s picture" /></a>  </div>
+</div>		</div>
+	</div>
+	<div class="shai-interest-group-member-right">
+		<h4 class="shai-interest-group-member-username">
+		<span class="field-content"><a href="../users/wenxi-zhang.html">Wenxi Zhang</a></span>		</h4>
+				<div class="shai-member-block-lastonline">
+			last login: about 1 year ago		</div>
+									    	    	
+			<div class="shai-interest-group-member-add-friend">
+			<div class="qtip-link"><div class="qtip-tooltip">Add Wenxi Zhang as a friend</div>
+				<a href="../relationship/1385/request/1-destination=user%7C1385.html" class="user_relationships_popup_link"><div class="shai-interest-group-member-friend-link"></div></a>	
+				</div>
+			</div>
+	    		<div class="qtip-link">
+			<div class="qtip-tooltip">Send a message to Wenxi Zhang.</div>
+			<div class="shai-interest-group-member-contact">
+				<div class="shai-ig-member-send-message">
+					<a href="../messages/new/1385-destination=user%7C1385.html" class="qtip-link"><div class="qtip-tooltip">Send message to Wenxi Zhang.</div></a>				</div>
+			</div>
+		</div>
+			</div>
+
+</div>
+
+
+  </div>
+  <div class="views-row views-row-2 views-row-even">
+    <div class="shai-interest-group-member-wrapper">
+	<div class="shai-interest-group-member-left">
+				<div class="shai-interst-group-member-picture shai-interest-group-member-logout">
+			 <div class="field-content">  <div class="user-picture">
+    <a href="../users/marcus-scheunemann.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-858-1416503199.jpg" alt="Marcus Scheunemann&#039;s picture" title="Marcus Scheunemann&#039;s picture" /></a>  </div>
+</div>		</div>
+	</div>
+	<div class="shai-interest-group-member-right">
+		<h4 class="shai-interest-group-member-username">
+		<span class="field-content"><a href="../users/marcus-scheunemann.html">Marcus Scheunemann</a></span>		</h4>
+				<div class="shai-member-block-lastonline">
+			last login: about 1 year ago		</div>
+									    	    	
+			<div class="shai-interest-group-member-add-friend">
+			<div class="qtip-link"><div class="qtip-tooltip">Add Marcus Scheunemann as a friend</div>
+				<a href="../relationship/858/request/1-destination=user%7C858.html" class="user_relationships_popup_link"><div class="shai-interest-group-member-friend-link"></div></a>	
+				</div>
+			</div>
+	    		<div class="qtip-link">
+			<div class="qtip-tooltip">Send a message to Marcus Scheunemann.</div>
+			<div class="shai-interest-group-member-contact">
+				<div class="shai-ig-member-send-message">
+					<a href="../messages/new/858-destination=user%7C858.html" class="qtip-link"><div class="qtip-tooltip">Send message to Marcus Scheunemann.</div></a>				</div>
+			</div>
+		</div>
+			</div>
+
+</div>
+
+
+  </div>
+  <div class="views-row views-row-3 views-row-odd">
+    <div class="shai-interest-group-member-wrapper">
+	<div class="shai-interest-group-member-left">
+				<div class="shai-interst-group-member-picture shai-interest-group-member-logout">
+			 <div class="field-content">  <div class="user-picture">
+    <a href="../users/xijin-zhao.html" title="View user profile."><img typeof="foaf:Image" src="http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=140" alt="Xijin Zhao&#039;s picture" title="Xijin Zhao&#039;s picture" /></a>  </div>
+</div>		</div>
+	</div>
+	<div class="shai-interest-group-member-right">
+		<h4 class="shai-interest-group-member-username">
+		<span class="field-content"><a href="../users/xijin-zhao.html">Xijin Zhao</a></span>		</h4>
+				<div class="shai-member-block-lastonline">
+			last login: about 1 year ago		</div>
+									    	    	
+			<div class="shai-interest-group-member-add-friend">
+			<div class="qtip-link"><div class="qtip-tooltip">Add Xijin Zhao as a friend</div>
+				<a href="../relationship/1587/request/1-destination=user%7C1587.html" class="user_relationships_popup_link"><div class="shai-interest-group-member-friend-link"></div></a>	
+				</div>
+			</div>
+	    		<div class="qtip-link">
+			<div class="qtip-tooltip">Send a message to Xijin Zhao.</div>
+			<div class="shai-interest-group-member-contact">
+				<div class="shai-ig-member-send-message">
+					<a href="../messages/new/1587-destination=user%7C1587.html" class="qtip-link"><div class="qtip-tooltip">Send message to Xijin Zhao.</div></a>				</div>
+			</div>
+		</div>
+			</div>
+
+</div>
+
+
+  </div>
+  <div class="views-row views-row-4 views-row-even">
+    <div class="shai-interest-group-member-wrapper">
+	<div class="shai-interest-group-member-left">
+				<div class="shai-interst-group-member-picture shai-interest-group-member-logout">
+			 <div class="field-content">  <div class="user-picture">
+    <a href="../users/sandeep-konam.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1723-1382348663.jpg" alt="Sandeep Konam&#039;s picture" title="Sandeep Konam&#039;s picture" /></a>  </div>
+</div>		</div>
+	</div>
+	<div class="shai-interest-group-member-right">
+		<h4 class="shai-interest-group-member-username">
+		<span class="field-content"><a href="../users/sandeep-konam.html">Sandeep Konam</a></span>		</h4>
+				<div class="shai-member-block-lastonline">
+			last login: over 2 years ago		</div>
+									    	    	
+			<div class="shai-interest-group-member-add-friend">
+			<div class="qtip-link"><div class="qtip-tooltip">Add Sandeep Konam as a friend</div>
+				<a href="../relationship/1723/request/1-destination=user%7C1723.html" class="user_relationships_popup_link"><div class="shai-interest-group-member-friend-link"></div></a>	
+				</div>
+			</div>
+	    		<div class="qtip-link">
+			<div class="qtip-tooltip">Send a message to Sandeep Konam.</div>
+			<div class="shai-interest-group-member-contact">
+				<div class="shai-ig-member-send-message">
+					<a href="../messages/new/1723-destination=user%7C1723.html" class="qtip-link"><div class="qtip-tooltip">Send message to Sandeep Konam.</div></a>				</div>
+			</div>
+		</div>
+			</div>
+
+</div>
+
+
+  </div>
+  <div class="views-row views-row-5 views-row-odd">
+    <div class="shai-interest-group-member-wrapper">
+	<div class="shai-interest-group-member-left">
+				<div class="shai-interst-group-member-picture shai-interest-group-member-logout">
+			 <div class="field-content">  <div class="user-picture">
+    <a href="../users/jekaterina-novikova-0.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-968-1366386402.jpg" alt="Jekaterina Novikova&#039;s picture" title="Jekaterina Novikova&#039;s picture" /></a>  </div>
+</div>		</div>
+	</div>
+	<div class="shai-interest-group-member-right">
+		<h4 class="shai-interest-group-member-username">
+		<span class="field-content"><a href="../users/jekaterina-novikova-0.html">Jekaterina Novikova</a></span>		</h4>
+				<div class="shai-member-block-lastonline">
+			last login: over 2 years ago		</div>
+									    	    	
+			<div class="shai-interest-group-member-add-friend">
+			<div class="qtip-link"><div class="qtip-tooltip">Add Jekaterina Novikova as a friend</div>
+				<a href="../relationship/968/request/1-destination=user%7C968.html" class="user_relationships_popup_link"><div class="shai-interest-group-member-friend-link"></div></a>	
+				</div>
+			</div>
+	    		<div class="qtip-link">
+			<div class="qtip-tooltip">Send a message to Jekaterina Novikova.</div>
+			<div class="shai-interest-group-member-contact">
+				<div class="shai-ig-member-send-message">
+					<a href="../messages/new/968-destination=user%7C968.html" class="qtip-link"><div class="qtip-tooltip">Send message to Jekaterina Novikova.</div></a>				</div>
+			</div>
+		</div>
+			</div>
+
+</div>
+
+
+  </div>
+  <div class="views-row views-row-6 views-row-even">
+    <div class="shai-interest-group-member-wrapper">
+	<div class="shai-interest-group-member-left">
+				<div class="shai-interst-group-member-picture shai-interest-group-member-logout">
+			 <div class="field-content">  <div class="user-picture">
+    <a href="../users/ahmed-naguib.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1477-1348978842.jpg" alt="Ahmed Naguib&#039;s picture" title="Ahmed Naguib&#039;s picture" /></a>  </div>
+</div>		</div>
+	</div>
+	<div class="shai-interest-group-member-right">
+		<h4 class="shai-interest-group-member-username">
+		<span class="field-content"><a href="../users/ahmed-naguib.html">Ahmed Naguib</a></span>		</h4>
+				<div class="shai-member-block-lastonline">
+			last login: over 3 years ago		</div>
+									    	    	
+			<div class="shai-interest-group-member-add-friend">
+			<div class="qtip-link"><div class="qtip-tooltip">Add Ahmed Naguib as a friend</div>
+				<a href="../relationship/1477/request/1-destination=user%7C1477.html" class="user_relationships_popup_link"><div class="shai-interest-group-member-friend-link"></div></a>	
+				</div>
+			</div>
+	    		<div class="qtip-link">
+			<div class="qtip-tooltip">Send a message to Ahmed Naguib.</div>
+			<div class="shai-interest-group-member-contact">
+				<div class="shai-ig-member-send-message">
+					<a href="../messages/new/1477-destination=user%7C1477.html" class="qtip-link"><div class="qtip-tooltip">Send message to Ahmed Naguib.</div></a>				</div>
+			</div>
+		</div>
+			</div>
+
+</div>
+
+
+  </div>
+  <div class="views-row views-row-7 views-row-odd">
+    <div class="shai-interest-group-member-wrapper">
+	<div class="shai-interest-group-member-left">
+				<div class="shai-interst-group-member-picture shai-interest-group-member-logout">
+			 <div class="field-content">  <div class="user-picture">
+    <a href="../users/ariel-vernaza.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1345-1348731387.jpg" alt="Ariel Vernaza&#039;s picture" title="Ariel Vernaza&#039;s picture" /></a>  </div>
+</div>		</div>
+	</div>
+	<div class="shai-interest-group-member-right">
+		<h4 class="shai-interest-group-member-username">
+		<span class="field-content"><a href="../users/ariel-vernaza.html">Ariel Vernaza</a></span>		</h4>
+				<div class="shai-member-block-lastonline">
+			last login: over 3 years ago		</div>
+									    	    	
+			<div class="shai-interest-group-member-add-friend">
+			<div class="qtip-link"><div class="qtip-tooltip">Add Ariel Vernaza as a friend</div>
+				<a href="../relationship/1345/request/1-destination=user%7C1345.html" class="user_relationships_popup_link"><div class="shai-interest-group-member-friend-link"></div></a>	
+				</div>
+			</div>
+	    		<div class="qtip-link">
+			<div class="qtip-tooltip">Send a message to Ariel Vernaza.</div>
+			<div class="shai-interest-group-member-contact">
+				<div class="shai-ig-member-send-message">
+					<a href="../messages/new/1345-destination=user%7C1345.html" class="qtip-link"><div class="qtip-tooltip">Send message to Ariel Vernaza.</div></a>				</div>
+			</div>
+		</div>
+			</div>
+
+</div>
+
+
+  </div>
+  <div class="views-row views-row-8 views-row-even">
+    <div class="shai-interest-group-member-wrapper">
+	<div class="shai-interest-group-member-left">
+				<div class="shai-interst-group-member-picture shai-interest-group-member-logout">
+			 <div class="field-content">  <div class="user-picture">
+    <a href="../users/manucharova-antonina.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1506-1350160732.jpg" alt="Manucharova Antonina&#039;s picture" title="Manucharova Antonina&#039;s picture" /></a>  </div>
+</div>		</div>
+	</div>
+	<div class="shai-interest-group-member-right">
+		<h4 class="shai-interest-group-member-username">
+		<span class="field-content"><a href="../users/manucharova-antonina.html">Manucharova Antonina</a></span>		</h4>
+				<div class="shai-member-block-lastonline">
+			last login: over 3 years ago		</div>
+									    	    	
+			<div class="shai-interest-group-member-add-friend">
+			<div class="qtip-link"><div class="qtip-tooltip">Add Manucharova Antonina as a friend</div>
+				<a href="../relationship/1506/request/1-destination=user%7C1506.html" class="user_relationships_popup_link"><div class="shai-interest-group-member-friend-link"></div></a>	
+				</div>
+			</div>
+	    		<div class="qtip-link">
+			<div class="qtip-tooltip">Send a message to Manucharova Antonina.</div>
+			<div class="shai-interest-group-member-contact">
+				<div class="shai-ig-member-send-message">
+					<a href="../messages/new/1506-destination=user%7C1506.html" class="qtip-link"><div class="qtip-tooltip">Send message to Manucharova Antonina.</div></a>				</div>
+			</div>
+		</div>
+			</div>
+
+</div>
+
+
+  </div>
+  <div class="views-row views-row-9 views-row-odd">
+    <div class="shai-interest-group-member-wrapper">
+	<div class="shai-interest-group-member-left">
+				<div class="shai-interst-group-member-picture shai-interest-group-member-logout">
+			 <div class="field-content">  <div class="user-picture">
+    <a href="../users/tobias-klauser.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-977-1317297017.jpg" alt="Tobias Klauser&#039;s picture" title="Tobias Klauser&#039;s picture" /></a>  </div>
+</div>		</div>
+	</div>
+	<div class="shai-interest-group-member-right">
+		<h4 class="shai-interest-group-member-username">
+		<span class="field-content"><a href="../users/tobias-klauser.html">Tobias Klauser</a></span>		</h4>
+				<div class="shai-member-block-lastonline">
+			last login: over 3 years ago		</div>
+									    	    	
+			<div class="shai-interest-group-member-add-friend">
+			<div class="qtip-link"><div class="qtip-tooltip">Add Tobias Klauser as a friend</div>
+				<a href="../relationship/977/request/1-destination=user%7C977.html" class="user_relationships_popup_link"><div class="shai-interest-group-member-friend-link"></div></a>	
+				</div>
+			</div>
+	    		<div class="qtip-link">
+			<div class="qtip-tooltip">Send a message to Tobias Klauser.</div>
+			<div class="shai-interest-group-member-contact">
+				<div class="shai-ig-member-send-message">
+					<a href="../messages/new/977-destination=user%7C977.html" class="qtip-link"><div class="qtip-tooltip">Send message to Tobias Klauser.</div></a>				</div>
+			</div>
+		</div>
+			</div>
+
+</div>
+
+
+  </div>
+  <div class="views-row views-row-10 views-row-even views-row-last">
+    <div class="shai-interest-group-member-wrapper">
+	<div class="shai-interest-group-member-left">
+				<div class="shai-interst-group-member-picture shai-interest-group-member-logout">
+			 <div class="field-content">  <div class="user-picture">
+    <a href="../users/benjamin-ellenberger.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1352-1348734668.jpg" alt="Benjamin Ellenberger&#039;s picture" title="Benjamin Ellenberger&#039;s picture" /></a>  </div>
+</div>		</div>
+	</div>
+	<div class="shai-interest-group-member-right">
+		<h4 class="shai-interest-group-member-username">
+		<span class="field-content"><a href="../users/benjamin-ellenberger.html">Benjamin Ellenberger</a></span>		</h4>
+				<div class="shai-member-block-lastonline">
+			last login: over 3 years ago		</div>
+									    	    	
+			<div class="shai-interest-group-member-add-friend">
+			<div class="qtip-link"><div class="qtip-tooltip">Add Benjamin Ellenberger as a friend</div>
+				<a href="../relationship/1352/request/1-destination=user%7C1352.html" class="user_relationships_popup_link"><div class="shai-interest-group-member-friend-link"></div></a>	
+				</div>
+			</div>
+	    		<div class="qtip-link">
+			<div class="qtip-tooltip">Send a message to Benjamin Ellenberger.</div>
+			<div class="shai-interest-group-member-contact">
+				<div class="shai-ig-member-send-message">
+					<a href="../messages/new/1352-destination=user%7C1352.html" class="qtip-link"><div class="qtip-tooltip">Send message to Benjamin Ellenberger.</div></a>				</div>
+			</div>
+		</div>
+			</div>
+
+</div>
+
+
+  </div>
+    </div>
+  
+      <h2 class="element-invisible">Pages</h2><div class="item-list"><ul class="pager"><li class="pager-first first"><a href="104-page=0,0,0,0,0,0,0,0,0,0,1,0.html" title="Go to first page" class="active">« first</a></li>
+<li class="pager-previous"><a href="104-page=0,0,0,0,0,0,0,0,0,0,1,0.html" title="Go to previous page" class="active">‹ previous</a></li>
+<li class="pager-item"><a href="104-page=0,0,0,0,0,0,0,0,0,0,1,0.html" title="Go to page 1" class="active">1</a></li>
+<li class="pager-current">2</li>
+<li class="pager-item"><a href="104-page=2,0,0,0,0,0,0,0,0,0,1,0.html" title="Go to page 3" class="active">3</a></li>
+<li class="pager-item"><a href="104-page=3,0,0,0,0,0,0,0,0,0,1,0.html" title="Go to page 4" class="active">4</a></li>
+<li class="pager-item"><a href="104-page=4,0,0,0,0,0,0,0,0,0,1,0.html" title="Go to page 5" class="active">5</a></li>
+<li class="pager-item"><a href="104-page=5,0,0,0,0,0,0,0,0,0,1,0.html" title="Go to page 6" class="active">6</a></li>
+<li class="pager-next"><a href="104-page=2,0,0,0,0,0,0,0,0,0,1,0.html" title="Go to next page" class="active">next ›</a></li>
+<li class="pager-last last"><a href="104-page=5,0,0,0,0,0,0,0,0,0,1,0.html" title="Go to last page" class="active">last »</a></li>
+</ul></div>  
+  
+  
+  
+  
+</div>  </div>
+
+</div><!-- /.block -->
+  </div></div><!-- /.section, /.region -->
+
+    
+  </div></div><!-- /#main, /#main-wrapper -->
+  
+</div></div><!-- /#page, /#page-wrapper -->
+
+<div id="footer-background"></div>
+  <div class="region region-bottom">
+    <div id="block-menu-menu-footer" class="block block-menu first odd">
+
+      
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="../credits.html">Credits</a></li>
+<li class="leaf"><a href="../sitemap.html" title="">Sitemap</a></li>
+<li class="last leaf"><a href="../terms-and-conditions.html">Terms and Conditions</a></li>
+</ul>  </div>
+
+</div><!-- /.block -->
+<div id="block-block-1" class="block block-block last even">
+
+      
+  <div class="content">
+    <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a></p>
+  </div>
+
+</div><!-- /.block -->
+  </div><!-- /.region -->
+
+<!-- Overlay for User Menu -->
+<div class="apple_overlay" id="usermenuoverlay">
+<!-- the external content is loaded inside this tag -->
+	<div class="contentWrap"></div>
+	
+</div>
+  <div id="user_relationships_popup_form" class="user_relationships_ui_popup_form"></div><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+          Shadowbox.path = "/sites/all/libraries/shadowbox/";
+	      Shadowbox.init(Drupal.settings.shadowbox);
+	    
+//--><!]]>
+</script>
+</body>
+</html>

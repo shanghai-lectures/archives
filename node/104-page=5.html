@@ -1,0 +1,1180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="../sites/all/themes/shai_theme/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>Webots | ShanghAI Lectures</title>
+  <style type="text/css" media="all">@import url("http://shanghailectures.org/modules/system/system.base.css?nw62hc");
+@import url("http://shanghailectures.org/modules/system/system.messages.css?nw62hc");
+@import url("http://shanghailectures.org/modules/system/system.theme.css?nw62hc");</style>
+<style type="text/css" media="screen">@import url("../sites/all/modules/external_projects/qtip/library/jquery.qtip-nw62hc.css");
+@import url("../sites/all/libraries/shadowbox/shadowbox-nw62hc.css");</style>
+<style type="text/css" media="all">@import url("http://shanghailectures.org/modules/comment/comment.css?nw62hc");
+@import url("../sites/all/modules/external_projects/date/date_api/date-nw62hc.css");
+@import url("../sites/all/modules/external_projects/date/date_popup/themes/datepicker.1.7-nw62hc.css");
+@import url("http://shanghailectures.org/modules/field/theme/field.css?nw62hc");
+@import url("../sites/all/modules/external_projects/mollom/mollom-nw62hc.css");
+@import url("http://shanghailectures.org/modules/node/node.css?nw62hc");
+@import url("http://shanghailectures.org/modules/search/search.css?nw62hc");
+@import url("../sites/all/modules/external_projects/twitter_block/twitter_block-nw62hc.css");
+@import url("../sites/all/modules/external_projects/views/css/views-nw62hc.css");</style>
+<style type="text/css" media="all">@import url("../sites/all/modules/external_projects/ctools/css/ctools-nw62hc.css");
+@import url("../sites/all/modules/external_projects/media_embedded/formatters/overlay_formatter/skin/jcarousel-media-embedded-2-nw62hc.css");
+@import url("../sites/all/modules/external_projects/media_embedded/formatters/overlay_formatter/skin/jcarousel-media-embedded-3-nw62hc.css");
+@import url("../sites/all/modules/external_projects/media_embedded/formatters/overlay_formatter/skin/jcarousel-media-embedded-4-nw62hc.css");
+@import url("../sites/all/modules/external_projects/media_embedded/formatters/overlay_formatter/skin/jcarousel-media-embedded-nw62hc.css");
+@import url("../sites/all/modules/external_projects/nice_menus/nice_menus-nw62hc.css");
+@import url("../sites/all/modules/external_projects/panels/css/panels-nw62hc.css");
+@import url("../sites/all/modules/shai_member_block/shai_member_block-nw62hc.css");
+@import url("../sites/all/modules/external_projects/ctools/css/collapsible-div-nw62hc.css");
+@import url("../sites/all/modules/external_projects/user_relationships/user_relationships_ui/user_relationships_ui-nw62hc.css");
+@import url("../sites/all/modules/external_projects/views_slideshow/views_slideshow-nw62hc.css");
+@import url("../sites/all/modules/external_projects/views_slideshow/contrib/views_slideshow_cycle/views_slideshow_cycle-nw62hc.css");
+@import url("../sites/all/modules/external_projects/panels/plugins/layouts/flexible/flexible-nw62hc.css");
+@import url("../sites/all/modules/external_projects/media_embedded/formatters/overlay_formatter/skin/jcarousel-media-embedded-1-nw62hc.css");</style>
+<style type="text/css" media="all"><!--/*--><![CDATA[/*><!--*/
+.panels-flexible-region {
+  padding: 0;
+}
+
+.panels-flexible-region-inside {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.panels-flexible-region-inside-first {
+  padding-left: 0;
+}
+
+.panels-flexible-region-inside-last {
+  padding-right: 0;
+}
+
+.panels-flexible-column {
+  padding: 0;
+}
+
+.panels-flexible-column-inside {
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.panels-flexible-column-inside-first {
+  padding-left: 0;
+}
+
+.panels-flexible-column-inside-last {
+  padding-right: 0;
+}
+
+.panels-flexible-row {
+  padding: 0 0 0.5em 0;
+  margin: 0;
+}
+
+.panels-flexible-row-last {
+  padding-bottom: 0;
+}
+
+.panels-flexible-column-new-main {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-new-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-new {
+  width: auto;
+}
+
+.panels-flexible-region-new-center {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-new-main-row-inside {
+  padding-right: 0px;
+}
+
+.panels-flexible-region-new-bottom {
+  float: left;
+  width: 99.0000%;
+}
+
+.panels-flexible-row-new-1-inside {
+  padding-right: 0px;
+}
+
+
+/*]]>*/-->
+</style>
+<style type="text/css" media="all">@import url("../sites/all/themes/shai_theme/css/html-reset-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/wireframes-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/layout-fixed-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/page-backgrounds-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/tabs-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/pages-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/blocks-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/navigation-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/views-styles-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/nodes-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/comments-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/forms-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/fields-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/board-entries-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/system.menus-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/user-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/contextual-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/nice_menus_default-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/qtip-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/jquery.ui.core-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/relationships-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/media-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/lectures-nw62hc.css");
+@import url("../sites/all/themes/shai_theme/css/guest-lectures-nw62hc.css");</style>
+<style type="text/css" media="print">@import url("../sites/all/themes/shai_theme/css/print-nw62hc.css");</style>
+
+<!--[if lte IE 8]>
+<style type="text/css" media="all">@import url("http://shanghailectures.org/sites/all/themes/shai_theme/css/ie8.css?nw62hc");</style>
+<![endif]-->
+
+<!--[if lte IE 7]>
+<style type="text/css" media="all">@import url("http://shanghailectures.org/sites/all/themes/shai_theme/css/ie7.css?nw62hc");</style>
+<![endif]-->
+
+<!--[if lte IE 6]>
+<style type="text/css" media="all">@import url("http://shanghailectures.org/sites/all/themes/shai_theme/css/ie6.css?nw62hc");</style>
+<![endif]-->
+  <script type="text/javascript" src="http://shanghailectures.org/misc/jquery.js?v=1.4.4"></script>
+<script type="text/javascript" src="http://shanghailectures.org/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="http://shanghailectures.org/misc/drupal.js?nw62hc"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/qtip/library/jquery.qtip-v=2.0.0pre.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/qtip/js/qtip-v=2.0.0pre.js"></script>
+<script type="text/javascript" src="../sites/all/libraries/shadowbox/shadowbox-v=3.0.3.js"></script>
+<script type="text/javascript" src="http://shanghailectures.org/misc/jquery.cookie.js?v=1.0"></script>
+<script type="text/javascript" src="http://shanghailectures.org/misc/jquery.form.js?v=2.52"></script>
+<script type="text/javascript" src="http://shanghailectures.org/misc/ajax.js?v=7.8"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/mollom/mollom-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/media_embedded/formatters/overlay_formatter/skin/jquery.easing.1.2-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/panels/js/panels-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/user_relationships/user_relationships_ui/user_relationships_ui-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/views_slideshow/js/views_slideshow-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/libraries/jquery.cycle/jquery.cycle.all.min-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/views_slideshow/contrib/views_slideshow_cycle/js/views_slideshow_cycle-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/jcarousel/js/jquery.jcarousel.min-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/jcarousel/js/jcarousel-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/views/js/base-nw62hc.js"></script>
+<script type="text/javascript" src="http://shanghailectures.org/misc/progress.js?1477327151"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/google_analytics/googleanalytics-nw62hc.js"></script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/views/js/ajax_view-nw62hc.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-5982901-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript" src="../sites/all/modules/external_projects/views/js/jquery.ui.dialog.patch-nw62hc.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"shai_theme","theme_token":"71UFUJJSSg1lQZENdoMZ63nkZKyQKjTgY6VnJICYCgQ","js":{"0":1,"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/external_projects\/qtip\/library\/jquery.qtip.js":1,"sites\/all\/modules\/external_projects\/qtip\/js\/qtip.js":1,"sites\/all\/libraries\/shadowbox\/shadowbox.js":1,"misc\/jquery.cookie.js":1,"misc\/jquery.form.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/external_projects\/mollom\/mollom.js":1,"sites\/all\/modules\/external_projects\/media_embedded\/formatters\/overlay_formatter\/skin\/jquery.easing.1.2.js":1,"sites\/all\/modules\/external_projects\/panels\/js\/panels.js":1,"sites\/all\/modules\/external_projects\/user_relationships\/user_relationships_ui\/user_relationships_ui.js":1,"sites\/all\/modules\/external_projects\/views_slideshow\/js\/views_slideshow.js":1,"sites\/all\/libraries\/jquery.cycle\/jquery.cycle.all.min.js":1,"sites\/all\/modules\/external_projects\/views_slideshow\/contrib\/views_slideshow_cycle\/js\/views_slideshow_cycle.js":1,"sites\/all\/modules\/external_projects\/jcarousel\/js\/jquery.jcarousel.min.js":1,"sites\/all\/modules\/external_projects\/jcarousel\/js\/jcarousel.js":1,"sites\/all\/modules\/external_projects\/views\/js\/base.js":1,"misc\/progress.js":1,"sites\/all\/modules\/external_projects\/google_analytics\/googleanalytics.js":1,"sites\/all\/modules\/external_projects\/views\/js\/ajax_view.js":1,"1":1,"sites\/all\/modules\/external_projects\/views\/js\/jquery.ui.dialog.patch.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/external_projects\/qtip\/library\/jquery.qtip.css":1,"sites\/all\/libraries\/shadowbox\/shadowbox.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/external_projects\/date\/date_api\/date.css":1,"sites\/all\/modules\/external_projects\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/external_projects\/mollom\/mollom.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"sites\/all\/modules\/external_projects\/twitter_block\/twitter_block.css":1,"sites\/all\/modules\/external_projects\/views\/css\/views.css":1,"sites\/all\/modules\/external_projects\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/external_projects\/media_embedded\/formatters\/overlay_formatter\/skin\/jcarousel-media-embedded-2.css":1,"sites\/all\/modules\/external_projects\/media_embedded\/formatters\/overlay_formatter\/skin\/jcarousel-media-embedded-3.css":1,"sites\/all\/modules\/external_projects\/media_embedded\/formatters\/overlay_formatter\/skin\/jcarousel-media-embedded-4.css":1,"sites\/all\/modules\/external_projects\/media_embedded\/formatters\/overlay_formatter\/skin\/jcarousel-media-embedded.css":1,"sites\/all\/modules\/external_projects\/nice_menus\/nice_menus.css":1,"sites\/all\/modules\/external_projects\/panels\/css\/panels.css":1,"sites\/all\/modules\/shai_member_block\/shai_member_block.css":1,"sites\/all\/modules\/external_projects\/ctools\/css\/collapsible-div.css":1,"sites\/all\/modules\/external_projects\/user_relationships\/user_relationships_ui\/user_relationships_ui.css":1,"sites\/all\/modules\/external_projects\/views_slideshow\/views_slideshow.css":1,"sites\/all\/modules\/external_projects\/views_slideshow\/contrib\/views_slideshow_cycle\/views_slideshow_cycle.css":1,"sites\/all\/modules\/external_projects\/panels\/plugins\/layouts\/flexible\/flexible.css":1,"sites\/all\/modules\/external_projects\/media_embedded\/formatters\/overlay_formatter\/skin\/jcarousel-media-embedded-1.css":1,"0":1,"sites\/all\/themes\/shai_theme\/css\/html-reset.css":1,"sites\/all\/themes\/shai_theme\/css\/wireframes.css":1,"sites\/all\/themes\/shai_theme\/css\/layout-fixed.css":1,"sites\/all\/themes\/shai_theme\/css\/page-backgrounds.css":1,"sites\/all\/themes\/shai_theme\/css\/tabs.css":1,"sites\/all\/themes\/shai_theme\/css\/pages.css":1,"sites\/all\/themes\/shai_theme\/css\/blocks.css":1,"sites\/all\/themes\/shai_theme\/css\/navigation.css":1,"sites\/all\/themes\/shai_theme\/css\/views-styles.css":1,"sites\/all\/themes\/shai_theme\/css\/nodes.css":1,"sites\/all\/themes\/shai_theme\/css\/comments.css":1,"sites\/all\/themes\/shai_theme\/css\/forms.css":1,"sites\/all\/themes\/shai_theme\/css\/fields.css":1,"sites\/all\/themes\/shai_theme\/css\/board-entries.css":1,"sites\/all\/themes\/shai_theme\/css\/system.menus.css":1,"sites\/all\/themes\/shai_theme\/css\/user.css":1,"sites\/all\/themes\/shai_theme\/css\/contextual.css":1,"sites\/all\/themes\/shai_theme\/css\/nice_menus_default.css":1,"sites\/all\/themes\/shai_theme\/css\/qtip.css":1,"sites\/all\/themes\/shai_theme\/css\/jquery.ui.core.css":1,"sites\/all\/themes\/shai_theme\/css\/relationships.css":1,"sites\/all\/themes\/shai_theme\/css\/media.css":1,"sites\/all\/themes\/shai_theme\/css\/lectures.css":1,"sites\/all\/themes\/shai_theme\/css\/guest-lectures.css":1,"sites\/all\/themes\/shai_theme\/css\/print.css":1,"sites\/all\/themes\/shai_theme\/css\/ie8.css":1,"sites\/all\/themes\/shai_theme\/css\/ie7.css":1,"sites\/all\/themes\/shai_theme\/css\/ie6.css":1}},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views","carousels":{"media-embedded-4759":{"skin":"media_embedded_1","scroll":0,"wrap":"null","size":"3","selector":".media-embedded-4759"},"media-embedded-2106":{"skin":"media_embedded_1","scroll":0,"wrap":"null","size":"3","selector":".media-embedded-2106"},"media-embedded-2085":{"skin":"media_embedded_1","scroll":0,"wrap":"null","size":"3","selector":".media-embedded-2085"},"media-embedded-2075":{"skin":"media_embedded_1","scroll":0,"wrap":"null","size":"3","selector":".media-embedded-2075"},"media-embedded-2065":{"skin":"media_embedded_1","scroll":0,"wrap":"null","size":"3","selector":".media-embedded-2065"}}},"qtip":{"target_position":"top_right","tooltip_position":"bottom_left","show_speech_bubble_tip":1,"show_speech_bubble_tip_side":0,"speech_bubble_size":"12","show_speech_bubble_tip_solid":1,"show_shadow":1,"rounded_corners":1,"color":"ui-tooltip-light","custom_color":"","show_event_type":"mouseenter","hide_event_type":"mouseleave","show_webform_descriptions":0,"additional_elements":""},"shadowbox":{"animate":1,"animateFade":1,"animSequence":"wh","auto_enable_all_images":0,"auto_gallery":0,"autoplayMovies":true,"continuous":0,"counterLimit":"10","counterType":"default","displayCounter":1,"displayNav":1,"enableKeys":1,"fadeDuration":"0.35","handleOversize":"resize","handleUnsupported":"remove","initialHeight":160,"initialWidth":320,"language":"en","modal":false,"overlayColor":"#000","overlayOpacity":"0.85","resizeDuration":"0.35","showMovieControls":1,"slideshowDelay":"0","viewportPadding":20,"useSizzle":0},"user_relationships_ui":{"loadingimage":"\/sites\/all\/modules\/external_projects\/user_relationships\/user_relationships_ui\/images\/loadingAnimation.gif","savingimage":"\/sites\/all\/modules\/external_projects\/user_relationships\/user_relationships_ui\/images\/savingimage.gif","position":{"position":"absolute","left":"0","top":"0"}},"views":{"ajax_path":"\/views\/ajax","ajaxViews":[{"view_name":"interest_group_board_entries_com","view_display_id":"page","view_args":"4759","view_path":"node\/104","view_base_path":"node\/104","view_dom_id":1,"pager_element":"11"},{"view_name":"interest_group_board_entries_com","view_display_id":"page","view_args":"2399","view_path":"node\/104","view_base_path":"node\/104","view_dom_id":2,"pager_element":"11"},{"view_name":"interest_group_board_entries_com","view_display_id":"page","view_args":"2276","view_path":"node\/104","view_base_path":"node\/104","view_dom_id":3,"pager_element":"11"},{"view_name":"interest_group_board_entries_com","view_display_id":"page","view_args":"2249","view_path":"node\/104","view_base_path":"node\/104","view_dom_id":4,"pager_element":"11"},{"view_name":"interest_group_board_entries_com","view_display_id":"page","view_args":"2166","view_path":"node\/104","view_base_path":"node\/104","view_dom_id":5,"pager_element":"11"},{"view_name":"interest_group_board_entries_com","view_display_id":"page","view_args":"2106","view_path":"node\/104","view_base_path":"node\/104","view_dom_id":6,"pager_element":"11"},{"view_name":"interest_group_board_entries_com","view_display_id":"page","view_args":"2085","view_path":"node\/104","view_base_path":"node\/104","view_dom_id":7,"pager_element":"11"},{"view_name":"interest_group_board_entries_com","view_display_id":"page","view_args":"2075","view_path":"node\/104","view_base_path":"node\/104","view_dom_id":8,"pager_element":"11"},{"view_name":"interest_group_board_entries_com","view_display_id":"page","view_args":"2065","view_path":"node\/104","view_base_path":"node\/104","view_dom_id":9,"pager_element":"11"},{"view_name":"interest_group_board_entries_com","view_display_id":"page","view_args":"2061","view_path":"node\/104","view_base_path":"node\/104","view_dom_id":10,"pager_element":"11"},{"view_name":"interest_group_board_entries","view_display_id":"default","view_args":"104","view_path":"node\/104","view_base_path":"interest-group-board-entries","view_dom_id":11,"pager_element":"10"}]},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"og":{"og_context":{"gid":"8","etid":"104","entity_type":"node","label":"Webots","state":"1","created":"1317971383","rdf_mapping":[]}}});
+//--><!]]>
+</script>
+  
+<!--[if lt IE 7]>
+	<style> 
+	div.apple_overlay {
+		background-image:url(http://static.flowplayer.org/tools/img/overlay/overlay_IE6.gif);
+		color:#fff;
+	}
+	
+	/* default close button positioned on upper right corner */
+	div.apple_overlay div.close {
+		background-image:url(http://static.flowplayer.org/tools/img/overlay/overlay_close_IE6.gif);
+	
+	}	
+	</style>
+	<![endif]-->
+  
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-104 node-type-interest-group group-context group-context-group-8 group-context-node group-context-node-104 section-node" >
+  <div id="skip-link">
+    <a href="104-page=5.html#main-menu" class="element-invisible element-focusable">Jump to Navigation</a>
+  </div>
+    <div id="header-background"></div>
+<div id="page-wrapper"><div id="page">
+
+  <div id="header"><div class="section clearfix">
+
+          <a href="../index.html" title="Home" id="logo"><img src="../sites/all/themes/shai_theme/logo.png" alt="Home" /></a>
+    
+    
+    
+      <div class="region region-header">
+    <div id="block-user-login" class="block block-user first odd">
+
+        <h2 class="block-title">User login</h2>
+    
+  <div class="content">
+    <form action="/node/104?destination=node/104%3Fpage%3D5" method="post" id="user-login-form" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-name">
+  <label for="edit-name">E-mail <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-name" name="name" value="" size="15" maxlength="60" class="form-text required" />
+</div>
+<div class="form-item form-type-password form-item-pass">
+  <label for="edit-pass">Password <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" id="edit-pass" name="pass" size="15" maxlength="60" class="form-text required" />
+</div>
+<div class="item-list"><ul><li class="first last"><a href="../user/password.html" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" value="form-bZ5lFGwg_umV7kopQAcqZy3Rbuv1DWMWP9EqQYEG05k" />
+<input type="hidden" name="form_id" value="user_login_block" />
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Log in" class="form-submit" /></div></div></form>  </div>
+
+</div><!-- /.block -->
+<div id="block-nice-menus-1" class="block block-nice-menus last even">
+
+      
+  <div class="content">
+    <ul class="nice-menu nice-menu-down" id="nice-menu-1"><li class="menu-604 menu-path-news first  odd "><a href="../news.html">News</a></li>
+<li class="menu-626 menuparent menu-path-community even "><a href="../community.html">Community</a><ul><li class="menu-511 menu-path-community-interest-groups first  odd  last "><a href="../community/interest-groups.html">Interest Groups</a></li>
+</ul>
+</li>
+<li class="menu-628 menuparent menu-path-lectures odd "><a href="../lectures.html">Lectures</a><ul><li class="menu-629 menu-path-lectures-guest-lectures first  odd "><a href="../lectures/guest-lectures.html">Guest Lectures</a></li>
+<li class="menu-808 menu-path-node-1738 even "><a href="../content/rulesexam.html">Rules/Exam</a></li>
+<li class="menu-812 menu-path-node-2893 odd "><a href="../koans.html">Kōans</a></li>
+<li class="menu-821 menu-path-shanghailecturesorg-drupalchat-messages even  last "><a href="../drupalchat/messages.html" title="Log of chat messages.">Chat log (members only)</a></li>
+</ul>
+</li>
+<li class="menu-656 menu-path-node-19 even "><a href="../research.html">Research</a></li>
+<li class="menu-652 menu-path-node-2 odd "><a href="../sponsors.html">Sponsors</a></li>
+<li class="menu-806 menu-path-node-1542 even  last "><a href="../links.html">Links</a></li>
+</ul>
+  </div>
+
+</div><!-- /.block -->
+  </div><!-- /.region -->
+
+  </div></div><!-- /.section, /#header -->
+
+  <div id="main-wrapper"><div id="main" class="clearfix">
+
+    <div id="content" class="column"><div class="section">
+            <div class="wrapper-breadcrumb">
+      <div class="breadcrumb"><h2 class="element-invisible">You are here</h2><a href="../index.html">Home</a> › <a href="../community.html">Community</a> › <a href="../community/interest-groups.html">Interest Groups</a> › </div>Webots      </div>
+      
+      <a id="main-content"></a>
+                    <h1 class="title" id="page-title">Webots</h1>
+                                            <div class="region region-content">
+    <div id="block-system-main" class="block block-system first last odd">
+
+      
+  <div class="content">
+    <div class="panel-flexible panels-flexible-new clearfix" >
+<div class="panel-flexible-inside panels-flexible-new-inside">
+<div class="panels-flexible-row panels-flexible-row-new-main-row panels-flexible-row-first clearfix">
+  <div class="inside panels-flexible-row-inside panels-flexible-row-new-main-row-inside panels-flexible-row-inside-first clearfix">
+<div class="panels-flexible-region panels-flexible-region-new-center panels-flexible-region-first panels-flexible-region-last">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-new-center-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+  </div>
+</div>
+  </div>
+</div>
+<div class="panels-flexible-row panels-flexible-row-new-1 panels-flexible-row-last clearfix ">
+  <div class="inside panels-flexible-row-inside panels-flexible-row-new-1-inside panels-flexible-row-inside-last clearfix">
+<div class="panels-flexible-region panels-flexible-region-new-bottom panels-flexible-region-first panels-flexible-region-last ">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-new-bottom-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-views pane-interest-group-board-entries" >
+  
+      <h2 class="pane-title">Interest Group Board Entries</h2>
+  
+  
+  <div class="pane-content">
+    <div class="view view-interest-group-board-entries view-id-interest_group_board_entries view-display-id-default view-dom-id-11">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    
+<div class="shai-group-entry-wrapper">
+	<div class="shai-group-entry-content-wrapper">
+		<div class="shai-group-entry-left">
+		<div class="field-content shai_boardentry_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-right">
+		<div class="field-content shai_boardentry_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-title-wrapper">
+				<div class="field-content shai_boardentry_date"><em class="placeholder">11 months 5 days</em> ago</div>
+				<div class="shai-group-entry-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_content"><p>We are organizing a robot programming challenge called "NAO race" based on Webots which may be interesting for Shanghai lecture students. Let me quickly introduce it...</p>
+<p>The goal is to program a NAO robot in Python to walk (or run) as fast as possible on a 10 meters race. There no need to install Webots as it runs in the cloud from your web browser (Firefox or Chrome):</p>
+<p><a href="https://www.cyberbotics.com/nao_race">https://www.cyberbotics.com/nao_race</a></p>
+<p>We are partnering on this even with The Construct (a new company offering robot simulations in the cloud). They will award the competitor achieving the best performance with a round-trip to Hawaii!</p>
+<p><a href="http://contest.theconstructsim.com">http://contest.theconstructsim.com</a></p>
+<p>It's a great opportunity to demonstrate a nice robotics achievement.<br />
+The contest is open now and will close on December 31th.</p>
+<p>Cheers,</p>
+<p>-Olivier</p>
+</div>
+		</div>
+	</div>
+	
+
+<div class='field field-name-field-interest-group-attachments field-type-media field-label-hidden clearfix'
+>
+		<div class='field-items' >
+		<ul
+			class='media-embedded-4759 jcarousel-skin-media_embedded_1'>
+						<li>
+				<div class='field-item even'
+				>
+										<a href='../system/files/nao_race.png'
+						rel='shadowbox[media-embedded-4759];'
+						id='http://shanghailectures.org/system/files/nao_race.png'> [1]
+						<img typeof="foaf:Image" src="../system/files/styles/square_thumbnail/private/nao_race.png" alt="" /> </a>
+				    
+
+				</div>
+			</li>
+					</ul>
+			</div>
+
+</div>
+<!--  -->
+			<hr class="shai-group-entry-before-comment-separator"><div class="view view-interest-group-board-entries-com view-id-interest_group_board_entries_com view-display-id-page view-dom-id-1">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div>	<div class="shai-group-entry-add-comment-wrapper">
+		</div>
+</div>
+<hr	class="shai-group-entry-separator">  </div>
+  <div class="views-row views-row-2 views-row-even">
+    
+<div class="shai-group-entry-wrapper">
+	<div class="shai-group-entry-content-wrapper">
+		<div class="shai-group-entry-left">
+		<div class="field-content shai_boardentry_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-right">
+		<div class="field-content shai_boardentry_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-title-wrapper">
+				<div class="field-content shai_boardentry_date"><em class="placeholder">3 years 11 months</em> ago</div>
+				<div class="shai-group-entry-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_content"><p>Hi,</p>
+<p>We just released Webots 7.0.2 that fixes a number of bugs reported in this group. You can download the new version from our web site at <a href="http://www.cyberbotics.com">http://www.cyberbotics.com</a></p>
+<p>-Olivier</p>
+</div>
+		</div>
+	</div>
+		<hr class="shai-group-entry-before-comment-separator"><div class="view view-interest-group-board-entries-com view-id-interest_group_board_entries_com view-display-id-page view-dom-id-2">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div>	<div class="shai-group-entry-add-comment-wrapper">
+		</div>
+</div>
+<hr	class="shai-group-entry-separator">  </div>
+  <div class="views-row views-row-3 views-row-odd">
+    
+<div class="shai-group-entry-wrapper">
+	<div class="shai-group-entry-content-wrapper">
+		<div class="shai-group-entry-left">
+		<div class="field-content shai_boardentry_userpicture">  <div class="user-picture">
+    <a href="../users/rusvai-tam%C3%A1s-0.html" title="View user profile."><img typeof="foaf:Image" src="http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=140" alt="Rusvai Tamás&#039;s picture" title="Rusvai Tamás&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-right">
+		<div class="field-content shai_boardentry_username"><a href="../users/rusvai-tam%C3%A1s-0.html" title="View user profile." class="username" xml:lang="" about="/users/rusvai-tam%C3%A1s-0" typeof="sioc:UserAccount" property="foaf:name">Rusvai Tamás</a></div>			<div class="shai-group-entry-title-wrapper">
+				<div class="field-content shai_boardentry_date"><em class="placeholder">3 years 11 months</em> ago</div>
+				<div class="shai-group-entry-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_content"><p>Hy everyone,<br />
+I have problem with the movie maker options of the webots. It create a large,slow video with low pixel ratio.<br />
+How can i make a good and small video..., or if it is impossible a small video?<br />
+Could you help me?</p>
+<p>kind regards, Tamás Rusvai</p>
+</div>
+		</div>
+	</div>
+		<hr class="shai-group-entry-before-comment-separator"><div class="view view-interest-group-board-entries-com view-id-interest_group_board_entries_com view-display-id-page view-dom-id-3">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">3 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>On which platform are you? Linux, Windows or Mac OS X?</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>	<div class="shai-group-entry-add-comment-wrapper">
+		</div>
+</div>
+<hr	class="shai-group-entry-separator">  </div>
+  <div class="views-row views-row-4 views-row-even">
+    
+<div class="shai-group-entry-wrapper">
+	<div class="shai-group-entry-content-wrapper">
+		<div class="shai-group-entry-left">
+		<div class="field-content shai_boardentry_userpicture">  <div class="user-picture">
+    <a href="../users/clemens-czech.html" title="View user profile."><img typeof="foaf:Image" src="http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=140" alt="Clemens Czech&#039;s picture" title="Clemens Czech&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-right">
+		<div class="field-content shai_boardentry_username"><a href="../users/clemens-czech.html" title="View user profile." class="username" xml:lang="" about="/users/clemens-czech" typeof="sioc:UserAccount" property="foaf:name">Clemens Czech</a></div>			<div class="shai-group-entry-title-wrapper">
+				<div class="field-content shai_boardentry_date"><em class="placeholder">3 years 11 months</em> ago</div>
+				<div class="shai-group-entry-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_content"><p>Hi everyone,</p>
+<p>Webots crashed during a simulation, after I reopened it, it showed that the license is already in use and automatically deleted my "login-mail-adress" from the space in the preferences.</p>
+<p>I rebooted my computer and now I can not access webots anymore.</p>
+<p>Everytime I start it, a window saying "No Email defined to connect to the internet license" appears and webots closes again.</p>
+<p>I already deleted webots and reinstalled it, with no effect.</p>
+<p>Is it possible to set this email adress manually in a file?</p>
+<p>Please help me :)<br />
+kind regards, Clemens Czech</p>
+</div>
+		</div>
+	</div>
+		<hr class="shai-group-entry-before-comment-separator"><div class="view view-interest-group-board-entries-com view-id-interest_group_board_entries_com view-display-id-page view-dom-id-4">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">3 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>This bug should be fixed in the new release of Webots 7.0.2</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>	<div class="shai-group-entry-add-comment-wrapper">
+		</div>
+</div>
+<hr	class="shai-group-entry-separator">  </div>
+  <div class="views-row views-row-5 views-row-odd">
+    
+<div class="shai-group-entry-wrapper">
+	<div class="shai-group-entry-content-wrapper">
+		<div class="shai-group-entry-left">
+		<div class="field-content shai_boardentry_userpicture">  <div class="user-picture">
+    <a href="../users/j%C3%B6rg-meier.html" title="View user profile."><img typeof="foaf:Image" src="http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=140" alt="Jörg Meier&#039;s picture" title="Jörg Meier&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-right">
+		<div class="field-content shai_boardentry_username"><a href="../users/j%C3%B6rg-meier.html" title="View user profile." class="username" xml:lang="" about="/users/j%C3%B6rg-meier" typeof="sioc:UserAccount" property="foaf:name">Jörg Meier</a></div>			<div class="shai-group-entry-title-wrapper">
+				<div class="field-content shai_boardentry_date"><em class="placeholder">3 years 11 months</em> ago</div>
+				<div class="shai-group-entry-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_content"><p>hi there,<br />
+i have some troubles with the license of my account. when trying to activate Webots EDU, via Tools -&gt; Preferences -&gt; License, it says "Login: no such user: ...".<br />
+since it's the same mail address used here in shanghailectures.org, i supposed it would work, doesn't it?<br />
+maybe it's because i enrolled in this lecture a few weeks later than most students?<br />
+anyone discovered the same? thanks for help!</p>
+</div>
+		</div>
+	</div>
+		<hr class="shai-group-entry-before-comment-separator"><div class="view view-interest-group-board-entries-com view-id-interest_group_board_entries_com view-display-id-page view-dom-id-5">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/tobias-klauser.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-977-1317297017.jpg" alt="Tobias Klauser&#039;s picture" title="Tobias Klauser&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/tobias-klauser.html" title="View user profile." class="username" xml:lang="" about="/users/tobias-klauser" typeof="sioc:UserAccount" property="foaf:name">Tobias Klauser</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">3 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Hi Jörg</p>
+<p>Did you try selecting the PRO version (I think that's the version we should be allowed using)? If it still doesn't work, please send me an e-mail (<a href="mailto:tobias.klauser@uzh.ch">tobias.klauser@uzh.ch</a>), so I can check with Cyberbotics.</p>
+<p>Best regards<br />
+Tobias</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-2 views-row-even">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">3 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Yes, you should use the PRO license (and not the EDU). Please ensure also that the e-mail address you entered in the Webots Preferences (under the License tab) correspond to your Webots account: <a href="http://www.cyberbotics.com/my_account">http://www.cyberbotics.com/my_account</a> and that you can log in this account from the web site as well.</p>
+<p>-Olivier</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-3 views-row-odd views-row-last">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/j%C3%B6rg-meier.html" title="View user profile."><img typeof="foaf:Image" src="http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=140" alt="Jörg Meier&#039;s picture" title="Jörg Meier&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/j%C3%B6rg-meier.html" title="View user profile." class="username" xml:lang="" about="/users/j%C3%B6rg-meier" typeof="sioc:UserAccount" property="foaf:name">Jörg Meier</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">3 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>ok, it worked with the pro version. thank you very much for your help! :)</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>	<div class="shai-group-entry-add-comment-wrapper">
+		</div>
+</div>
+<hr	class="shai-group-entry-separator">  </div>
+  <div class="views-row views-row-6 views-row-even">
+    
+<div class="shai-group-entry-wrapper">
+	<div class="shai-group-entry-content-wrapper">
+		<div class="shai-group-entry-left">
+		<div class="field-content shai_boardentry_userpicture">  <div class="user-picture">
+    <a href="../users/priscila-rey.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1354-1348733926.jpg" alt="Priscila Rey&#039;s picture" title="Priscila Rey&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-right">
+		<div class="field-content shai_boardentry_username"><a href="../users/priscila-rey.html" title="View user profile." class="username" xml:lang="" about="/users/priscila-rey" typeof="sioc:UserAccount" property="foaf:name">Priscila Rey</a></div>			<div class="shai-group-entry-title-wrapper">
+				<div class="field-content shai_boardentry_date"><em class="placeholder">3 years 11 months</em> ago</div>
+				<div class="shai-group-entry-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_content"><p>Hi </p>
+<p>After reinstalling Webots, I can't activate my license anymore. How do I proceed best?</p>
+<p>Thanks, priscila</p>
+</div>
+		</div>
+	</div>
+	
+
+<div class='field field-name-field-interest-group-attachments field-type-media field-label-hidden clearfix'
+>
+		<div class='field-items' >
+		<ul
+			class='media-embedded-2106 jcarousel-skin-media_embedded_1'>
+						<li>
+				<div class='field-item even'
+				>
+										<a href='../system/files/Untitled.png'
+						rel='shadowbox[media-embedded-2106];'
+						id='http://shanghailectures.org/system/files/Untitled.png'> [1]
+						<img typeof="foaf:Image" src="../system/files/styles/square_thumbnail/private/Untitled.png" alt="" /> </a>
+				    
+
+				</div>
+			</li>
+					</ul>
+			</div>
+
+</div>
+<!--  -->
+			<hr class="shai-group-entry-before-comment-separator"><div class="view view-interest-group-board-entries-com view-id-interest_group_board_entries_com view-display-id-page view-dom-id-6">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">3 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>For the record, this issue was resolved (after some private e-mail discussion) by clicking on the red cross on your personal <a href="http://www.cyberbotics.com/my_account/profile">http://www.cyberbotics.com/my_account/profile</a> page.</p>
+<p>-Olivier</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>	<div class="shai-group-entry-add-comment-wrapper">
+		</div>
+</div>
+<hr	class="shai-group-entry-separator">  </div>
+  <div class="views-row views-row-7 views-row-odd">
+    
+<div class="shai-group-entry-wrapper">
+	<div class="shai-group-entry-content-wrapper">
+		<div class="shai-group-entry-left">
+		<div class="field-content shai_boardentry_userpicture">  <div class="user-picture">
+    <a href="../users/manucharova-antonina.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1506-1350160732.jpg" alt="Manucharova Antonina&#039;s picture" title="Manucharova Antonina&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-right">
+		<div class="field-content shai_boardentry_username"><a href="../users/manucharova-antonina.html" title="View user profile." class="username" xml:lang="" about="/users/manucharova-antonina" typeof="sioc:UserAccount" property="foaf:name">Manucharova Antonina</a></div>			<div class="shai-group-entry-title-wrapper">
+				<div class="field-content shai_boardentry_date"><em class="placeholder">3 years 11 months</em> ago</div>
+				<div class="shai-group-entry-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_content"><p>Hi Olivier,<br />
+Microsoft visual C++ Runtime Library </p>
+<p>This application has requested the Runtime to terminate it in an unusual way. Please contact the application's support team for more information. </p>
+<p>Thanks!</p>
+</div>
+		</div>
+	</div>
+	
+
+<div class='field field-name-field-interest-group-attachments field-type-media field-label-hidden clearfix'
+>
+		<div class='field-items' >
+		<ul
+			class='media-embedded-2085 jcarousel-skin-media_embedded_1'>
+						<li>
+				<div class='field-item even'
+				>
+										<a href='../system/files/webot-problem.JPG'
+						rel='shadowbox[media-embedded-2085];'
+						id='http://shanghailectures.org/system/files/webot-problem_1.JPG'> [1]
+						<img typeof="foaf:Image" src="../system/files/styles/square_thumbnail/private/webot-problem_1.JPG" alt="" /> </a>
+				    
+
+				</div>
+			</li>
+					</ul>
+			</div>
+
+</div>
+<!--  -->
+			<hr class="shai-group-entry-before-comment-separator"><div class="view view-interest-group-board-entries-com view-id-interest_group_board_entries_com view-display-id-page view-dom-id-7">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">3 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>I guess you have an Intel graphics card, right? Can you tell me the exact model of it?</p>
+<p>I would suggest you to try to update the graphics driver, as it often fixes this kind of<br />
+problem.</p>
+<p>Finally, does the folder path in which you installed Webots contains non-ASCII characters? If so, try to install Webots in a folder path which contains only ASCII characters.</p>
+<p>Please let me know if that helps.</p>
+<p>-Olivier</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>	<div class="shai-group-entry-add-comment-wrapper">
+		</div>
+</div>
+<hr	class="shai-group-entry-separator">  </div>
+  <div class="views-row views-row-8 views-row-even">
+    
+<div class="shai-group-entry-wrapper">
+	<div class="shai-group-entry-content-wrapper">
+		<div class="shai-group-entry-left">
+		<div class="field-content shai_boardentry_userpicture">  <div class="user-picture">
+    <a href="../users/manucharova-antonina.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1506-1350160732.jpg" alt="Manucharova Antonina&#039;s picture" title="Manucharova Antonina&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-right">
+		<div class="field-content shai_boardentry_username"><a href="../users/manucharova-antonina.html" title="View user profile." class="username" xml:lang="" about="/users/manucharova-antonina" typeof="sioc:UserAccount" property="foaf:name">Manucharova Antonina</a></div>			<div class="shai-group-entry-title-wrapper">
+				<div class="field-content shai_boardentry_date"><em class="placeholder">3 years 11 months</em> ago</div>
+				<div class="shai-group-entry-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_content"><p>Hi,<br />
+I have the following problem (see the attachment). Any ideas? By now I have downloaded webot 7,but the problem persists.<br />
+Thanks!</p>
+</div>
+		</div>
+	</div>
+	
+
+<div class='field field-name-field-interest-group-attachments field-type-media field-label-hidden clearfix'
+>
+		<div class='field-items' >
+		<ul
+			class='media-embedded-2075 jcarousel-skin-media_embedded_1'>
+						<li>
+				<div class='field-item even'
+				>
+										<a href='../system/files/webot-problem.JPG'
+						rel='shadowbox[media-embedded-2075];'
+						id='http://shanghailectures.org/system/files/webot-problem_0.JPG'> [1]
+						<img typeof="foaf:Image" src="../system/files/styles/square_thumbnail/private/webot-problem_0.JPG" alt="" /> </a>
+				    
+
+				</div>
+			</li>
+					</ul>
+			</div>
+
+</div>
+<!--  -->
+			<hr class="shai-group-entry-before-comment-separator"><div class="view view-interest-group-board-entries-com view-id-interest_group_board_entries_com view-display-id-page view-dom-id-8">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">3 years 11 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Unfortunately, your screenshot is too small (low resolution) and I cannot read the message displayed in the dialog box... Can you post a higher resolution screenshot or write the message in clear text?</p>
+<p>-Olivier</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>	<div class="shai-group-entry-add-comment-wrapper">
+		</div>
+</div>
+<hr	class="shai-group-entry-separator">  </div>
+  <div class="views-row views-row-9 views-row-odd">
+    
+<div class="shai-group-entry-wrapper">
+	<div class="shai-group-entry-content-wrapper">
+		<div class="shai-group-entry-left">
+		<div class="field-content shai_boardentry_userpicture">  <div class="user-picture">
+    <a href="../users/zsolt-burger.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1365-1350143451.jpg" alt="Zsolt Burger&#039;s picture" title="Zsolt Burger&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-right">
+		<div class="field-content shai_boardentry_username"><a href="../users/zsolt-burger.html" title="View user profile." class="username" xml:lang="" about="/users/zsolt-burger" typeof="sioc:UserAccount" property="foaf:name">Zsolt Burger</a></div>			<div class="shai-group-entry-title-wrapper">
+				<div class="field-content shai_boardentry_date"><em class="placeholder">3 years 12 months</em> ago</div>
+				<div class="shai-group-entry-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_content"><p>Hi,</p>
+<p>Why do I get this error message(see the attachement)? When I try to license webots?</p>
+<p>I can't build the dog controller then.</p>
+<p>Regards,<br />
+Zsolt</p>
+</div>
+		</div>
+	</div>
+	
+
+<div class='field field-name-field-interest-group-attachments field-type-media field-label-hidden clearfix'
+>
+		<div class='field-items' >
+		<ul
+			class='media-embedded-2065 jcarousel-skin-media_embedded_1'>
+						<li>
+				<div class='field-item even'
+				>
+										<a href='../system/files/webots%20license%20error.jpg'
+						rel='shadowbox[media-embedded-2065];'
+						id='http://shanghailectures.org/system/files/webots%20license%20error.jpg'> [1]
+						<img typeof="foaf:Image" src="../system/files/styles/square_thumbnail/private/webots%20license%20error.jpg" alt="" /> </a>
+				    
+
+				</div>
+			</li>
+					</ul>
+			</div>
+
+</div>
+<!--  -->
+			<hr class="shai-group-entry-before-comment-separator"><div class="view view-interest-group-board-entries-com view-id-interest_group_board_entries_com view-display-id-page view-dom-id-9">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">3 years 12 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Zsolt,</p>
+<p>Can you try to switch from "Webots EDU" to "Webots PRO" under the License tab of the Webots Preferences? That should fix the problem. If not, please let me know.</p>
+<p>-Olivier</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+<hr class="shai-group-entry-comment-separator">  </div>
+  <div class="views-row views-row-2 views-row-even views-row-last">
+    
+<div class="shai-group-entry-comment-wrapper">
+	<div class="shai-group-entry-comment-content-wrapper">
+		<div class="shai-group-entry-comment-left">
+		<div class="field-content shai_boardentry_comment_userpicture">  <div class="user-picture">
+    <a href="../users/zsolt-burger.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1365-1350143451.jpg" alt="Zsolt Burger&#039;s picture" title="Zsolt Burger&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-comment-right">
+		<div class="field-content shai_boardentry_comment_username"><a href="../users/zsolt-burger.html" title="View user profile." class="username" xml:lang="" about="/users/zsolt-burger" typeof="sioc:UserAccount" property="foaf:name">Zsolt Burger</a></div>			<div class="shai-group-entry-comment-title-wrapper">
+				<div class="field-content shai_boardentry_comment_date"><em class="placeholder">3 years 12 months</em> ago</div>
+				<div class="shai-group-entry-comment-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_comment_content"><p>Hi Olivier,</p>
+<p>It is working now, thanks:)</p>
+<p>Zsolt</p>
+</div>
+		</div>
+	</div>
+	<div></div></div>
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>	<div class="shai-group-entry-add-comment-wrapper">
+		</div>
+</div>
+<hr	class="shai-group-entry-separator">  </div>
+  <div class="views-row views-row-10 views-row-even views-row-last">
+    
+<div class="shai-group-entry-wrapper">
+	<div class="shai-group-entry-content-wrapper">
+		<div class="shai-group-entry-left">
+		<div class="field-content shai_boardentry_userpicture">  <div class="user-picture">
+    <a href="../users/olivier-michel.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-1093-1317982495.jpg" alt="Olivier Michel&#039;s picture" title="Olivier Michel&#039;s picture" /></a>  </div>
+</div>		</div>
+		<div class="shai-group-entry-right">
+		<div class="field-content shai_boardentry_username"><a href="../users/olivier-michel.html" title="View user profile." class="username" xml:lang="" about="/users/olivier-michel" typeof="sioc:UserAccount" property="foaf:name">Olivier Michel</a></div>			<div class="shai-group-entry-title-wrapper">
+				<div class="field-content shai_boardentry_date"><em class="placeholder">3 years 12 months</em> ago</div>
+				<div class="shai-group-entry-placeholder">&nbsp;</div>			</div>
+			<div class="field-content shai_boardentry_content"><p>Hi,</p>
+<p>We just released Webots 7!</p>
+<p>All the ShanghAI lecture students (and teachers) can use this new version (instead of the beta) using their existing account (same e-mail address and password). You can download Webots 7.0.1 from <a href="http://www.cyberbotics.com/download/">http://www.cyberbotics.com/download/</a></p>
+<p>Don't hesitate to post any feedback on this Interest Group.</p>
+<p>Best regards,</p>
+<p>-Olivier</p>
+</div>
+		</div>
+	</div>
+		<hr class="shai-group-entry-before-comment-separator"><div class="view view-interest-group-board-entries-com view-id-interest_group_board_entries_com view-display-id-page view-dom-id-10">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div>	<div class="shai-group-entry-add-comment-wrapper">
+		</div>
+</div>
+<hr	class="shai-group-entry-separator">  </div>
+    </div>
+  
+      <h2 class="element-invisible">Pages</h2><div class="item-list"><ul class="pager"><li class="pager-current first">1</li>
+<li class="pager-item"><a href="104-page=5,0,0,0,0,0,0,0,0,0,1.html" title="Go to page 2" class="active">2</a></li>
+<li class="pager-item"><a href="104-page=5,0,0,0,0,0,0,0,0,0,2.html" title="Go to page 3" class="active">3</a></li>
+<li class="pager-item"><a href="104-page=5,0,0,0,0,0,0,0,0,0,3.html" title="Go to page 4" class="active">4</a></li>
+<li class="pager-next"><a href="104-page=5,0,0,0,0,0,0,0,0,0,1.html" title="Go to next page" class="active">next ›</a></li>
+<li class="pager-last last"><a href="104-page=5,0,0,0,0,0,0,0,0,0,3.html" title="Go to last page" class="active">last »</a></li>
+</ul></div>  
+  
+  
+  
+  
+</div>  </div>
+
+  
+  </div>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+</div>
+  </div>
+
+</div><!-- /.block -->
+  </div><!-- /.region -->
+          </div></div><!-- /.section, /#content -->
+
+    
+      <div class="region region-sidebar-first column sidebar"><div class="section">
+    <div id="block-shanghai-interest-groups-shai-interest-groups" class="block block-shanghai-interest-groups first odd">
+
+        <h2 class="block-title">Group subscription</h2>
+    
+  <div class="content">
+    <a href="../user/login-destination=group%7Cnode%7C104%7Csubscribe.html">Subscribe to group</a>  </div>
+
+</div><!-- /.block -->
+<div id="block-views-shai-ig-members-block" class="block block-views last even">
+
+        <h2 class="block-title">Interest Group Members</h2>
+    
+  <div class="content">
+    <div class="view view-shai-ig-members view-id-shai_ig_members view-display-id-block view-dom-id-12">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    <div class="shai-interest-group-member-wrapper">
+	<div class="shai-interest-group-member-left">
+				<div class="shai-interst-group-member-picture shai-interest-group-member-logout">
+			 <div class="field-content">  <div class="user-picture">
+    <a href="../users/pablo-mar%C3%ADn-plaza.html" title="View user profile."><img typeof="foaf:Image" src="../system/files/styles/member_list/private/userpictures/picture-960-1317378979.jpg" alt="Pablo Marín Plaza&#039;s picture" title="Pablo Marín Plaza&#039;s picture" /></a>  </div>
+</div>		</div>
+	</div>
+	<div class="shai-interest-group-member-right">
+		<h4 class="shai-interest-group-member-username">
+		<span class="field-content"><a href="../users/pablo-mar%C3%ADn-plaza.html">Pablo Marín Plaza</a></span>		</h4>
+				<div class="shai-member-block-lastonline">
+			last login: over 5 years ago		</div>
+									    	    	
+			<div class="shai-interest-group-member-add-friend">
+			<div class="qtip-link"><div class="qtip-tooltip">Add Pablo Marín Plaza as a friend</div>
+				<a href="../relationship/960/request/1-destination=user%7C960.html" class="user_relationships_popup_link"><div class="shai-interest-group-member-friend-link"></div></a>	
+				</div>
+			</div>
+	    		<div class="qtip-link">
+			<div class="qtip-tooltip">Send a message to Pablo Marín Plaza.</div>
+			<div class="shai-interest-group-member-contact">
+				<div class="shai-ig-member-send-message">
+					<a href="../messages/new/960-destination=user%7C960.html" class="qtip-link"><div class="qtip-tooltip">Send message to Pablo Marín Plaza.</div></a>				</div>
+			</div>
+		</div>
+			</div>
+
+</div>
+
+
+  </div>
+  <div class="views-row views-row-2 views-row-even">
+    <div class="shai-interest-group-member-wrapper">
+	<div class="shai-interest-group-member-left">
+				<div class="shai-interst-group-member-picture shai-interest-group-member-logout">
+			 <div class="field-content">  <div class="user-picture">
+    <a href="../users/ahlem-ouaddah.html" title="View user profile."><img typeof="foaf:Image" src="http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=140" alt="Ahlem OUADDAH&#039;s picture" title="Ahlem OUADDAH&#039;s picture" /></a>  </div>
+</div>		</div>
+	</div>
+	<div class="shai-interest-group-member-right">
+		<h4 class="shai-interest-group-member-username">
+		<span class="field-content"><a href="../users/ahlem-ouaddah.html">Ahlem OUADDAH</a></span>		</h4>
+				<div class="shai-member-block-lastonline">
+			last login: over 5 years ago		</div>
+									    	    	
+			<div class="shai-interest-group-member-add-friend">
+			<div class="qtip-link"><div class="qtip-tooltip">Add Ahlem OUADDAH as a friend</div>
+				<a href="../relationship/982/request/1-destination=user%7C982.html" class="user_relationships_popup_link"><div class="shai-interest-group-member-friend-link"></div></a>	
+				</div>
+			</div>
+	    		<div class="qtip-link">
+			<div class="qtip-tooltip">Send a message to Ahlem OUADDAH.</div>
+			<div class="shai-interest-group-member-contact">
+				<div class="shai-ig-member-send-message">
+					<a href="../messages/new/982-destination=user%7C982.html" class="qtip-link"><div class="qtip-tooltip">Send message to Ahlem OUADDAH.</div></a>				</div>
+			</div>
+		</div>
+			</div>
+
+</div>
+
+
+  </div>
+  <div class="views-row views-row-3 views-row-odd views-row-last">
+    <div class="shai-interest-group-member-wrapper">
+	<div class="shai-interest-group-member-left">
+				<div class="shai-interst-group-member-picture shai-interest-group-member-logout">
+			 <div class="field-content">  <div class="user-picture">
+    <a href="../users/georgy-marchenko.html" title="View user profile."><img typeof="foaf:Image" src="http://www.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=140" alt="Georgy Marchenko&#039;s picture" title="Georgy Marchenko&#039;s picture" /></a>  </div>
+</div>		</div>
+	</div>
+	<div class="shai-interest-group-member-right">
+		<h4 class="shai-interest-group-member-username">
+		<span class="field-content"><a href="../users/georgy-marchenko.html">Georgy Marchenko</a></span>		</h4>
+				<div class="shai-member-block-lastonline">
+			last login: over 5 years ago		</div>
+									    	    	
+			<div class="shai-interest-group-member-add-friend">
+			<div class="qtip-link"><div class="qtip-tooltip">Add Georgy Marchenko as a friend</div>
+				<a href="../relationship/1153/request/1-destination=user%7C1153.html" class="user_relationships_popup_link"><div class="shai-interest-group-member-friend-link"></div></a>	
+				</div>
+			</div>
+	    		<div class="qtip-link">
+			<div class="qtip-tooltip">Send a message to Georgy Marchenko.</div>
+			<div class="shai-interest-group-member-contact">
+				<div class="shai-ig-member-send-message">
+					<a href="../messages/new/1153-destination=user%7C1153.html" class="qtip-link"><div class="qtip-tooltip">Send message to Georgy Marchenko.</div></a>				</div>
+			</div>
+		</div>
+			</div>
+
+</div>
+
+
+  </div>
+    </div>
+  
+      <h2 class="element-invisible">Pages</h2><div class="item-list"><ul class="pager"><li class="pager-first first"><a href="104.html" title="Go to first page" class="active">« first</a></li>
+<li class="pager-previous"><a href="104-page=4.html" title="Go to previous page" class="active">‹ previous</a></li>
+<li class="pager-item"><a href="104.html" title="Go to page 1" class="active">1</a></li>
+<li class="pager-item"><a href="104-page=1.html" title="Go to page 2" class="active">2</a></li>
+<li class="pager-item"><a href="104-page=2.html" title="Go to page 3" class="active">3</a></li>
+<li class="pager-item"><a href="104-page=3.html" title="Go to page 4" class="active">4</a></li>
+<li class="pager-item"><a href="104-page=4.html" title="Go to page 5" class="active">5</a></li>
+<li class="pager-current last">6</li>
+</ul></div>  
+  
+  
+  
+  
+</div>  </div>
+
+</div><!-- /.block -->
+  </div></div><!-- /.section, /.region -->
+
+    
+  </div></div><!-- /#main, /#main-wrapper -->
+  
+</div></div><!-- /#page, /#page-wrapper -->
+
+<div id="footer-background"></div>
+  <div class="region region-bottom">
+    <div id="block-menu-menu-footer" class="block block-menu first odd">
+
+      
+  <div class="content">
+    <ul class="menu"><li class="first leaf"><a href="../credits.html">Credits</a></li>
+<li class="leaf"><a href="../sitemap.html" title="">Sitemap</a></li>
+<li class="last leaf"><a href="../terms-and-conditions.html">Terms and Conditions</a></li>
+</ul>  </div>
+
+</div><!-- /.block -->
+<div id="block-block-1" class="block block-block last even">
+
+      
+  <div class="content">
+    <p><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a></p>
+  </div>
+
+</div><!-- /.block -->
+  </div><!-- /.region -->
+
+<!-- Overlay for User Menu -->
+<div class="apple_overlay" id="usermenuoverlay">
+<!-- the external content is loaded inside this tag -->
+	<div class="contentWrap"></div>
+	
+</div>
+  <div id="user_relationships_popup_form" class="user_relationships_ui_popup_form"></div><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+          Shadowbox.path = "/sites/all/libraries/shadowbox/";
+	      Shadowbox.init(Drupal.settings.shadowbox);
+	    
+//--><!]]>
+</script>
+</body>
+</html>
